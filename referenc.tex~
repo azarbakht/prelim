@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%% referenc.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sample references
+% "computer science"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% BibTeX users please use
+% \bibliographystyle{}
+% \bibliography{}
+%
+% Non-BibTeX users please use
+\begin{thebibliography}{99.}
+%
+% and use \bibitem to create references.
+%
+% Use the following syntax and markup for your references
+%
+%% Monographs
+%\bibitem{monograph} Kajan E (2002)
+%Information technology encyclopedia and acronyms. Springer, Berlin
+%Heidelberg New York
+%
+%% Contributed Works
+%\bibitem{contribution} Broy M (2002) Software engineering -- From
+%auxiliary to key technologies. In: Broy M, Denert E (eds)
+%Software Pioneers. Springer, Berlin Heidelberg New York
+%
+%% Journal
+%\bibitem{journal} Che M, Grellmann W, Seidler S (1997)
+%Appl Polym Sci 64:1079--1090
+%
+%\bibitem{journal} Chde M, Grellmann W, Seidler S (1997)
+%Appl Polym Sci 64:1079--1090
+%
+%%% Theses
+%%\bibitem{thesis} Ross DW (1977) Lysosomes and storage diseases. MA
+%%Thesis, Columbia University, New York
+%
+\bibitem{Asur} Asur, S., S. Parthasarathy, and D. Ucar, (2009), ``\textit{An event-based framework for characterizing the evolutionary behavior of interaction graphs,}'' in ACM Trans.  Knowledge Discovery Data. 3, 4, Article 16, (November 2009), 36 pages. 2009.
+
+\bibitem{BaishakhiRepertoire} Baishakhi R., C. Wiley, and M. Kim, ``\textit{REPERTOIRE: a cross-system porting analysis tool for forked software projects,}'' in Proc. of the ACM SIGSOFT 20th Int. Sym. on the Foundations of Software Engineering (FSE '12). ACM, New York, NY, USA, Article 8 , 2012.
+
+\bibitem{Bastian} Bastian, M., S. Heymann, and M. Jacomy, ``\textit{Gephi: an open source software for exploring and manipulating networks,}'' presented at the Int. AAAI Conf. on Weblogs and Social Media, 2009.
+
+\bibitem{Bezrukova} Bezrukova, K,, C. S. Spell, J. L. Perry, (2010). , ``\textit{Violent Splits Or Healthy Divides? Coping With Injustice Through Faultlines,}'' Personnel Psychology, Vol 63, Issue 3. 2010. 
+
+\bibitem{Bird} Bird, C., D. Pattison, R. D'Souza, V. Filkov, and P. Devanbu, ``\textit{Latent social structure in open source projects,}'' in Proc. of the 16th ACM SIGSOFT Int. Symposium on Foundations of software engineering, New York, NY, USA: ACM, pp. 24-35, 2008.  
+
+\bibitem{Brandes} Brandes, U. ``\textit{A Faster Algorithm for Betweenness Centrality}'', in Journal of Mathematical Sociology 25(2):163-177, 2001.
+
+\bibitem{Chakrabarti} Chakrabarti,  D., and C. Faloutsos. ``\textit{Graph mining: Laws, generators, and algorithms,}'' ACM Computing Surveys, 38, 1, Article 2, 2006.
+
+\bibitem{CrowstonFLOSSWhatWeKnow} 
+Crowston, K., K. Wei, J. Howison, and A. Wiggins. ``\textit{Free/Libre open-source software development: What we know and what we do not know,}'' ACM Comput. Surv. 44, 2, Article 7, 2012.
+
+\bibitem{Ford} Ford, L. R. and D. R. Folkerson, ``\textit{A simple algorithm for finding maximal network flows and an application to the Hitchcock problem,}'' Canadian Journal of Mathematics, vol. 9, pp. 210-218, 1957. 
+
+\bibitem{Forrest} Forrest, D., C. Jensen, N. Mohan, and J. Davidson, ``\textit{Exploring the Role of Outside Organizations in Free/ Open Source Software Projects,}'' in Proceedings of the 8th IFIP WG 2.13 International Conference on Open Source Systems, OSS 2012, Hammamet, Tunisia, September 10-13, 2012.
+
+\bibitem{Fruchterman} Fruchterman, T. M. J. and E. M. Reingold, ``\textit{Graph drawing by force-directed placement,}'' Softw: Pract. Exper., vol. 21, no. 11, pp. 1129-1164, 1991.
+
+\bibitem{Guzzi} Guzzi, A., A. Bacchelli, M. Lanza, M. Pinzger, and A. van Deursen. ``\textit{Communication in open source software development mailing lists,}'' in Proc. of the 10th Working Conference on Mining Software Repositories (MSR '13). IEEE Press, Piscataway, NJ, USA, 277-286. 2013.
+
+\bibitem{Hannemann} Hannemann, A and , R. Klamma ``\textit{Community Dynamics in Open Source Software Projects: Aging and Social Reshaping,}'' in Proc. of the IFIP Second Int. Conf. on Open Source Systems, pp. 80-96, 2013. 
+
+\bibitem{HowisonPerilsSourceForge} Howison, J. and K. Crowston. ``\textit{The perils and pitfalls of mining SourceForge,}'' In Proceedings of the Int. Workshop on Mining Software Repositories (MSR 2004), pp. 7-11. 2004.  
+
+\bibitem{HowisonSocialDynamics} Howison, J., K. Inoue, and K. Crowston, ``\textit{Social dynamics of free and open source team communications,}'' in Proc. of the IFIP Second Int. Conf. on Open Source Systems, 319-330, 2006.  
+
+\bibitem{HowisonFlossMole} Howison, J., M. Conklin, and K. Crowston, ``\textit{FLOSSmole: A collaborative repository for FLOSS research data and analyses,}'' Int. Journal of Information Technology and Web Engineering, 1(3), 17-26. 2006.  
+
+\bibitem{Kuechler} Kuechler, V., C. Gilbertson, and C. Jensen, ``\textit{Gender Differences in Early Free and Open Source Software Joining Process,}'' Open Source Systems: Long-Term Sustainability, 2012. 
+
+\bibitem{Kunegis} Kunegis, J., S. Sizov, F. Schwagereit, and D. Fay, ``\textit{Diversity dynamics in online networks,}'' in Proc. of the 23rd ACM Conf. on Hypertext and Social Media, USA, 2012. 
+
+\bibitem{LeskovecGraphsOverTime} Leskovec, J., Kleinberg, J., and Faloutsos, C.: ``\textit{Graphs over time: densification laws, shrinking diameters and possible explanations,}'' in Proc. of the SIGKDD Int. Conf. on Knowledge Discovery and data Mining, 2005. 
+
+\bibitem{LeskovecStatisticalPropertiesOfCommunityStructure} Leskovec, J., K. J. Lang, A. Dasgupta, and M. W. Mahoney, ``\textit{Statistical properties of community structure in large social and information networks,}'' in Proc. of the 17th Int. Conf. on World Wide Web (WWW '08), ACM, 2008.  
+
+\bibitem{NymanToForkOrNotToFork} Mikkonen, T., L. Nyman, ``\textit{To Fork or Not to Fork: Fork Motivations in SourceForge Projects,}'' in Int. J. Open Source Softw. Process. 3, 3. July, 2011.
+
+\bibitem{Noack} Noack, A., ``\textit{Energy models for graph clustering,}'' J. Graph Algorithms Appl., vol. 11, no. 2, pp. 453-480, 2007.
+
+\bibitem{NymanCodeForking} Nyman, L. , ``\textit{Understanding code forking in open source software,}'' in Proc. of the 7th Int. Conf. on Open Source Systems Doctoral Consortium, Salvador, Brazil, 2011. 
+
+\bibitem{NymanForkingSustainability} Nyman, L., T. Mikkonen, J. Lindman, and M. Foug\`{e}re, ``\textit{Forking: the invisible hand of sustainability in open source software,}'' in Proc. of SOS 2011: Towards Sustainable Open Source, 2011. 
+
+\bibitem{NymanHackersForking} Nyman, L., ``\textit{Hackers on Forking,}'' in Proc. of Int. Sym. on Open Collaboration, OpenSym, 2014. 
+
+\bibitem{Oh} Oh, W., Jeon, S., ``\textit{Membership Dynamics and Network Stability in the Open-Source Community: The Ising Perspective}'' in Proceedings of the Twenty-Fifth International Conference on Information Systems. 2004.
+
+\bibitem{Page} Page, B, B. Sergey, R. Motwani and T. Winograd, ``\textit{The PageRank Citation Ranking: Bringing Order to the Web,}'' Technical Report, Stanford InfoLab, 1999.
+
+\bibitem{Robles} Robles, G. and J. M. Gonzalez-Barahona, ``\textit{A comprehensive study of software forks: Dates, reasons and outcomes,}'' in Proc. of the 8th Int. Conf. on Open Source Systems, Hammamet, Tunisia, 2012. 
+
+\bibitem{Rocchini} Rocchini, C. (Nov. 27 2012), Wikimedia Commons, Available:\\ http://en.wikipedia.org/wiki/File:Centrality.svg, 2012.  
+
+\bibitem{Singer} Singer, L., F. Figueira Filho, B. Cleary, C. Treude, M. Storey, and K. Schneider. ``\textit{Mutual assessment in the social programmer ecosystem: an empirical investigation of developer profile aggregators,}'' in Proc. of the 2013 conference on Computer supported cooperative work (CSCW '13). ACM, New York, NY, USA, 103-116. 2013.
+
+\bibitem{Sowe} Sowe, S., L. Stamelos, and L. Angelis, ``\textit{Identifying knowledge brokers that yield software engineering knowledge in OSS projects,}'' Information and Software Technology, vol. 48, pp. 1025-1033, Nov 2006. 
+
+\bibitem{Storey} Storey, M., L. Singer, B. Cleary, F. Figueira Filho, and A. Zagalsky, ``\textit{The (R) Evolution of social media in software engineering,}'' in Proc. of the on Future of Software Engineering (FOSE 2014). ACM, New York, NY, USA, 100-116. 2014.
+
+\bibitem{JoseWebKit} Teixeira, J., and T. Lin, ``\textit{Collaboration in the open-source arena: the webkit case,}'' in Proc. of the 52nd ACM conference on Computers and people research (SIGSIM-CPR '14). ACM, New York, NY, USA, 2014. 
+
+\bibitem{Torres} Torres, M. R. M., S. L. Toral, M. Perales, and F. Barrero, ``\textit{Analysis of the Core Team Role in Open Source Communities,}'' in Complex, Intelligent and Software Intensive Systems (CISIS), 2011 Int. Conf. on, pp. 109-114. IEEE, 2011. 
+
+\bibitem{Zachary} Zachary, W., ``\textit{An information flow model for conflict and fission in small groups,}'' Journal of Anthropological Research, vol. 33, no. 4, pp. 452-473, 1977.
+
+\end{thebibliography}
