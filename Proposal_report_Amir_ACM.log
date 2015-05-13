@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  12 MAY 2015 18:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  13 MAY 2015 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,7 +1068,7 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 801.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 801.
 Package rerunfilecheck Info: File `Proposal_report_Amir_ACM.out' has not change
 d.
-(rerunfilecheck)             Checksum: 4ED8C0915F1A014A04C03D3DEE192949;2180.
+(rerunfilecheck)             Checksum: 3E9A98CF2867CBDF5B8A31C45A9FDF63;2165.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 801.
  ) 
 Here is how much of TeX's memory you used:
@@ -1093,7 +1093,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on Proposal_report_Amir_ACM.pdf (15 pages, 2742306 bytes).
+Output written on Proposal_report_Amir_ACM.pdf (15 pages, 2741862 bytes).
 PDF statistics:
  506 PDF objects out of 1000 (max. 8388607)
  434 compressed objects within 5 object streams
