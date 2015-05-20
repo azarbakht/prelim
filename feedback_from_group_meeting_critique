@@ -1,0 +1,58 @@
+- copy of intro somewhere else
+- use of GRE words
+- terms from psychology
+- disconnect of statistical modeling method and rest of paper
+- how theories are used in hypothesis
+- title: word-salad
+	Looking at forking through the lens of longitudinal social network analysis
+- abstract: just covers introduction, not methodology, ...
+	says forking is bad
+	violent conflict-driven [use acrimonious] split is a bad term
+	add the second; what's to come out
+- introduction last paragraph; add section numbers
+- introduction 2nd paragraph; introduction of forking (from related work. move here)
+- related work: subsectionize: FOSS, Forking, SNA
+- related work: forking definition ad \ref
+		move to introduction
+		remove italic
+- fig 1: one of the pie slices doesn't have %
+- sort references for multiple references
+- last paragraph before motivation -> for initial study only
+- related work, parapraph 3; is it generalizable? it should be reconnected to the rest
+- pie chart: use shades or more distinct colors for B/W printers
+- motivation merge into introduction; as a subsection
+- motivation first paragraph is a direct copy/paste
+- quote formatting style: italic or not-italic. choose one and stick with it
+- motivation last sentence: not really answered/addressed in the rest of the paper.
+- RQ numbers, should be RQ 1, 2, etc.
+- last reference before 4.1.3
+- 4.1.4 Does our analysis match reality? (not what they remember)
+- point of saturation -> stat test...
+	mention of open coding, etc. 
+- why one month to the fork, why not two months... needs to be motivated
+- Methodology first sentence: is given 
+- 5.1.1 doesn't have any following 5.1.2
+- talk about control group; size, selection, ...
+- add some H.F. to make the U.F. and H.F. numbers equal
+- too many a) b) c) d)... maybe Firstly, secondly, ...
+- why three months after the fork? remove it!
+- mailing list, where developers send and receive ... remove it. it's given
+- weed-out
+- why this model. why not regression
+- theories should come earlier. certainly before the predictions (model covariates), maybe even before the statistical model
+- formulaes in table 8, should be explained. they are not explained
+- when do the outdegree and etc. covariates change
+	what do we expect to see after the fork
+- 6.2.3 add footnote
+- fig 6 7 8, what you should see
+	draw the fork line. vertical line
+- FLOSS -> change to FOSS
+- SNA
+- Fig 3 4 not explained
+	what we should see
+- Table 9: the -: I dunno ones or they are gonna stay the same (insignificant)
+- be specific about data sources.
+- 6.2.4 Second paragraph. How was this identifiable. What is the proof. Where's the proof. Be careful about the wording.
+- Conclusion should not be there
+- Section missing: What I'm gonna do next
+- Timeline and threats to validity needs to be updated.
