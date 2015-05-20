@@ -156,19 +156,19 @@ Social networks are a ubiquitous part of our lives, and the creation of online s
 \category{H.5.m}{Information interfaces and presentation (e.g., HCI)}[Miscellaneous]
 %A category including the fourth, optional field follows...
 
-\terms{Measurement, Reliabality, Human Factors}
+\terms{Measurement, Reliability, Human Factors}
 
-\keywords{Free and Open Source Software, Social Dynamics, Temporal Analysis, Forking, Longitidinal Social Network Analysis, ERGM, Separable Temporal Exponential Family Random Graph Models, STERGM, FOSS.} % NOT required for Proceedings
+\keywords{Free and Open Source Software, Social Dynamics, Temporal Analysis, Forking, Longitudinal Social Network Analysis, ERGM, Separable Temporal Exponential Family Random Graph Models, STERGM, FOSS.} % NOT required for Proceedings
 
 \section{Introduction}
 \label{introduction}
-Social networks are a ubiquitous part of our social lives, and the creation of online social communities has been a natural extension of this phenomena. Social media plays an important role in software engineering, as software developers utilize them to communicate, learn, collaboborate and coordinate with others \cite{Storey}. Free and Open Source Software (FOSS) development efforts are prime examples of how community can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement in order to stay alive \cite{NymanCodeForking}.
+Social networks are a ubiquitous part of our social lives, and the creation of online social communities has been a natural extension of this phenomena. Social media plays an important role in software engineering, as software developers utilize them to communicate, learn, collaborate and coordinate with others \cite{Storey}. Free and Open Source Software (FOSS) development efforts are prime examples of how community can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement in order to stay alive \cite{NymanCodeForking}.
 
 Although the bulk of collaboration and communication in FOSS communities occurs online and is publicly accessible, there are still many open questions about the social dynamics in FOSS communities. Projects might go through a metamorphosis when faced with an influx of new developers or the involvement of an outside organization. Conflicts between developers' divergent visions about the future of the project might lead to forking of the project and dilution of the community. Forking, either as a violent split when there is a conflict or as a friendly divide when new features are experimentally added both affect the community \cite{Bezrukova}.
 
 Previous research on forking ranges from the studies of Robles et al. \cite{Robles} that identified all significant FOSS forks since 1990, to the works of Baishakhi et al. \cite{Baishakhi} on post-forking porting of new features or bug fixes from peer projects. It encompasses works of Nyman on developers' opinions about forking \cite{NymanHackersForking}, developers motivations for performing forks \cite{NymanToForkOrNotToFork}, the necessity of code forking as tool for sustainability \cite{NymanForkingSustainability}, and Syeed's work on socio-technical dependencies in the BSD projects family \cite{Syeed}.
 
-Most existing research on forking, however, is post-hoc. It looks at the forking events in restrospect and tries to find the outcome of the fork; what happened after the fork happened; what was the cause of forking, and such. The run-up to the forking events are seldom studied. This leaves a number of questions unanswered: Was it a long-term trend? Was the community polarized, before forking happened? Was there a shift of influence? Did the center of gravity of the community change? What was the tipping point? Was it predictable? Is it ever predictable? We are missing that context. 
+Most existing research on forking, however, is post-hoc. It looks at the forking events in retrospect and tries to find the outcome of the fork; what happened after the fork happened; what was the cause of forking, and such. The run-up to the forking events are seldom studied. This leaves a number of questions unanswered: Was it a long-term trend? Was the community polarized, before forking happened? Was there a shift of influence? Did the center of gravity of the community change? What was the tipping point? Was it predictable? Is it ever predictable? We are missing that context. 
 
 Additionally, studies of FOSS communities tend to suffer from an important limitation. They treat community as a static structure rather than a dynamic process. Longitudinal studies on open source forking are rare.
 
@@ -268,7 +268,7 @@ Recipes for success or stagnation, sustainability or fragmentation could be iden
 \section{Research Goals}
 \label{ResearchGoalsAndMethods}
 
-Social interactions reflects the changes the community goes through, we argue. And so, it can be used to describe the context surrounding a forking event. Three of the six main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} are socially related, and so should be reflected in the social interactions data. For example, if a fork occured because of a desire for ``more community-driven development'', we expect to see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community. In other words, in this case, the power stays in the hands of the same people throughout, as new people come and go. 
+Social interactions reflects the changes the community goes through, we argue. And so, it can be used to describe the context surrounding a forking event. Three of the six main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} are socially related, and so should be reflected in the social interactions data. For example, if a fork occurred because of a desire for ``more community-driven development'', we expect to see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community. In other words, in this case, the power stays in the hands of the same people throughout, as new people come and go. 
 
 We aim to 1) Analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time; 2) Test whether the results of the analysis match what developers in the project's community remember? 
 Specifically, our research objective and research questions are listed in the following.\\
@@ -279,9 +279,9 @@ Specifically, our research objective and research questions are listed in the fo
 
 \subsubsection{Do forks leave traces in the collaboration artifacts of open source projects?\\}
 
-To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artefacts of open source projects, e.g. mailing list data, issue tracking systems data, source code data.
+To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g. mailing list data, issue tracking systems data, source code data.
 
-\subsubsection{Do differences types of forks leave different tyoes of traces?\\}
+\subsubsection{Do differences types of forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? 
 
@@ -300,7 +300,7 @@ What establishes an inflection point (fork)? Which metrics are indicative of inf
 
 To validate what our quantitative data mining approach finds, we can compare it to what people remember of the situation, and what is written about that project. This validation check requires interviewing people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation, i.e. when no new information is gained by doing more interviews. These semi-structured interviews will be recorded, transcribed, and coded, to find common patterns in the interviewee responses.
 
-To complement the interview study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can also be a read and analysed to complement the findings of the interview study. 
+To complement the interview study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can also be a read and analyzed to complement the findings of the interview study. 
 
 %\subsection{Research Objective \#3:}
 %\subsection*{Can knowledge of these metrics help community members reflect or make decisions about the evolution of their current projects?\\}
@@ -319,7 +319,7 @@ To complement the interview study, a literature review and web research will be 
 \section{Methodology}
 \label{methodology}
 
-To detect change patterns, we need to gather  relevant data, clean it, and analyze it. In the ollowing subsections, we describe the process in detail. 
+To detect change patterns, we need to gather  relevant data, clean it, and analyze it. In the following subsections, we describe the process in detail. 
 
 \subsection{Phase 1: Data Collection}
 
@@ -332,7 +332,7 @@ To find patterns uniquely associated with undesirable forks, we need to gather d
 \label{tableUndesirableForkingDataCollect} 
 \begin{tabular}{p{0.6\columnwidth} p{0.3\columnwidth}}
 \hline\noalign{\smallskip}
-\textbf{Type of forking} & \textbf{Abbrevation} \\
+\textbf{Type of forking} & \textbf{Abbreviation} \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 Undesirable forking & U.F. \\ \hline
 Other (Healthy/Other) forking & H.F. \\\hline
@@ -363,7 +363,7 @@ Pidgin \& Carrier & Technical (Addition of functionality) & 2008 & H.F.\\
 \end{tabular}
 \end{table*}
 
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They also found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e. happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable develeper community, i.e. more than a dozen developers; large enough to make a sociogram for our statistical analysis. This three-stage filtering process resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They also found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e. happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e. more than a dozen developers; large enough to make a sociogram for our statistical analysis. This three-stage filtering process resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.
 
 \begin{table*}[!ht]
 \centering
@@ -435,7 +435,7 @@ Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
 \end{table*}
 
 
-The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the above data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a good data source to be sentiment-analysed.
+The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the above data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a good data source to be sentiment-analyzed.
 
 The time period data to be collected for is the year in which the fork happened, as well as three months after the fork date. This should capture the social context prior, at, and after the time of the fork.
 
@@ -447,7 +447,7 @@ Our longitudinal study can look at the sociograms in two distinct approaches: \t
 
 \subsubsection{Why bother find a statistical model?}
 
-One may wonder why we should look beyond the observed network. We need to do so because of the following reasons: \textbf{a)} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large purturbation in the numerical descriptors used to describe static graphs. \textbf{b)} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data is relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \textbf{c)} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, weed out the properties generated by random processes, and find the statistically significant network statistics. In short, with a statistical model, we can do inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \textbf{d)} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \textbf{e)} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g. structural balance, or through node-level effects, e.g. homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. \textbf{f)} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
+One may wonder why we should look beyond the observed network. We need to do so because of the following reasons: \textbf{a)} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large perturbation in the numerical descriptors used to describe static graphs. \textbf{b)} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data is relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \textbf{c)} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, weed out the properties generated by random processes, and find the statistically significant network statistics. In short, with a statistical model, we can do inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \textbf{d)} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \textbf{e)} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g. structural balance, or through node-level effects, e.g. homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. \textbf{f)} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
 
 We need to find a well-fitting statistical model of our observed interactions network, because 
 
@@ -479,7 +479,7 @@ where:
 \item \( g(y) \) is called the \textit{statistics} of the model, and \(\delta(y_{ij}) \) the ``\textit{change statistics}'' for actor pair \( y_{ij} \) \cite{Krivitsky}.
 \end{itemize}
 
-The model parameters are usually estimated using a pesudo-likelihood estimation (PLE) method or Markov chain Monte Carlo maximum likelihood estimation (MCMCMLE) \cite{SnijdersMCMCMLE}. 
+The model parameters are usually estimated using a pseudo-likelihood estimation (PLE) method or Markov chain Monte Carlo maximum likelihood estimation (MCMCMLE) \cite{SnijdersMCMCMLE}. 
 
 As in the case of our longitudinal study of dynamic networks, we need to use an extension of ERGMs, namely, Separable Temporal Exponential Family Random Graph Models (STERGM), which takes two models, one for the formation, and another for dissolution \cite{Krivitsky}.
 
@@ -491,7 +491,7 @@ For ``\textit{personal differences}'' forks (U.F.), we expect to see a decrease 
 
 For ``\textit{more community-driven development}'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure, as well as an increase in positive assortativity, which highlights preference for homophile interactions.
 
-For  ``\textit{technical differences}'' forks (H.F.), we expect to see a decrease in between ness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absense at the center, will distance pairs of developers in the network.
+For  ``\textit{technical differences}'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
 
 For ``\textit{no forks at all}'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
 
@@ -522,13 +522,13 @@ Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}
 \subsubsection{Theories}
 Three theories about human behavior are the bases for the hypotheses in this research study.
 
-\textbf{1)} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitivie consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
+\textbf{1)} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 
-We may explain U.F. forked projects due to ``perosnal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
+We may explain U.F. forked projects due to ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
 
-\textbf{2)} \textbf{Signalling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, an individual in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that individual. In this scenario, the cost of helping another individual is less than the benefit gained by the individual because of signalling their conditions. 
+\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, an individual in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that individual. In this scenario, the cost of helping another individual is less than the benefit gained by the individual because of signaling their conditions. 
 
-We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signalling others in the community of their status, by helping others in need (i.e. peripheral community members), which in turn brings them social prestige.
+We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e. peripheral community members), which in turn brings them social prestige.
 
 \textbf{3)} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 
@@ -584,7 +584,7 @@ In our initual study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{Azar
 \begin{figure}[!ht]
 \centering
 \epsfig{file=centrality.eps, width=\columnwidth}
-\caption{Heat-map color-coded examples of nodes with high centrality metric are shown above. The same network is analysed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
+\caption{Heat-map color-coded examples of nodes with high centrality metric are shown above. The same network is analyzed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
 \label{figureCentrality}
 \end{figure}
 
@@ -684,7 +684,7 @@ More importantly, the initial study showed the limitations of a \textit{network-
 \section{Conclusion}
 Software development in free and open source software development are prime examples of how communities can be leveraged to create and maintain software. Forking, either as an undesirable violent split, or a non-undesirable friendly divide, affects the community. We propose to examine several software development projects that have forked over the past decade, and analyze the evolution and change of dynamics in the developers' interaction patterns. This may answer several open questions, particularly, about the run-up to forks, which is seldom studied.
 
-We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category; i.e. 1) Undesirable forks because of personal conflicts among the developer team, 2) Undersirable forks because of the need for more community-driven development, when a few elite developers behave in a clanish manner and put a glass ceiling for the rest of the community, 3) Other non-undesirable (e.g. Healthy) forks, in which, a fraction of developers temporarily fork away to add new features, and plan to merge back to the main project. We will also look at stable projects that have not forked undesirably, as control group. 
+We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category; i.e. 1) Undesirable forks because of personal conflicts among the developer team, 2) Undesirable forks because of the need for more community-driven development, when a few elite developers behave in a clannish manner and put a glass ceiling for the rest of the community, 3) Other non-undesirable (e.g. Healthy) forks, in which, a fraction of developers temporarily fork away to add new features, and plan to merge back to the main project. We will also look at stable projects that have not forked undesirably, as control group. 
 
 We expect to find patterns specific to each of the above categories, which then may be used to identify early warning signs of forking. The identification of such measures may inform those who are interested in the sustainability of their project community to stay informed and take action to amend undesirable dynamics. 
 
