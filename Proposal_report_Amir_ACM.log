@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  21 MAY 2015 15:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  21 MAY 2015 16:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,20 +732,20 @@ l.351
 e.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.437 
+l.438 
        [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 3919) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.443 
-       [6]
-Overfull \hbox (2.79501pt too wide) in paragraph at lines 478--479
+l.441 \subsubsection{The statistical model}
+                                            [6]
+Overfull \hbox (2.79501pt too wide) in paragraph at lines 479--480
 \T1/aer/m/n/9 ex-pect to see a de-crease in 3-cycles, which in-di-cates a stron
 ger
  []
@@ -765,6 +765,14 @@ ty-
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.522 
+       [8]
 Underfull \hbox (badness 10000) in paragraph at lines 542--542
 []|\T1/aer/m/n/9 Preferential At-tach-
  []
@@ -774,15 +782,6 @@ Overfull \hbox (15.47673pt too wide) in paragraph at lines 549--549
 []\secfnt INITIAL STUDY: TEM-PO-RAL NETWORK-
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.549 ...tudy: Temporal network-specific analysis}
-                                                   [8]
 Package epstopdf Info: Source file: <centrality.eps>
 (epstopdf)                    date: 2013-05-05 12:19:38
 (epstopdf)                    size: 1414850 bytes
@@ -793,7 +792,6 @@ Package epstopdf Info: Source file: <centrality.eps>
 o.pdf centrality.eps>
 (epstopdf)             \includegraphics on input line 555.
 Package epstopdf Info: Output file is already uptodate.
-
 <centrality-eps-converted-to.pdf, id=313, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -802,17 +800,6 @@ Package pdftex.def Info: centrality-eps-converted-to.pdf used on input line 555
 .
 (pdftex.def)             Requested size: 240.0pt x 238.55743pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.563 
-       [9 <./centrality-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 566--566
 [][][][]\T1/aer/m/n/9 Video vi-su-al-iza-tions avail-able at
  []
@@ -827,7 +814,7 @@ Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 ed-to.pdf NodesEdgesTime.eps>
 (epstopdf)             \includegraphics on input line 574.
 Package epstopdf Info: Output file is already uptodate.
-<NodesEdgesTime-eps-converted-to.pdf, id=344, 744.7825pt x 697.60625pt>
+<NodesEdgesTime-eps-converted-to.pdf, id=326, 744.7825pt x 697.60625pt>
 File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
@@ -845,26 +832,32 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)             \includegraphics on input line 581.
 Package epstopdf Info: Output file is already uptodate.
 
-<DiameterTime-eps-converted-to.pdf, id=345, 744.7825pt x 697.60625pt>
+<DiameterTime-eps-converted-to.pdf, id=327, 744.7825pt x 697.60625pt>
 File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
 Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 5
 81.
 (pdftex.def)             Requested size: 240.0pt x 224.79266pt.
-
-Underfull \vbox (badness 2486) has occurred while \output is active []
-
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.588 
+       [9 <./centrality-eps-converted-to.pdf>]
 Overfull \hbox (2.00558pt too wide) in paragraph at lines 589--590
 []\T1/aer/m/n/9 The com-mu-nity starts with the Gen-er-al-List as the the bigge
 st
  []
 
-<2.png, id=347, 502.87875pt x 520.94624pt> <use 2.png>
-<3.png, id=348, 576.1525pt x 636.3775pt> <use 3.png>
-<5.png, id=349, 591.20876pt x 576.1525pt> <use 5.png>
-<7.png, id=350, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
+
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+
+<2.png, id=352, 502.87875pt x 520.94624pt> <use 2.png>
+<3.png, id=353, 576.1525pt x 636.3775pt> <use 3.png>
+<5.png, id=354, 591.20876pt x 576.1525pt> <use 5.png>
+<7.png, id=355, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
@@ -898,7 +891,7 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 ed-to.pdf Kamailio_chart.eps>
 (epstopdf)             \includegraphics on input line 611.
 Package epstopdf Info: Output file is already uptodate.
-<Kamailio_chart-eps-converted-to.pdf, id=351, 1229.59375pt x 506.89375pt>
+<Kamailio_chart-eps-converted-to.pdf, id=356, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
@@ -916,13 +909,16 @@ erted-to.pdf Kamailio_diameter.eps>
 (epstopdf)             \includegraphics on input line 613.
 Package epstopdf Info: Output file is already uptodate.
 
-<Kamailio_diameter-eps-converted-to.pdf, id=352, 1229.59375pt x 145.54375pt>
+<Kamailio_diameter-eps-converted-to.pdf, id=357, 1229.59375pt x 145.54375pt>
 File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Kamailio_diameter-eps-converted-to.pdf used on input l
 ine 613.
 (pdftex.def)             Requested size: 458.64185pt x 54.28783pt.
+
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
@@ -1056,9 +1052,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.695 \section
-              *{Acknowledgement} [13 <./Asterisk_chart-eps-converted-to.pdf> <.
-/Asterisk_diameter-eps-converted-to.pdf>]
+l.693 
+       [13 <./Asterisk_chart-eps-converted-to.pdf> <./Asterisk_diameter-eps-con
+verted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 697--699
 
  []
@@ -1089,7 +1085,7 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 771.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 771.
 Package rerunfilecheck Info: File `Proposal_report_Amir_ACM.out' has not change
 d.
-(rerunfilecheck)             Checksum: CE0678F1C54C3943FDA0E15BE7B0362D;2150.
+(rerunfilecheck)             Checksum: A11A9282F0068A164410958DEB7178F1;2153.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1103,7 +1099,7 @@ Here is how much of TeX's memory you used:
  12499 multiletter control sequences out of 15000+600000
  53540 words of font info for 73 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 44i,24n,49p,2884b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,24n,49p,2886b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist
@@ -1118,7 +1114,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on Proposal_report_Amir_ACM.pdf (15 pages, 2763147 bytes).
+Output written on Proposal_report_Amir_ACM.pdf (15 pages, 2763413 bytes).
 PDF statistics:
  513 PDF objects out of 1000 (max. 8388607)
  442 compressed objects within 5 object streams
