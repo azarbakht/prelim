@@ -271,17 +271,23 @@ Specifically, our research objective and research questions are listed in the fo
 
 \subsubsection{Do forks leave traces in the collaboration artifacts of open source projects?\\}
 
-To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g. mailing list data, issue tracking systems data, source code data.
+To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list data, issue tracking systems data, source code data. 
+
+This is going to be accomplished by examining 
+
+TO DO:\\
+
+explained in more detail in section \ref{methodology}.
 
 \subsubsection{Do differences types of forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? 
 
-Is a project labeled as a ``\textit{technical differences}'' fork really only a ``\textit{technical differences}'' fork? Or, alternatively, can they be a mix of several reason categories?
+Is a project labeled as a ``\textit{technical differences}'' fork only a ``\textit{technical differences}'' fork? Or, alternatively, can they be a mix of several reason categories?
 
 \subsubsection{What are the key indicators that can tell us distinguish between different types of forks?\\}
 
-What establishes an inflection point (fork)? Which metrics are indicative of inflection? Is there a metric that can be used to monitor the odds of change, e.g. forking, ahead of time?
+What establishes an inflection point (fork)? Which metrics are indicative of inflection? Is there a metric that can be used to monitor the odds of change, e.g., forking, ahead of time?
 
 %RQ Impact: \\
 %What to prove? \\
@@ -290,23 +296,9 @@ What establishes an inflection point (fork)? Which metrics are indicative of inf
 
 \subsubsection{Does our analysis match what people in the community remember?\\} 
 
-To validate what our quantitative data mining approach finds, we can compare it to what people remember of the situation, and what is written about that project. This validation check requires interviewing people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation, i.e. when no new information is gained by doing more interviews. These semi-structured interviews will be recorded, transcribed, and coded, to find common patterns in the interviewee responses.
+To validate what our quantitative data mining approach finds, we can compare it to what people remember of the situation, and what is written about that project. This validation check requires interviewing people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation (i.e., when no new information is gained by doing more interviews). These semi-structured interviews will be recorded, transcribed, and open-coded, to find common patterns in the interviewees responses.
 
-To complement the interview study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can also be a read and analyzed to complement the findings of the interview study. 
-
-%\subsection{Research Objective \#3:}
-%\subsection*{Can knowledge of these metrics help community members reflect or make decisions about the evolution of their current projects?\\}
-%\label{RQ3}
-%
-%This requires a user study. The usefulness of the findings, and the method can be tested by having current community folks reflect on the findings, and ask them to estimate the correct future of an anonymized project. The aim of the user study will be to test whether we can use these to know \textit{how} and \textit{why} projects fork. 
-%
-%The users will be presented with actionable visualizations of the key indicators found in the first phase of the study, on data from sample forks. Then they will be asked to rate healthy and unhealthy patterns associated with those key indicators. This will involve real project data, and generated data. If the users can identify the healthy and unhealthy dynamics, then the key indicators are good tools that can be used to make decisions about the evolution of their current projects.
-%
-%The same user study procedure will be prepared as an online survey, and shared with the open source community developers, to gather data at a larger scale than a user study author can conduct.
-
-%actionable/navigable/clickable labels: export to SigmaJS in Gephi, put on a webpage\\
-
-%video: players positions fixed, relationships come and go
+To complement the interview study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a read and analyzed to complement the findings of the interview study. 
 
 \section{Methodology}
 \label{methodology}
@@ -320,7 +312,7 @@ To find patterns uniquely associated with undesirable forks, we need to gather d
 
 
 \begin{table}[!htbp]
-\caption{Not all forks are bad; Three types of forking for which data will be collected}
+\caption{Not all forks are bad; Three types of projects for which data will be collected}
 \label{tableUndesirableForkingDataCollect} 
 \begin{tabular}{p{0.6\columnwidth} p{0.3\columnwidth}}
 \hline\noalign{\smallskip}
@@ -355,7 +347,7 @@ Pidgin \& Carrier & Technical (Addition of functionality) & 2008 & H.F.\\
 \end{tabular}
 \end{table*}
 
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They also found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e. happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e. more than a dozen developers; large enough to make a sociogram for our statistical analysis. This three-stage filtering process resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. This three-stage filtering process resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.
 
 \begin{table*}[!ht]
 \centering
@@ -427,7 +419,7 @@ Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
 \end{table*}
 
 
-The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the above data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a good data source to be sentiment-analyzed.
+The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a good data source to be sentiment-analyzed.
 
 The time period data to be collected for is the year in which the fork happened, as well as three months after the fork date. This should capture the social context prior, at, and after the time of the fork.
 
@@ -435,11 +427,11 @@ The time period data to be collected for is the year in which the fork happened,
 
 Many social structures can be represented as graphs. The nodes represent actors/players and the edges represent the interaction between them. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. Two types of analysis can be done on sociograms; \textbf{a)} a \textit{cross-sectional} study, and \textbf{b)} a \textit{longitudinal} study. We are interested in patterns in the run-up to forks, so, we should do a longitudinal study, unlike most existing research on forking.
 
-Our longitudinal study can look at the sociograms in two distinct approaches: \textbf{a)} a \textit{network-specific} approach, in which, we focus on the actual networks under study, to describe the structure of the \textit{observed network} with numerical summaries/descriptors to describe the structure and what we actually see, e.g. in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Or, \textbf{b)} a \textit{population-processes} approach, in which, we treat the observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. To this end, the observed network, is only good to help us understand the social forces/processes that generated it. 
+Our longitudinal study can look at the sociograms in two distinct approaches: \textbf{a)} a \textit{network-specific} approach, in which, we focus on the actual networks under study, to describe the structure of the \textit{observed network} with numerical summaries/descriptors to describe the structure and what we actually see, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Or, \textbf{b)} a \textit{population-processes} approach, in which, we treat the observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. To this end, the observed network, is only good to help us understand the social forces/processes that generated it. 
 
 \subsubsection{Why bother find a statistical model?}
 
-One may wonder why we should look beyond the observed network. We need to do so because of the following reasons: \textbf{a)} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large perturbation in the numerical descriptors used to describe static graphs. \textbf{b)} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data is relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \textbf{c)} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, weed out the properties generated by random processes, and find the statistically significant network statistics. In short, with a statistical model, we can do inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \textbf{d)} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \textbf{e)} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g. structural balance, or through node-level effects, e.g. homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. \textbf{f)} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
+One may wonder why we should look beyond the observed network. We need to do so because of the following reasons: \textbf{a)} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large perturbation in the numerical descriptors used to describe static graphs. \textbf{b)} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data are relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \textbf{c)} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, weed out the properties generated by random processes, and find the statistically significant network statistics. In short, with a statistical model, we can do inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \textbf{d)} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \textbf{e)} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g., structural balance, or through node-level effects, e.g., homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. \textbf{f)} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
 
 We need to find a well-fitting statistical model of our observed interactions network, because 
 
@@ -463,7 +455,7 @@ This can be written in terms of the conditional log-odds of a single actor pair 
 where: 
 \begin{itemize}
 \item \( Y_{ij} \) is the random variable for the state of the actor pair \( i,j \) (with realization \( y_{ij} \)), 
-\item \( y^{c}_{ij} \) signifies the complement of \( y_{ij} \), i.e. all dyads in the network other than \( y_{ij} \). 
+\item \( y^{c}_{ij} \) signifies the complement of \( y_{ij} \), i.e., all dyads in the network other than \( y_{ij} \). 
 \item \( \delta(y_{ij}) \) equals \( g(y^{+}_{ij})-g(y^{-}_{ij}) \), where 
 \item \( y^{+}_{ij} \) is defined as \( y^{c}_{ij} \) along with \( y_{ij} \) set to 1,
 \item \( y^{-}_{ij} \) is defined as \( y^{c}_{ij} \) along with \( y_{ij} \) set to 0.
@@ -481,7 +473,7 @@ Table \ref{tableCovariates} lists several explanatory variables that can be incl
 
 For ``\textit{personal differences}'' forks (U.F.), we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
 
-For ``\textit{more community-driven development}'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure, as well as an increase in positive assortativity, which highlights preference for homophile interactions.
+For ``\textit{more community-driven development}'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
 
 For  ``\textit{technical differences}'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
 
@@ -516,15 +508,15 @@ Three theories about human behavior are the bases for the hypotheses in this res
 
 \textbf{1)} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 
-We may explain U.F. forked projects due to ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
+We may explain U.F. forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
 
-\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, an individual in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that individual. In this scenario, the cost of helping another individual is less than the benefit gained by the individual because of signaling their conditions. 
+\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
 
-We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e. peripheral community members), which in turn brings them social prestige.
+We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
 \textbf{3)} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 
-We may explain U.F. forked projects due to ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
+We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -552,31 +544,14 @@ CUSUM betweenness & sharp increase & - & increase & - \\
 \end{tabular}
 \end{table*}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%
-%\subsubsection{Interpretation of the model parameters}
-%
-%\begin{itemize}
-%\item Density
-%\item Degree
-%\item Clustering coefficient
-%\item Betweenness centralization; to determine whether an elite few contributors are dominating the network
-%\item Fragmentation coefficient to measure network fragility
-%\item Tiad count, or simmellian ties to determine structural change
-%\item Hub or Authority centralization 
-%\item Reciprocity: Change in reciprocity as percentage and also as a total amount.
-%\item Homophily change/increase/decrease over time
-%\end{itemize}
-
 \section{Initial study: Temporal network-specific analysis}
 \label{sectionInitialStudy}
-In our initual study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g. three months before and three months after the year in which the forking event happened. For this network-specific study, we measured betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g. to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window of three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
+In our initual study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window of three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
 
 \begin{figure}[!ht]
 \centering
 \epsfig{file=centrality.eps, width=\columnwidth}
-\caption{Heat-map color-coded examples of nodes with high centrality metric are shown above. The same network is analyzed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
+\caption{Heat-map color-coded examples are shown above. Nodes with higher centrality metric are colored with warmer color: red is the warmest color here. The same network is analyzed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
 \label{figureCentrality}
 \end{figure}
 
@@ -586,7 +561,7 @@ In addition to the centrality measures, we planned to look into the \textit{resi
 
 \subsection{Visualization}
 Several visualization techniques and tools are used in the field of social network analysis, for instance, Gephi \cite{Bastian}, which is a FLOSS tool for exploring and manipulating networks. It is capable of handling large networks with more than 20,000 nodes and features several SNA algorithms. We used it for dynamic network visualization.
-We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos\footnote{\label{footnote1}Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}} show how the community graph is structured, using a continuous force-directed linear-linear model, in which the nodes are positioned near or far from each other proportional to the graph distance between them. This results in a graph shape between Fr\"{u}chterman \& Rheingold's \cite{Fruchterman} layout and Noack's LinLog \cite{Noack}.
+We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos\footnote{\label{footnote1}Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}} show how the community graph is structured, using a continuous force-directed linear-linear model, in which the nodes are positioned near or far from one another proportional to the graph distance between them. This results in a graph shape between Fr\"{u}chterman \& Rheingold's \cite{Fruchterman} layout and Noack's LinLog \cite{Noack}.
 
 
 \subsection{Initial study results and discussion}
@@ -595,7 +570,7 @@ We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos
 \begin{figure}[!Ht]
 \centering
 \epsfig{file=NodesEdgesTime.eps, width=\columnwidth}
-\caption{Nodes and Edges over Time. Note that the and number of nodes and number of edges are normalized to the range [0,1] to make comparison across projects meaningful, by emphasizing change in ratio, rather than the varying counts. Hence, the measurements were normalized for drawing this graph. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
+\caption{Nodes and Edges over Time. The number of nodes and number of edges are normalized to the range [0,1] to make comparison across projects meaningful, by emphasizing change in ratio, rather than the varying counts. Hence, the measurements were normalized for drawing this graph. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
 \label{figureNodesEdgesTimeR}
 \end{figure}
 
@@ -638,7 +613,7 @@ The community starts with the GeneralList as the the biggest node, and four larg
 \label{figureKamailioStackedAreaChart}
 \end{figure*}
 
-Figure \ref{figureKamailioStackedAreaChart} shows the betweenness centrality of the major contributors of Kamailio project over the same time period. The horizontal axis marks the dates, (each mark represents a 3-month time window with 1.5 months overlap). The vertical axis shows the percentage of the top betweenness centralities for each node. The saliency of the GeneralList -- colored as light blue -- is apparent due to to its continuous and dominant presence in the stacked area chart. The chart legend lists the contributors based on the color and in the same order of appearance on the chart starting from the bottom. One can easily see that around the "Aug. 15, 2008 - Nov. 15, 2008" tick mark on the horizontal axis, several contributors' betweenness centralities shrink to almost zero and disappear. This helps identify the date of fork with a month accuracy. The network diameter of the Kamailio project over the same time period is also shown in Figure \ref{figureKamailioStackedAreaChart}. An increase in the network diameter during this period as suggested by findings of Hannemann and Klamma \cite{Hannemann} is seen.
+Figure \ref{figureKamailioStackedAreaChart} shows the betweenness centrality of the major contributors of Kamailio project over the same time period. The horizontal axis marks the dates, (each mark represents a 3-month time window with 1.5 months overlap). The vertical axis shows the percentage of the top betweenness centralities for each node. The saliency of the GeneralList -- colored as light blue -- is apparent because of its continuous and dominant presence in the stacked area chart. The chart legend lists the contributors based on the color and in the same order of appearance on the chart starting from the bottom. One can easily see that around the "Aug. 15, 2008 - Nov. 15, 2008" tick mark on the horizontal axis, several contributors' betweenness centralities shrink to almost zero and disappear. This helps identify the date of fork with a month accuracy. The network diameter of the Kamailio project over the same time period is also shown in Figure \ref{figureKamailioStackedAreaChart}. An increase in the network diameter during this period as suggested by findings of Hannemann and Klamma \cite{Hannemann} is seen.
 
 This technique can be used to identify the people involved in conflict and the date the fork happened with a months accuracy, even if the rival project does not emerge immediately.
 
@@ -664,7 +639,7 @@ The video for the Amarok project fork is available online\footnote{Video visuali
 \label{figureAsteriskStackedAreaChart}
 \end{figure*}
 
-The video for the Asterisk project is also available online, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAsteriskStackedAreaChart}. The results show that the network diameter remained steady at 6 throughout the period. The Asterisk community was by far the most crowded project, with 932 nodes and 4282 edges. The stacked area chart shows the distribution of centralities, where we see an 80\%-20\% distribution (i.e. 80\% or more of the activity is attributed to six major players, with the rest of the community accounting for only 20\%). This is evident in the video representation as well, as the top-level structure of the network holds throughout the time period. The results from the visual and quantitative analysis links the Asterisk fork to the more community-driven category of forking reasons.
+The video for the Asterisk project is also available online, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAsteriskStackedAreaChart}. The results show that the network diameter remained steady at 6 throughout the period. The Asterisk community was by far the most crowded project, with 932 nodes and 4282 edges. The stacked area chart shows the distribution of centralities, where we see an 80\%-20\% distribution (i.e., 80\% or more of the activity is attributed to six major players, with the rest of the community accounting for only 20\%). This is evident in the video representation as well, as the top-level structure of the network holds throughout the time period. The results from the visual and quantitative analysis links the Asterisk fork to the more community-driven category of forking reasons.
 
 \subsubsection{Initial study conclusion}
 We studied the collaboration networks of three FOSS projects using a combination of temporal visualization and quantitative analysis. We based our study on two papers by Robles and Gonzalez-Barahona \cite{Robles} and Hannemann and Klamma \cite{Hannemann}, and identified three projects that had forked in the recent past. We mined the collaboration data, formed dynamic collaboration graphs, and measured social network metrics over an 18-month period time window.
@@ -677,7 +652,7 @@ More importantly, the initial study showed the limitations of a \textit{network-
 \label{conclusion}
 Software development in free and open source software development are prime examples of how communities can be leveraged to create and maintain software. Forking, either as an undesirable violent split, or a non-undesirable friendly divide, affects the community. We propose to examine several software development projects that have forked over the past decade, and analyze the evolution and change of dynamics in the developers' interaction patterns. This may answer several open questions, particularly, about the run-up to forks, which is seldom studied.
 
-We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category; i.e. 1) Undesirable forks because of personal conflicts among the developer team, 2) Undesirable forks because of the need for more community-driven development, when a few elite developers behave in a clannish manner and put a glass ceiling for the rest of the community, 3) Other non-undesirable (e.g. Healthy) forks, in which, a fraction of developers temporarily fork away to add new features, and plan to merge back to the main project. We will also look at stable projects that have not forked undesirably, as control group. 
+We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category; i.e., 1) Undesirable forks because of personal conflicts among the developer team, 2) Undesirable forks because of the need for more community-driven development, when a few elite developers behave in a clannish manner and put a glass ceiling for the rest of the community, 3) Other non-undesirable (e.g., Healthy) forks, in which, a fraction of developers temporarily fork away to add new features, and plan to merge back to the main project. We will also look at stable projects that have not forked undesirably, as control group. 
 
 We expect to find patterns specific to each of the above categories, which then may be used to identify early warning signs of forking. The identification of such measures may inform those who are interested in the sustainability of their project community to stay informed and take action to amend undesirable dynamics. 
 
@@ -717,8 +692,8 @@ The qualitative approach of interviewing key individuals from the community also
 
 \section*{Acknowledgement}
 \label{acknowledgements}
-The author would like to thank his academic adviser, Prof. Carlos Jensen, and his committee members, Prof. Margaret Burnett, Prof. Ronald Metoyer, and Prof. Christopher Scaffidi for their help and guidance throughout the author's PhD program, and particularly, in help with framing the proposed research in this paper. The author would also like to thank Derric Jacobs, of Sociology Department at Oregon State University, for his help with search for theories and lending books to the author; and also, many thanks goes to Prof. Drew Gerkey, of Department of Anthropology at Oregon State University for his advice and pointers to theories for human behavior in social sciences.
-The author would also like to thank the open source developers of the projects studied for making their data available, without which this study would not have been possible. \\
+I would like to thank my academic adviser, Prof. Carlos Jensen, and my committee members, Prof. Margaret Burnett, Prof. Ronald Metoyer, and Prof. Christopher Scaffidi for their help and guidance throughout my PhD program, and particularly, in help with framing the proposed research in this paper. I would also like to thank Derric Jacobs, of the Sociology Department at Oregon State University, for his help with search for theories and lending books to me; and also, many thanks goes to Prof. Drew Gerkey, of the Department of Anthropology at Oregon State University for his advice and pointers to theories about human behavior in social sciences.
+I would also like to thank the open source developers of the projects studied for making their data available, without which this study would not have been possible. \\
 
 % The following two commands are all you need in the
 % initial runs of your .tex file to
