@@ -2,26 +2,22 @@
 \BOOKMARK [1][-]{section.2}{Related Work}{}% 2
 \BOOKMARK [1][-]{section.3}{Research Goals}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Research Objective:}{section.3}% 4
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?}{subsection.3.1}% 5
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Do differences types of forks leave different types of traces?}{subsection.3.1}% 6
-\BOOKMARK [3][-]{subsubsection.3.1.3}{What are the key indicators that let us distinguish between different types of forks?}{subsection.3.1}% 7
-\BOOKMARK [3][-]{subsubsection.3.1.4}{Does our analysis match what people in the community remember?}{subsection.3.1}% 8
-\BOOKMARK [1][-]{section.4}{Methodology}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{Phase 1: Data Collection}{section.4}% 10
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Not all forks are equal: Undesirable forking}{subsection.4.1}% 11
-\BOOKMARK [2][-]{subsection.4.2}{Phase 2: Sociogram Formation and Statistical Study}{section.4}% 12
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Why bother finding a statistical model?}{subsection.4.2}% 13
-\BOOKMARK [3][-]{subsubsection.4.2.2}{The statistical model}{subsection.4.2}% 14
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Model Covariates}{subsection.4.2}% 15
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Theories}{subsection.4.2}% 16
-\BOOKMARK [1][-]{section.5}{Initial study: Temporal network-specific analysis}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Visualization}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Initial study results and discussion}{section.5}% 19
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Kamailio Project}{subsection.5.2}% 20
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Amarok Project}{subsection.5.2}% 21
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Asterisk Project}{subsection.5.2}% 22
-\BOOKMARK [3][-]{subsubsection.5.2.4}{Initial study conclusion}{subsection.5.2}% 23
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 24
-\BOOKMARK [1][-]{section.7}{Timeline}{}% 25
-\BOOKMARK [1][-]{section.8}{Threats to Validity}{}% 26
-\BOOKMARK [1][-]{section.9}{References}{}% 27
+\BOOKMARK [1][-]{section.4}{Methodology}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Phase 1: Data Collection}{section.4}% 6
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Not all forks are equal: Undesirable forking}{subsection.4.1}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Phase 2: Sociogram Formation and Statistical Study}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Why bother finding a statistical model?}{subsection.4.2}% 9
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Theories}{subsection.4.2}% 10
+\BOOKMARK [3][-]{subsubsection.4.2.3}{The statistical model}{subsection.4.2}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Model Covariates}{subsection.4.2}% 12
+\BOOKMARK [1][-]{section.5}{Initial study: Temporal network-specific analysis}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Visualization}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Initial study results and discussion}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Kamailio Project}{subsection.5.2}% 16
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Amarok Project}{subsection.5.2}% 17
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Asterisk Project}{subsection.5.2}% 18
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Initial study conclusion}{subsection.5.2}% 19
+\BOOKMARK [1][-]{section.6}{Yet To Be Done}{}% 20
+\BOOKMARK [1][-]{section.7}{Timeline}{}% 21
+\BOOKMARK [1][-]{section.8}{Threats to Validity}{}% 22
+\BOOKMARK [1][-]{section.9}{References}{}% 23
