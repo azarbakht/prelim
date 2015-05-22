@@ -417,9 +417,9 @@ Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
 \end{table*}
 
 
-The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a good data source to be sentiment-analyzed.
+The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. 
 
-The time period data to be collected for is the year in which the fork happened, as well as three months after the fork date. This should capture the social context prior, at, and after the time of the fork.
+The time period data to be collected for is the year in which the fork happened. This should capture the social context prior, and at the time of the fork.
 
 \subsection{Phase 2: Sociogram Formation and Statistical Study}
 
@@ -427,8 +427,9 @@ Many social structures can be represented as graphs. The nodes represent actors/
 
 Our longitudinal study can look at the sociograms in two distinct approaches: \textbf{a)} a \textit{network-specific} approach, in which, we focus on the actual networks under study, to describe the structure of the \textit{observed network} with numerical summaries/descriptors to describe the structure and what we actually see, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Or, \textbf{b)} a \textit{population-processes} approach, in which, we treat the observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. To this end, the observed network, is only good to help us understand the social forces/processes that generated it. 
 
-The \textit{population-processes approach} involves statistical modeling of the network, and the following subsection lists the reasons why we need to use a statistical model.
+Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness as well as the limitation of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and shows how a network-specific approach may or may not help us understand the network dynamics.  
 
+The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes approach}.
 
 \subsubsection{Why bother finding a statistical model?}
 
@@ -484,40 +485,6 @@ The model parameters are usually estimated using a pseudo-likelihood estimation 
 
 As in the case of our longitudinal study of dynamic networks, we need to use an extension of ERGMs, namely, Separable Temporal Exponential Family Random Graph Models (STERGM), which takes two models, one for the formation, and another for dissolution \cite{Krivitsky}.
 
-\subsubsection{Model Covariates}
-What covariates to include depends on the context, and the data available for developers.
-Table \ref{tableCovariates} lists several explanatory variables that can be included for modeling the community evolution. Table \ref{tabelSummaryExpectationModelParameters} lists what we expect to see associated with different types of forking. Specifically, for each of the following forking categories, we expect the following model parameters:
-
-For ``personal differences'' forks (U.F.), we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
-
-For ``more community-driven development'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
-
-For  ``technical differences'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
-
-For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
-
-\begin{table*}[!ht]
-\centering
-\caption{Explanatory variables to include in the initial model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
-\label{tableCovariates}
-\begin{tabular}{m{0.34\columnwidth} m{0.5\columnwidth} m{0.9\columnwidth}} 
-\hline\noalign{\smallskip}
-\textbf{Network effect} & \textbf{Network Statistic} & \textbf{Description} \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Outdegree & \begin{equation*} \sum_j x_{ij} \end{equation*} & Overall tendency to have ties (Negative parameter means, on average, cost of friendship ties higher than their benefits) \\ 
-Reciprocity & \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*} & Tendency to have reciprocated ties \\ 
-Balance & \begin{equation*} \sum_j x_{ij}strsim_{ij} \end{equation*} & Tendency to have ties to structurally similar others (structural equivalence with respect to outgoing ties) \\ 
-Covariate similarity & \begin{equation*} \sum_j x_{ij} sim_{ij} \end{equation*} & Tendency to have ties to similar others (homophile selection) \\ 
-3-cycles & \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*} & Tendency to form relationship cycles (negative parameter means absense of hierarchy) \\
-Betweenness & \begin{equation*} \sum_j x_{ij} \sum_h x_{hi}(1 - x_{hj}) \end{equation*} & Tendency to occupy an intermediate position between unrelated others (represents brokerage) \\ 
-Transitive triplets & \begin{equation*} \sum_j x_{ij} \sum_h x_{ih}x_{hj} \end{equation*} &  Tendency toward triadic closure of the neighborhood (linear effect of the number of indirect ties) \\
-Transitive ties & \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} & Tendency toward triadic closure of the neighborhood (binary effect of indirect ties) \\
-Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*} & Main effect of alter's behavior (covariate determines popularity in network) \\ 
-Covariate ego & \begin{equation*} \sum_j x_{ij} (z_i - \bar z) \end{equation*} & Main effect of ego's behavior on tie preference (covariate determines activity in network) \\
-Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*} & Tendency to keep others at social distance 2 (negative measure of triadic closure; lower means stronger network closure) \\ 
-\noalign{\smallskip}\hline
-\end{tabular}
-\end{table*}
 
 \begin{table*} [!Ht]
 \centering
@@ -543,6 +510,44 @@ CUSUM betweenness & sharp increase & - & increase & - \\
 \end{tabular}
 \end{table*}
 
+
+
+\subsubsection{Model Covariates}
+What covariates to include depends on the context, and the data available for developers.
+Table \ref{tableCovariates} lists several explanatory variables that can be included for modeling the community evolution. Table \ref{tabelSummaryExpectationModelParameters} lists what we expect to see associated with different types of forking. Specifically, for each of the following forking categories, we expect the following model parameters:
+
+For ``personal differences'' forks (U.F.), we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
+
+For ``more community-driven development'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
+
+For  ``technical differences'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
+
+For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
+
+
+
+\begin{table*}[!ht]
+\centering
+\caption{Explanatory variables to include in the initial model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
+\label{tableCovariates}
+\begin{tabular}{m{0.34\columnwidth} m{0.5\columnwidth} m{0.9\columnwidth}} 
+\hline\noalign{\smallskip}
+\textbf{Network effect} & \textbf{Network Statistic} & \textbf{Description} \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Outdegree & \begin{equation*} \sum_j x_{ij} \end{equation*} & Overall tendency to have ties (Negative parameter means, on average, cost of friendship ties higher than their benefits) \\ 
+Reciprocity & \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*} & Tendency to have reciprocated ties \\ 
+Balance & \begin{equation*} \sum_j x_{ij}strsim_{ij} \end{equation*} & Tendency to have ties to structurally similar others (structural equivalence with respect to outgoing ties) \\ 
+Covariate similarity & \begin{equation*} \sum_j x_{ij} sim_{ij} \end{equation*} & Tendency to have ties to similar others (homophile selection) \\ 
+3-cycles & \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*} & Tendency to form relationship cycles (negative parameter means absense of hierarchy) \\
+Betweenness & \begin{equation*} \sum_j x_{ij} \sum_h x_{hi}(1 - x_{hj}) \end{equation*} & Tendency to occupy an intermediate position between unrelated others (represents brokerage) \\ 
+Transitive triplets & \begin{equation*} \sum_j x_{ij} \sum_h x_{ih}x_{hj} \end{equation*} &  Tendency toward triadic closure of the neighborhood (linear effect of the number of indirect ties) \\
+Transitive ties & \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} & Tendency toward triadic closure of the neighborhood (binary effect of indirect ties) \\
+Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*} & Main effect of alter's behavior (covariate determines popularity in network) \\ 
+Covariate ego & \begin{equation*} \sum_j x_{ij} (z_i - \bar z) \end{equation*} & Main effect of ego's behavior on tie preference (covariate determines activity in network) \\
+Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*} & Tendency to keep others at social distance 2 (negative measure of triadic closure; lower means stronger network closure) \\ 
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table*}
 \section{Initial study: Temporal network-specific analysis}
 \label{sectionInitialStudy}
 In our initual study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured the betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
@@ -559,7 +564,7 @@ There are many ways of looking at an individual's importance/prestige/status wit
 In addition to the centrality measures, we planned to look into the \textit{resilience} of the community as well. By resilience, we mean how well the network holds its structure and form when some parts of it are deleted, added, or changed. For a graph, the resilience of a graph is a measure of its robustness to node or edge failures. This could occur for instance when an influential member of the community leaves. Many real-world graphs are resilient to random failures but vulnerable to targeted attacks. Resilience can be related to the \textit{graph diameter}: a graph whose diameter does not increase much on node or edge removal has higher resilience \cite{Chakrabarti}.
 
 \subsection{Visualization}
-Several visualization techniques and tools are used in the field of social network analysis, for instance, Gephi \cite{Bastian}, which is a FLOSS tool for exploring and manipulating networks. It is capable of handling large networks with more than 20,000 nodes and features several SNA algorithms. We used it for dynamic network visualization.
+Several visualization techniques and tools are used in the field of social network analysis, for instance, Gephi \cite{Bastian}, which is a FOSS tool for exploring and manipulating networks. It is capable of handling large networks with more than 20,000 nodes and features several SNA algorithms. We used it for dynamic network visualization.
 We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos\footnote{\label{footnote1}Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}} show how the community graph is structured, using a continuous force-directed linear-linear model, in which the nodes are positioned near or far from one another proportional to the graph distance between them. This results in a graph shape between Fr\"{u}chterman \& Rheingold's \cite{Fruchterman} layout and Noack's LinLog \cite{Noack}.
 
 
@@ -636,7 +641,7 @@ The video for the Amarok project fork is available online\footnote{Video visuali
 \label{figureAsteriskStackedAreaChart}
 \end{figure*}
 
-The video for the Asterisk project is also available online, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAsteriskStackedAreaChart}. The results show that the network diameter remained steady at 6 throughout the period. The Asterisk community was by far the most crowded project, with 932 nodes and 4282 edges. The stacked area chart shows the distribution of centralities, where we see an 80\%-20\% distribution (i.e., 80\% or more of the activity is attributed to six major players, with the rest of the community accounting for only 20\%). This is evident in the video representation as well, as the top-level structure of the network holds throughout the time period. The results from the visual and quantitative analysis links the Asterisk fork to the more community-driven category of forking reasons.
+The video for the Asterisk project is also available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAsteriskStackedAreaChart}. The results show that the network diameter remained steady at 6 throughout the period. The Asterisk community was by far the most crowded project, with 932 nodes and 4282 edges. The stacked area chart shows the distribution of centralities, where we see an 80\%-20\% distribution (i.e., 80\% or more of the activity is attributed to six major players, with the rest of the community accounting for only 20\%). This is evident in the video representation as well, as the top-level structure of the network holds throughout the time period. The results from the visual and quantitative analysis links the Asterisk fork to the more community-driven category of forking reasons.
 
 \subsubsection{Initial study conclusion}
 We studied the collaboration networks of three FOSS projects using a combination of temporal visualization and quantitative analysis. We based our study on two papers by Robles and Gonzalez-Barahona \cite{Robles} and Hannemann and Klamma \cite{Hannemann}, and identified three projects that had forked in the recent past. We mined the collaboration data, formed dynamic collaboration graphs, and measured social network metrics over an 18-month period time window.
