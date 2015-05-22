@@ -149,7 +149,7 @@ Amir Azarbakht\\
 \maketitle
 
 \begin{abstract}
-Social networks are a ubiquitous part of our lives, and the creation of online social communities has been a natural extension of this phenomena. Free and Open Source Software (FOSS) development efforts are prime examples of how communities can be leveraged in software development, where group are formed around communities of interest, and depend on continued interest and involvement. Forking, either as an acrimonious split or a friendly divide, affects the community. Most existing research on forking is post-hoc. The run-up to fork is seldom studied. This leaves several questions unanswered. In this study, we propose using longitudinal social network analysis to study the evolution and social dynamics of FOSS communities. With these techniques we aim to identify measures for influence and the shift of influence, measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. One set of dynamics we are especially interested in, are those that lead FOSS projects to fork. This will help predict formation of unhealthy dynamics, which gives the community a heads-up when they can still take action to ensure the sustainability of the project.
+Social networks are a ubiquitous part of our lives, and the creation of online social communities has been a natural extension of this phenomena. Free and Open Source Software (FOSS) development efforts are prime examples of how communities can be leveraged in software development, where group are formed around communities of interest, and depend on continued interest and involvement. Forking, either as an acrimonious split or a friendly divide, affects the community. Most existing research on forking is post-hoc. The run-up to fork is seldom studied. This leaves several questions unanswered. In this study, we propose using statistical modeling of longitudinal social collaboration graphs of software developers to study the evolution and social dynamics of FOSS communities. With these techniques we aim to identify measures for influence and the shift of influence, measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. One set of dynamics we are especially interested in, are those that lead FOSS projects to fork. This will help predict formation of unhealthy dynamics, which gives the community a heads-up when they can still take action to ensure the sustainability of the project.
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -274,23 +274,17 @@ Specifically, our research objective and research questions are listed in the fo
 
 \subsubsection*{R.Q. 1 \hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
-To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list data, issue tracking systems data, source code data. 
-
-This is going to be accomplished by examining 
-
-TO DO:\\
-
-explained in more detail in section \ref{methodology}.
+To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list data, issue tracking systems data, source code data. This is going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
 \subsubsection*{R.Q. 2 \hspace{4 mm} Do differences types of forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? 
 
-Is a project labeled as a ``technical differences'' fork only a ``technical differences'' fork? Or, alternatively, can they be a mix of several reason categories? 
+Is a project labeled as a ``technical differences'' fork only a ``technical differences'' fork? Or, alternatively, can they be a mix of several reason categories?
 
 \subsubsection*{R.Q. 3 \hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
 
-What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Is there a metric that can be used to monitor the odds of change, e.g., forking, ahead of time?
+What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Is there a metric that can be used to monitor the odds of change, e.g., forking, ahead of time? This is also going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
 \subsubsection*{R.Q. 4 \hspace{4 mm} Does our analysis match what people in the community remember?\\} 
 
@@ -307,7 +301,6 @@ To detect change patterns, we need to gather  relevant data, clean it, and analy
 
 \subsubsection{Not all forks are equal: Undesirable forking}
 To find patterns uniquely associated with undesirable forks, we need to gather data on projects from the following three categories: 
-
 
 \begin{table}[!htbp]
 \caption{Not all forks are bad; Three types of projects for which data will be collected}
@@ -416,7 +409,7 @@ Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
 \end{tabular}
 \end{table*}
 
-
+\subsubsection{Data Sources}
 The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. 
 
 The time period data to be collected for is the year in which the fork happened. This should capture the social context prior, and at the time of the fork.
@@ -652,10 +645,6 @@ More importantly, the initial study showed the limitations of a \textit{network-
 
 \section{Yet To Be Done}
 \label{YetToBeDone}
-
-TO DO:\\
-
-Software development in free and open source software development are prime examples of how communities can be leveraged to create and maintain software. Forking, either as an undesirable violent split, or a non-undesirable friendly divide, affects the community. We propose to examine several software development projects that have forked over the past decade, and analyze the evolution and change of dynamics in the developers' interaction patterns. This may answer several open questions, particularly, about the run-up to forks, which is seldom studied.
 
 We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category; i.e., 1) Undesirable forks because of personal conflicts among the developer team, 2) Undesirable forks because of the need for more community-driven development, when a few elite developers behave in a clannish manner and put a glass ceiling for the rest of the community, 3) Other non-undesirable (e.g., Healthy) forks, in which, a fraction of developers temporarily fork away to add new features, and plan to merge back to the main project. We will also look at stable projects that have not forked undesirably, as control group. 
 
