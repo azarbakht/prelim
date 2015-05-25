@@ -278,9 +278,9 @@ To study the properties of possible social patterns, we need to verify their exi
 
 \subsubsection*{R.Q. 2 \hspace{4 mm} Do differences types of forks leave different types of traces?\\}
 
-If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? 
+If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? Is a project labeled as a ``technical differences'' fork only a ``technical differences'' fork? Or, alternatively, can they be a mix of several reason categories?
 
-Is a project labeled as a ``technical differences'' fork only a ``technical differences'' fork? Or, alternatively, can they be a mix of several reason categories?
+We are going to investigate this by statistical modeling of the interaction graphs, as explained in detail in section \ref{modelCovariates}.
 
 \subsubsection*{R.Q. 3 \hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
 
@@ -343,7 +343,7 @@ GlusterFS & Not forked & N/A & No.F.\\
 \end{tabular}
 \end{table*}
 
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. This three-stage filtering process resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. For No.F. category, we chose stable projects that had not forked and are similar in size of the development team. The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.  
 
 \begin{table*}[!ht]
 \centering
@@ -510,6 +510,7 @@ Sentiment Analysis & increase in negativity & - & - & - \\
 
 
 \subsubsection{Model Covariates}
+\label{modelCovariates}
 What covariates to include depends on the context, and the data available for developers.
 Table \ref{tableCovariates} lists several explanatory variables that can be included for modeling the community evolution. Table \ref{tabelSummaryExpectationModelParameters} lists what we expect to see associated with different types of forking. Specifically, for each of the following forking categories, we expect the following model parameters:
 
