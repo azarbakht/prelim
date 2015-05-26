@@ -322,9 +322,9 @@ Our results will only be valid if the patterns found in the \textit{undesirable 
 \centering
 \caption{Projects in U.F. H.F., and No.F. categories  for our study}
 \label{forkedProjectsDataCollected}
-\begin{tabular}{p{0.55\columnwidth} p{0.7\columnwidth} p{0.1\columnwidth} p{0.1\columnwidth}}
+\begin{tabular}{p{0.52\columnwidth} p{0.63\columnwidth} p{0.25\columnwidth} p{0.1\columnwidth}}
 \hline\noalign{\smallskip}
-\textbf{Projects} & \textbf{Reason for forking} & \textbf{Year} & \textbf{Type}\\
+\textbf{Projects} & \textbf{Reason for forking} & \textbf{Year forked} & \textbf{Type}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 Kamailio \& OpenSIPS & Differences among developer team & 2008 & U.F.\\ \hline
 ffmpeg \& libav & Differences among developer team & 2011 & U.F.\\ \hline
@@ -335,15 +335,15 @@ Amarok \& Clementine Player & Technical (Addition of functionality) & 2010 & H.F
 ApacheCouchDB \& BigCouch & Technical (Addition of functionality) & 2010 & H.F.\\ \hline
 Pidgin \& Carrier & Technical (Addition of functionality) & 2008 & H.F.\\ \hline
 MPlayer \& MPlayerXP & Technical (Addition of functionality) & 2005 & H.F.\\ \hline
-Ceph  & Not forked & N/A & No.F.\\ \hline
-Python & Not forked & N/A & No.F.\\ \hline
-OpenStack Neutron & Not forked & N/A & No.F.\\ \hline
-GlusterFS & Not forked & N/A & No.F.\\ 
+Ceph  & Not forked & Not forked & No.F.\\ \hline
+Python & Not forked & Not forked & No.F.\\ \hline
+OpenStack Neutron & Not forked & Not forked & No.F.\\ \hline
+GlusterFS & Not forked & Not forked & No.F.\\ 
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table*}
 
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. For No.F. category, we chose stable projects that had not forked and are similar in size of the development team. The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.  
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. For No.F. category, we chose well-known, stable projects, that,  have been active long enough (to experience turbulence); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. 
 
 \begin{table*}[!ht]
 \centering
@@ -351,23 +351,23 @@ To find projects in U.F. and H.F. categories, we looked at the list of all signi
 \label{tabelProjectsForkedCat1PersonalDiffereces}       
 \begin{tabular}{m{0.3\columnwidth} m{0.3\columnwidth} m{0.3\columnwidth} m{0.4\columnwidth} m{0.20\columnwidth}}
 \hline\noalign{\smallskip}
-\textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{Data available?} & \textbf{Collected?}\\
+\textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{M.L. data available?} & \textbf{Collected?}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 GNU Emacs & X Emacs & 1991, ? & Only after 2000 & N/A \\ \hline
 NetBSD & OpenBSD & 1995, Oct & Yes, but scarce & N/A \\ \hline
 xMule & aMule & 2003, Aug & Only 2006-2007 & N/A \\ \hline
-lMule & xMule & 2003, Jun & - & N/A \\ \hline
+lMule & xMule & 2003, Jun & No & N/A \\ \hline
 Sodipodi & Inkscape & 2003, Nov & Yes & Req.\\ \hline
 Nucleus CMS & Blog:CMS & 2004, May & Only after Sept 2004 & N/A \\ \hline
 BMP & Audacious & 2005, Oct & Yes & Req. \\ \hline
-ntfsprogs & NTFS-3G & 2006, Jul & - & N/A \\ \hline
+ntfsprogs & NTFS-3G & 2006, Jul & No & N/A \\ \hline
 OpenWRT & FreeWRT & 2006, May & Only after Oct 2006 & N/A \\ \hline
-QtiPlot & SciDavis & 2007, Aug & - & N/A \\ \hline
+QtiPlot & SciDavis & 2007, Aug & No & N/A \\ \hline
 \textbf{Kamailio} & OpenSIPS & 2008, Aug & Yes & \textbf{Yes} \\ \hline
-Blastwave.org & OpenCSW & 2008, Aug & - & N/A \\ \hline
+Blastwave.org & OpenCSW & 2008, Aug & No & N/A \\ \hline
 jMonkeyEngine & Ardor3D & 2008, Sept & Yes, but scarce & N/A \\ \hline
-Frog CMS & Wolf CMS & 2009, Jul & - & N/A \\ \hline
-Aldrin & Neil & 2009, ? & - & N/A \\ \hline
+Frog CMS & Wolf CMS & 2009, Jul & No & N/A \\ \hline
+Aldrin & Neil & 2009, ? & No & N/A \\ \hline
 \textbf{Ffmpeg} & libav & 2011, Mar & Yes & \textbf{Yes}\\
 \noalign{\smallskip}\hline
 \end{tabular}
@@ -380,33 +380,33 @@ Aldrin & Neil & 2009, ? & - & N/A \\ \hline
 \label{tableProjectsForkedCat2CommunityDriven}
 \begin{tabular}{m{0.3\columnwidth} m{0.3\columnwidth} m{0.3\columnwidth} m{0.4\columnwidth} m{0.20\columnwidth}}
 \hline\noalign{\smallskip}
-\textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{Data available?} & \textbf{Collected?}\\
+\textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{M.L. data available?} & \textbf{Collected?}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-Nethack & Slash'EM & 1996, ? & - & N/A \\ \hline
-GCC & EGCS & 1997, ? & - & N/A \\ \hline
-SourceForge & Savane & 2001, Oct & - & N/A \\ \hline
+Nethack & Slash'EM & 1996, ? & No & N/A \\ \hline
+GCC & EGCS & 1997, ? & No & N/A \\ \hline
+SourceForge & Savane & 2001, Oct & No & N/A \\ \hline
 PHPNuke & PostNuke & 2001, Sum & Not found & N/A \\ \hline
-QTExtended & OPIE & 2002, May & - & N/A \\ \hline
+QTExtended & OPIE & 2002, May & No & N/A \\ \hline
 GraphicsMagick & Graphics & 2002, Nov  & Only after 2003 & N/A \\ \hline
 \textbf{freeglut} & OpenGLUT & 2004, Mar & Yes & \textbf{Yes} \\ \hline
-Mambo & Joomla! & 2005, Aug & - & N/A \\ \hline
+Mambo & Joomla! & 2005, Aug & No & N/A \\ \hline
 SER & Kamailio & 2005, Jun & Only after 2006 & N/A \\ \hline
 PHPNuke & RavenNuke & 2005, Nov & Not found & N/A \\ \hline
-Hula & Bongo & 2006, Dec & - & N/A \\ \hline
+Hula & Bongo & 2006, Dec & No & N/A \\ \hline
 Compiere & A Dempiere & 2006, Sept & No Dev. mailing list & N/A \\ \hline
 Compiz & Beryl & 2006, Sept & Only after Jun 2007 & N/A \\ \hline
 SQL-Ledger & LedgerSMB & 2006, Sept & No Dev. mailing list & N/A \\ \hline
 \textbf{Asterisk} & Callweaver & 2007, Jun & Yes & \textbf{Yes} \\ \hline
 CodeIgniter & KohanaPHP & 2007, May & Not found & N/A \\ \hline
 OpenOffice.org & Go-oo.org & 2007, Oct & Only after Jun 2011 & N/A \\ \hline
-Mambo & MiaCMS & 2008, May & - & N/A \\ \hline
+Mambo & MiaCMS & 2008, May & No & N/A \\ \hline
 TORCS & Speed Dreams & 2008, Nov & Yes, but scarce & N/A \\ \hline
-MySQL & MariaDB & 2009, Jan & Yes & No\\ \hline
+MySQL & MariaDB & 2009, Jan & Yes, but too large & No\\ \hline
 Nagios & Icinga & 2009, May & Yes & Req \\ \hline
 Project Darkstar& RedDwarf & 2010, Feb & Yes, but scarce & N/A \\ \hline
-SysCP & Froxlor & 2010, Feb & - & N/A \\ \hline
+SysCP & Froxlor & 2010, Feb & No & N/A \\ \hline
 Dokeos & Chamilo & 2010, Jan & Not found & N/A \\ \hline
-GNU Zebra & Quagga & 2010, Jul & - & N/A \\ \hline
+GNU Zebra & Quagga & 2010, Jul & No & N/A \\ \hline
 \textbf{rdesktop} & FreeRDP & 2010, Mar & Yes & \textbf{Yes} \\ \hline
 OpenOffice.org & LibreOffice & 2010, Sept & Only after Jun 2011 & N/A \\ \hline
 Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
@@ -415,7 +415,7 @@ Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
 \end{table*}
 
 \subsubsection{Data Sources}
-The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. 
+The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. Using sentiment analysis, we can quantify the level of positive/negative language usage, and may detect events, for example, in-fighting where people involved in the conflict exchange negative sentiments.
 
 The time period data to be collected for is the year in which the fork happened. This should capture the social context prior, and at the time of the fork.
 
@@ -434,7 +434,7 @@ The following subsection lists the reasons why we need to use a statistical mode
 One may wonder why we should look beyond the observed network. We need to find a well-fitting statistical model of our observed interactions network, because of the following reasons: \textbf{a)} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large perturbation in the numeric descriptors used to describe static graphs. \textbf{b)} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data are relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \textbf{c)} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, and to weed out the properties generated by random processes, and to find the statistically significant network statistics. In short, with a statistical model, we can draw inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \textbf{d)} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \textbf{e)} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g., structural balance, or through node-level effects, e.g., homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. \textbf{f)} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
 
 \subsubsection{Theories}
-Three theories about human behavior are the bases for the hypotheses in this research study.
+Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following three theories about human behavior are the bases for the hypotheses in this research study. They are complement each other in term of explaining the context of forking .
 
 \textbf{1)} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 
@@ -450,7 +450,7 @@ We may explain U.F. forked projects because of ``more community-driven developme
 
 
 \subsubsection{The statistical model}
-
+\label{statisticalModel}
 A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter is significantly different from zero, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
 
 The general form of the exponential family random graph models is \cite{Krivitsky}: 
@@ -484,7 +484,7 @@ As in the case of our longitudinal study of dynamic networks, we need to use an 
 
 \begin{table*} [!Ht]
 \centering
-\caption{Summary of expectations for the statistical model covariates, and sentiment analysis for each forking category. An expected ``no change'' is denoted by a dash ($-$) line.}
+\caption{Summary of expectations for the statistical model covariates, and sentiment analysis for each forking category. An expected ``no significant change'' is denoted by a dash ($-$) line.}
 \label{tabelSummaryExpectationModelParameters}       
 \begin{tabular}{m{0.4\columnwidth} m{0.35\columnwidth} m{0.4\columnwidth} m{0.35\columnwidth} m{0.3\columnwidth}}
 \hline\noalign{\smallskip}
@@ -507,8 +507,6 @@ Sentiment Analysis & increase in negativity & - & - & - \\
 \end{tabular}
 \end{table*}
 
-
-
 \subsubsection{Model Covariates}
 \label{modelCovariates}
 What covariates to include depends on the context, and the data available for developers.
@@ -521,8 +519,6 @@ For ``more community-driven development'' forks (U.F.), we expect to see a decre
 For  ``technical differences'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
 
 For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
-
-
 
 \begin{table*}[!ht]
 \centering
