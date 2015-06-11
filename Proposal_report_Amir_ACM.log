@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  2 JUN 2015 13:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  11 JUN 2015 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,11 +544,7 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
 \CurrentLineWidth=\dimen173
 )
-(./Proposal_report_Amir_ACM.aux
-
-LaTeX Warning: Label `timeline' multiply defined.
-
-)
+(./Proposal_report_Amir_ACM.aux)
 \openout1 = `Proposal_report_Amir_ACM.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -565,7 +561,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count146
 \scratchdimen=\dimen174
@@ -786,7 +783,7 @@ Package epstopdf Info: Source file: <centrality.eps>
 o.pdf centrality.eps>
 (epstopdf)             \includegraphics on input line 551.
 Package epstopdf Info: Output file is already uptodate.
-<centrality-eps-converted-to.pdf, id=301, 1004.75375pt x 998.73125pt>
+<centrality-eps-converted-to.pdf, id=300, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use centrality-eps-converted-to.pdf>
@@ -813,7 +810,7 @@ Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 ed-to.pdf NodesEdgesTime.eps>
 (epstopdf)             \includegraphics on input line 570.
 Package epstopdf Info: Output file is already uptodate.
-<NodesEdgesTime-eps-converted-to.pdf, id=336, 744.7825pt x 697.60625pt>
+<NodesEdgesTime-eps-converted-to.pdf, id=335, 744.7825pt x 697.60625pt>
 File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
@@ -831,7 +828,7 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)             \includegraphics on input line 577.
 Package epstopdf Info: Output file is already uptodate.
 
-<DiameterTime-eps-converted-to.pdf, id=337, 744.7825pt x 697.60625pt>
+<DiameterTime-eps-converted-to.pdf, id=336, 744.7825pt x 697.60625pt>
 File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
@@ -839,10 +836,10 @@ Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 5
 77.
 (pdftex.def)             Requested size: 240.0pt x 224.79266pt.
 
-<2.png, id=339, 502.87875pt x 520.94624pt> <use 2.png>
-<3.png, id=340, 576.1525pt x 636.3775pt> <use 3.png>
-<5.png, id=341, 591.20876pt x 576.1525pt> <use 5.png>
-<7.png, id=342, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
+<2.png, id=338, 502.87875pt x 520.94624pt> <use 2.png>
+<3.png, id=339, 576.1525pt x 636.3775pt> <use 3.png>
+<5.png, id=340, 591.20876pt x 576.1525pt> <use 5.png>
+<7.png, id=341, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
@@ -876,7 +873,7 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 ed-to.pdf Kamailio_chart.eps>
 (epstopdf)             \includegraphics on input line 605.
 Package epstopdf Info: Output file is already uptodate.
-<Kamailio_chart-eps-converted-to.pdf, id=343, 1229.59375pt x 506.89375pt>
+<Kamailio_chart-eps-converted-to.pdf, id=342, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
@@ -894,7 +891,7 @@ erted-to.pdf Kamailio_diameter.eps>
 (epstopdf)             \includegraphics on input line 607.
 Package epstopdf Info: Output file is already uptodate.
 
-<Kamailio_diameter-eps-converted-to.pdf, id=344, 1229.59375pt x 145.54375pt>
+<Kamailio_diameter-eps-converted-to.pdf, id=343, 1229.59375pt x 145.54375pt>
 File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
@@ -929,7 +926,7 @@ Package epstopdf Info: Source file: <Amarok_chart.eps>
 -to.pdf Amarok_chart.eps>
 (epstopdf)             \includegraphics on input line 619.
 Package epstopdf Info: Output file is already uptodate.
-<Amarok_chart-eps-converted-to.pdf, id=363, 1233.60875pt x 521.95pt>
+<Amarok_chart-eps-converted-to.pdf, id=362, 1233.60875pt x 521.95pt>
 File: Amarok_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_chart-eps-converted-to.pdf>
@@ -947,7 +944,7 @@ ted-to.pdf Amarok_diameter.eps>
 (epstopdf)             \includegraphics on input line 621.
 Package epstopdf Info: Output file is already uptodate.
 
-<Amarok_diameter-eps-converted-to.pdf, id=364, 1229.59375pt x 145.54375pt>
+<Amarok_diameter-eps-converted-to.pdf, id=363, 1229.59375pt x 145.54375pt>
 File: Amarok_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_diameter-eps-converted-to.pdf>
@@ -970,7 +967,7 @@ Package epstopdf Info: Source file: <Asterisk_chart.eps>
 ed-to.pdf Asterisk_chart.eps>
 (epstopdf)             \includegraphics on input line 631.
 Package epstopdf Info: Output file is already uptodate.
-<Asterisk_chart-eps-converted-to.pdf, id=368, 1223.57124pt x 523.9575pt>
+<Asterisk_chart-eps-converted-to.pdf, id=367, 1223.57124pt x 523.9575pt>
 File: Asterisk_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_chart-eps-converted-to.pdf>
@@ -988,7 +985,7 @@ erted-to.pdf Asterisk_diameter.eps>
 (epstopdf)             \includegraphics on input line 633.
 Package epstopdf Info: Output file is already uptodate.
 
-<Asterisk_diameter-eps-converted-to.pdf, id=369, 1230.5975pt x 145.54375pt>
+<Asterisk_diameter-eps-converted-to.pdf, id=368, 1230.5975pt x 145.54375pt>
 File: Asterisk_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_diameter-eps-converted-to.pdf>
@@ -1091,17 +1088,13 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 765.
 Package rerunfilecheck Info: File `Proposal_report_Amir_ACM.out' has not change
 d.
 (rerunfilecheck)             Checksum: 613CC59DC44A005B9055B3F7E93031FD;1666.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 765.
  ) 
 Here is how much of TeX's memory you used:
- 9599 strings out of 494985
- 143005 string characters out of 6180356
+ 9600 strings out of 494985
+ 143022 string characters out of 6180356
  292842 words of memory out of 5000000
- 12515 multiletter control sequences out of 15000+600000
+ 12516 multiletter control sequences out of 15000+600000
  53540 words of font info for 73 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  44i,24n,49p,2954b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1119,7 +1112,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on Proposal_report_Amir_ACM.pdf (16 pages, 2765975 bytes).
+Output written on Proposal_report_Amir_ACM.pdf (16 pages, 2765970 bytes).
 PDF statistics:
  518 PDF objects out of 1000 (max. 8388607)
  446 compressed objects within 5 object streams
