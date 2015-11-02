@@ -184,11 +184,12 @@ We are going to investigate this by statistical modeling of the interaction grap
 
 What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Is there a metric that can be used to monitor the odds of change, e.g., forking, ahead of time? This is also going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
-\subsubsection*{R.Q. 4 \hspace{4 mm} Does our analysis match what people in the community remember?\\} 
+%\subsubsection*{R.Q. 4 \hspace{4 mm} Does our analysis match what people in the community remember?\\} 
+%
+%To validate what our quantitative data mining approach finds, we can compare it to what people remember of the situation, and what is written about that project. This validation check requires interviewing people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation (i.e., when no new information is gained by doing more interviews). These semi-structured interviews will be recorded, transcribed, and open-coded, to find common patterns in the interviewees responses.
+%
 
-To validate what our quantitative data mining approach finds, we can compare it to what people remember of the situation, and what is written about that project. This validation check requires interviewing people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation (i.e., when no new information is gained by doing more interviews). These semi-structured interviews will be recorded, transcribed, and open-coded, to find common patterns in the interviewees responses.
-
-To complement the interview study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a read and analyzed to complement the findings of the interview study. 
+%To complement the study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a read and analyzed to complement the findings of the interview study. 
 
 \section{Methodology}
 \label{methodology}
@@ -220,7 +221,7 @@ Our results will only be valid if the patterns found in the \textit{undesirable 
 \centering
 \caption{Projects in U.F. H.F., and No.F. categories  for our study}
 \label{forkedProjectsDataCollected}
-\begin{tabular}{p{0.52\columnwidth} p{0.63\columnwidth} p{0.25\columnwidth} p{0.1\columnwidth}}
+\begin{tabular}{p{0.4\textwidth} p{0.48\textwidth} p{0.135\textwidth} p{0.07\textwidth}}
 \hline\noalign{\smallskip}
 \textbf{Projects} & \textbf{Reason for forking} & \textbf{Year forked} & \textbf{Type}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
@@ -247,7 +248,7 @@ To find projects in U.F. and H.F. categories, we looked at the list of all signi
 \centering
 \caption{All projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order}
 \label{tabelProjectsForkedCat1PersonalDiffereces}       
-\begin{tabular}{m{0.3\columnwidth} m{0.3\columnwidth} m{0.3\columnwidth} m{0.4\columnwidth} m{0.20\columnwidth}}
+\begin{tabular}{m{0.2\columnwidth} m{0.15\columnwidth} m{0.2\columnwidth} m{0.3\columnwidth} m{0.1\columnwidth}}
 \hline\noalign{\smallskip}
 \textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{M.L. data available?} & \textbf{Collected?}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
@@ -272,11 +273,11 @@ Aldrin & Neil & 2009, ? & No & N/A \\ \hline
 \end{table*}
 
 
-\begin{table*} [!Ht]
+\begin{table*} [H]
 \centering
 \caption{All projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order}
 \label{tableProjectsForkedCat2CommunityDriven}
-\begin{tabular}{m{0.3\columnwidth} m{0.3\columnwidth} m{0.3\columnwidth} m{0.4\columnwidth} m{0.20\columnwidth}}
+\begin{tabular}{m{0.2\textwidth} m{0.2\textwidth} m{0.1\textwidth} m{0.2\textwidth} m{0.2\textwidth}}
 \hline\noalign{\smallskip}
 \textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{M.L. data available?} & \textbf{Collected?}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
@@ -337,19 +338,19 @@ Software development is a collective effort, and software developers are human b
 \textbf{1)} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 
 We may explain U.F. forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
+%
+%\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
+%
+%We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
-\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
-
-We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
-
-\textbf{3)} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
+\textbf{2)} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 
 We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
 
 \subsubsection{The statistical model}
 \label{statisticalModel}
-A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter's effect is significantly different from zero, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
+A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter's effect is significant, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
 
 The general form of the exponential family random graph models is \cite{Krivitsky}: 
 
@@ -395,7 +396,6 @@ Balance & - & - & - & - \\ \hline
 Transitive triplets & - & - & - & - \\ \hline
 Transitive ties & - & - & - & - \\ \hline
 Betweenness & increase & - & increase & - \\ \hline
-Diameter & increase & - & - & - \\ \hline
 Clustering Coefficient & - & - & - & - \\ \hline
 Preferential Attachment & - & - & - & - \\ \hline
 Assortativity & - & increase & - & - \\ \hline
@@ -422,7 +422,7 @@ For ``no forks at all'' projects (No.F.), we expect to see a steady progression,
 \centering
 \caption{Explanatory variables to include in the initial model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
 \label{tableCovariates}
-\begin{tabular}{m{0.34\columnwidth} m{0.5\columnwidth} m{0.9\columnwidth}} 
+\begin{tabular}{m{0.2\textwidth} m{0.3\textwidth} m{0.5\textwidth}}
 \hline\noalign{\smallskip}
 \textbf{Network effect} & \textbf{Network Statistic} & \textbf{Description} \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
@@ -431,7 +431,6 @@ Reciprocity & \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*} & Tendency 
 Balance & \begin{equation*} \sum_j x_{ij}strsim_{ij} \end{equation*} & Tendency to have ties to structurally similar others (structural equivalence with respect to outgoing ties) \\ 
 Covariate similarity & \begin{equation*} \sum_j x_{ij} sim_{ij} \end{equation*} & Tendency to have ties to similar others (homophile selection) \\ 
 3-cycles & \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*} & Tendency to form relationship cycles (negative parameter means absense of hierarchy) \\
-Betweenness & \begin{equation*} \sum_j x_{ij} \sum_h x_{hi}(1 - x_{hj}) \end{equation*} & Tendency to occupy an intermediate position between unrelated others (represents brokerage) \\ 
 Transitive triplets & \begin{equation*} \sum_j x_{ij} \sum_h x_{ih}x_{hj} \end{equation*} &  Tendency toward triadic closure of the neighborhood (linear effect of the number of indirect ties) \\
 Transitive ties & \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} & Tendency toward triadic closure of the neighborhood (binary effect of indirect ties) \\
 Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*} & Main effect of alter's behavior (covariate determines popularity in network) \\ 
@@ -442,11 +441,11 @@ Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}
 \end{table*}
 \section{Initial study: Temporal network-specific analysis}
 \label{sectionInitialStudy}
-In our initual study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured the betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
+In our initial study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured the betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
 
 \begin{figure}[!ht]
 \centering
-\epsfig{file=centrality.eps, width=\columnwidth}
+\epsfig{file=centrality.eps, width=0.7\columnwidth}
 \caption{Heat-map color-coded examples are shown above. Nodes with higher centrality metric are colored with warmer color: red is the warmest color here. The same network is analyzed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
 \label{figureCentrality}
 \end{figure}
@@ -485,13 +484,13 @@ Figure \ref{figureKamailioGraph} shows four key frames from the Kamailio project
 \def\tabularxcolumn#1{m{#1}} 
 \begin{tabularx}{\linewidth}{@{}cXX@{}}
 \begin{tabular}{cccc} 
-\subfloat[]{\includegraphics[width=0.5\columnwidth, height=0.5\columnwidth]{2}} 
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{2}} 
 &
-\subfloat[]{\includegraphics[width=0.5\columnwidth, height=0.5\columnwidth]{3}}
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{3}}
 &
-\subfloat[]{\includegraphics[width=0.5\columnwidth, height=0.5\columnwidth]{5}} 
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{5}} 
 & 
-\subfloat[]{\includegraphics[width=0.5\columnwidth, height=0.5\columnwidth]{7}}
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{7}}
 \end{tabular} 
 \end{tabularx} 
 \caption{Snapshots from video visualization of Kamailio's graph (Oct. 2007 - Mar. 2009) in which a core contributor (colored red) moves to the periphery and eventually departs the community.} 
@@ -502,7 +501,7 @@ Figure \ref{figureKamailioGraph} shows four key frames from the Kamailio project
 \centering
 \epsfig{file=Kamailio_chart.eps, width=\textwidth}
 \justifying
-\epsfig{file=Kamailio_diameter.eps, width=0.91\textwidth}
+\epsfig{file=Kamailio_diameter.eps, width=\textwidth}
 \caption{Kamailio top contributors' betweenness centralities and network diameter over time (Oct. 2007 to Mar. 2009) in 3-month time windows with 1.5-month overlaps}
 \label{figureKamailioStackedAreaChart}
 \end{figure*}
@@ -512,7 +511,7 @@ Figure \ref{figureKamailioStackedAreaChart} shows the betweenness centrality of 
 This technique can be used to identify the people involved in conflict and the date the fork happened with a months accuracy, even if the rival project does not emerge immediately.
 
 \subsubsection{Amarok Project}
-\begin{figure*}[!Ht]
+\begin{figure*}[H]
 \centering
 \epsfig{file=Amarok_chart.eps, width=\textwidth}
 \justifying
@@ -524,7 +523,7 @@ This technique can be used to identify the people involved in conflict and the d
 The video for the Amarok project fork is available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAmarokStachedAreaChart}. The results show that the network diameter has not increased over the period of the fork, which shows a resilient network. The video shows the dynamic changes in the network structure, again typical of a healthy network, rather than of simmering conflict. These indicators suggest that the Amarok fork in 2010 belongs to the ``addition of technical functionality'' rationale for forking, as there are no visible social conflict.
 
 \subsubsection{Asterisk Project}
-\begin{figure*}[!Ht]
+\begin{figure*}[H]
 \centering
 \epsfig{file=Asterisk_chart.eps, width=\textwidth}
 \justifying
@@ -556,7 +555,7 @@ We expect to find patterns specific to each category, which then may be used to 
 
 Table \ref{timeline} outlines my proposed research timeline. It also shows the mapping between research questions and the phases of the study.
 
-\begin{table}[!Ht]
+\begin{table}[H]
 \renewcommand\arraystretch{1.4}\arrayrulecolor{LightSteelBlue3}
 \captionsetup{singlelinecheck=false, font=blue, labelfont=sc, labelsep=quad}
 \caption{Timeline}\vskip -1.5ex
@@ -570,23 +569,22 @@ Winter 2014 & Creating communication graphs & \\
 Spring 2014 & Temporal visualization and temporal SNA & \\
 Fall 2014 & Preliminary statistical analysis & \\
 Spring 2015 & Planning and preliminary examination & \\
-Summer 2015 & Data collection for issue tracking and source code & \\
-Fall 2015 &  Statistical analysis \& Interviews designs (including pilots) & RQ 1-3 \\
-Winter 2016 & Interviews & RQ 4 \\
+Fall 2015 & Prelim \\
+Winter 2015 & Data collection for issue tracking and source code & \\
+Winter/Spring 2015 &  Statistical study, longitidinal modeling & RQ 1-3 \\
 Spring 2016 & Thesis writing & \\
-June 2016 & Defense & \\
+June 2016 & Defense (Hopefully) & \\
 \end{tabular}
 \label{timeline}
 \end{table}
 
 \section{Threats to Validity}
 \label{threatsToValidity}
-The presented findings may not be generalized to all FOSS projects. First, One reason is that the projects is this research study were selected from a pool of candidate projects, partly because of the availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. Second, the proposed technique uses the data from online communications. The assumption that all the communication can be captured by mining repositories is intuitively imperfect, but inevitable. Third, social interactions data is noisy, and our statistical approach might be affected because of this. Furthermore, the qualitative approach of interviewing key individuals from the community also reflects what they remember about their perception at the time, which should be taken with a grain of salt, as many of the projects forked several years ago. And, also perception of individuals should not be interpreted as ground truth.
-
+The presented findings may not be generalized to all FOSS projects. First, One reason is that the projects is this research study were selected from a pool of candidate projects, partly because of the availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. Second, the proposed technique uses the data from online communications. The assumption that all the communication can be captured by mining repositories is intuitively imperfect, but inevitable. Third, social interactions data is noisy, and our statistical approach might be affected because of this. 
 
 \section*{Acknowledgment}
 \label{acknowledgments}
-I would like to thank my academic adviser, Prof. Carlos Jensen, and my committee members, Prof. Margaret Burnett, Prof. Ronald Metoyer, and Prof. Christopher Scaffidi for their help and guidance throughout my PhD program, and particularly, in help with framing the proposed research in this paper. I would also like to thank Derric Jacobs, of the Sociology Department at Oregon State University, for his help with search for theories and lending books to me; and also, many thanks goes to Prof. Drew Gerkey, of the Department of Anthropology at Oregon State University for his advice and pointers to theories about human behavior in social sciences.
+I would like to thank my academic adviser, Prof. Carlos Jensen, and my committee members for their help. I would also like to thank Derric Jacobs, of the Sociology Department at Oregon State University, for his help with search for theories and lending books to me; and also, many thanks goes to Prof. Drew Gerkey, of the Department of Anthropology at Oregon State University for his advice and pointers to theories about human behavior in social sciences.
 I would also like to thank the open source developers of the projects studied for making their data available, without which this study would not have been possible. \\
 
 % The following two commands are all you need in the
