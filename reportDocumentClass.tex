@@ -40,6 +40,8 @@
 
 \renewcommand\thesection{\arabic{section}}
 
+\setcounter{secnumdepth}{10}
+
 %%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -49,7 +51,15 @@
 \author{Amirhosein (Emerson) Azarbakht\\
 School of Electrical Engineering and Computer Science\\
 Oregon State University\\
+\vspace{5mm} %5mm vertical space
 azarbaka@oregonstate.edu\\
+\vspace{5mm} %5mm vertical space
+Prelim Report\\
+Work Under Supervision of Prof. Carlos Jensen\\
+Ph.D. Committee Members:\\
+Prof. Alex Groce\\
+Prof. Chris Scaffidi\\
+Prof. Drew Gerkey\\
 }
 
 \maketitle
@@ -161,28 +171,28 @@ Community dynamics was the focus of a more recent study by Hannemann and Klamma 
 \section{Research Goals}
 \label{ResearchGoals}
 
-Social interactions reflects the changes the community goes through, we argue. And so, it can be used to describe the context surrounding a forking event. Three of the six main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} are socially related, and so should be reflected in the social interactions data. For example, if a fork occurred because of a desire for ``more community-driven development'', we expect to see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community. In other words, in this case, the power stays in the hands of the same people throughout, as new people come and go. 
+Social interactions reflects the changes the community goes through. And so, it can be used to describe the context surrounding a forking event. At least, three of the six main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} are socially related, and so, their effects should be reflected in the developers' interactions data. For example, if a fork occurred because of a desire for ``more community-driven development'', we expect to see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community. In other words, in this case, the power stays in the hands of the same people throughout, as new people come and go. 
 
-We aim to 1) Analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time; 2) Test whether the results of the analysis match what developers in the project's community remember? 
+This study plans to analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time.
 Specifically, our research objective and research questions are listed in the following subsection \ref{ResearchObjective}.
 
 \subsection{Research Objective:}
 \label{ResearchObjective}
 \subsection*{What are the social patterns associated with different types of undesirable forking?\\}
 
-\subsubsection*{R.Q. 1 \hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
+\subsubsection*{R.O. 1 \hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
 To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list data, issue tracking systems data, source code data. This is going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
-\subsubsection*{R.Q. 2 \hspace{4 mm} Do different types of forks leave different types of traces?\\}
+\subsubsection*{R.O. 2 \hspace{4 mm} Do different types of forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? Is a project labeled as a ``technical differences'' fork only a ``technical differences'' fork? Or, alternatively, can they be a mix of several reason categories?
 
-We are going to investigate this by statistical modeling of the interaction graphs, as explained in detail in section \ref{modelCovariates}.
+We are going to investigate this by statistical modeling of the interaction graphs, as explained in detail in section \ref{statisticalModel}.
 
-\subsubsection*{R.Q. 3 \hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
+\subsubsection*{R.O. 3 \hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
 
-What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Is there a metric that can be used to monitor the odds of change, e.g., forking, ahead of time? This is also going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
+What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Is there a metric that can be used to monitor the odds of change, (e.g. forking-related patterns), ahead of time? This will be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
 %\subsubsection*{R.Q. 4 \hspace{4 mm} Does our analysis match what people in the community remember?\\} 
 %
@@ -194,7 +204,7 @@ What quantitative measure(s) can be used as an early warning sign of an inflecti
 \section{Methodology}
 \label{methodology}
 
-To detect change patterns, we need to gather  relevant data, clean it, and analyze it. In the following subsections, we describe the process in detail. 
+Detecting change patterns, requires gathering  relevant data, cleaning it, and analyzing it. In the following subsections, we describe the proposed process in detail. 
 
 \subsection{Phase 1: Data Collection}
 
@@ -202,7 +212,7 @@ To detect change patterns, we need to gather  relevant data, clean it, and analy
 To find patterns uniquely associated with undesirable forks, we need to gather data on projects from the following three categories: 
 
 \begin{table}[!htbp]
-\caption{Not all forks are bad; Three types of projects for which data will be collected}
+\caption{Not all forks are bad; The three types of projects for which data is collected}
 \label{tableUndesirableForkingDataCollect} 
 \begin{tabular}{p{0.6\columnwidth} p{0.3\columnwidth}}
 \hline\noalign{\smallskip}
@@ -246,28 +256,28 @@ To find projects in U.F. and H.F. categories, we looked at the list of all signi
 
 \begin{table*}[!ht]
 \centering
-\caption{All projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order}
+\caption{All projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
 \label{tabelProjectsForkedCat1PersonalDiffereces}       
 \begin{tabular}{m{0.2\columnwidth} m{0.15\columnwidth} m{0.2\columnwidth} m{0.3\columnwidth} m{0.1\columnwidth}}
 \hline\noalign{\smallskip}
 \textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{M.L. data available?} & \textbf{Collected?}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-GNU Emacs & X Emacs & 1991, ? & Only after 2000 & N/A \\ \hline
-NetBSD & OpenBSD & 1995, Oct & Yes, but scarce & N/A \\ \hline
-xMule & aMule & 2003, Aug & Only 2006-2007 & N/A \\ \hline
+GNU Emacs & X Emacs & 1991, ? & Only after 2000 & U.A. \\ \hline
+NetBSD & OpenBSD & 1995, Oct & Yes, but scarce & U.A. \\ \hline
+xMule & aMule & 2003, Aug & Only 2006-2007 & U.A. \\ \hline
 lMule & xMule & 2003, Jun & No & N/A \\ \hline
-Sodipodi & Inkscape & 2003, Nov & Yes & Req.\\ \hline
-Nucleus CMS & Blog:CMS & 2004, May & Only after Sept 2004 & N/A \\ \hline
-BMP & Audacious & 2005, Oct & Yes & Req. \\ \hline
-ntfsprogs & NTFS-3G & 2006, Jul & No & N/A \\ \hline
-OpenWRT & FreeWRT & 2006, May & Only after Oct 2006 & N/A \\ \hline
-QtiPlot & SciDavis & 2007, Aug & No & N/A \\ \hline
-\textbf{Kamailio} & OpenSIPS & 2008, Aug & Yes & \textbf{Yes} \\ \hline
-Blastwave.org & OpenCSW & 2008, Aug & No & N/A \\ \hline
-jMonkeyEngine & Ardor3D & 2008, Sept & Yes, but scarce & N/A \\ \hline
-Frog CMS & Wolf CMS & 2009, Jul & No & N/A \\ \hline
-Aldrin & Neil & 2009, ? & No & N/A \\ \hline
-\textbf{Ffmpeg} & libav & 2011, Mar & Yes & \textbf{Yes}\\
+Sodipodi & Inkscape & 2003, Nov & Yes & U.A.\\ \hline
+Nucleus CMS & Blog:CMS & 2004, May & Only after Sept 2004 & U.A. \\ \hline
+BMP & Audacious & 2005, Oct & Yes & U.A. \\ \hline
+ntfsprogs & NTFS-3G & 2006, Jul & No & U.A. \\ \hline
+OpenWRT & FreeWRT & 2006, May & Only after Oct 2006 & U.A. \\ \hline
+QtiPlot & SciDavis & 2007, Aug & No & U.A. \\ \hline
+Kamailio & OpenSIPS & 2008, Aug & Yes & Yes \\ \hline
+Blastwave.org & OpenCSW & 2008, Aug & No & U.A. \\ \hline
+jMonkeyEngine & Ardor3D & 2008, Sept & Yes, but scarce & U.A. \\ \hline
+Frog CMS & Wolf CMS & 2009, Jul & No & U.A. \\ \hline
+Aldrin & Neil & 2009, ? & No & U.A. \\ \hline
+Ffmpeg & libav & 2011, Mar & Yes & Yes\\
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table*}
@@ -275,67 +285,71 @@ Aldrin & Neil & 2009, ? & No & N/A \\ \hline
 
 \begin{table*} [H]
 \centering
-\caption{All projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order}
+\caption{All projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
 \label{tableProjectsForkedCat2CommunityDriven}
 \begin{tabular}{m{0.2\textwidth} m{0.2\textwidth} m{0.1\textwidth} m{0.2\textwidth} m{0.2\textwidth}}
 \hline\noalign{\smallskip}
 \textbf{Original} & \textbf{Forked} & \textbf{Date} & \textbf{M.L. data available?} & \textbf{Collected?}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-Nethack & Slash'EM & 1996, ? & No & N/A \\ \hline
-GCC & EGCS & 1997, ? & No & N/A \\ \hline
-SourceForge & Savane & 2001, Oct & No & N/A \\ \hline
-PHPNuke & PostNuke & 2001, Sum & Not found & N/A \\ \hline
-QTExtended & OPIE & 2002, May & No & N/A \\ \hline
-GraphicsMagick & Graphics & 2002, Nov  & Only after 2003 & N/A \\ \hline
+Nethack & Slash'EM & 1996, ? & No & U.A. \\ \hline
+GCC & EGCS & 1997, ? & No & U.A. \\ \hline
+SourceForge & Savane & 2001, Oct & No & U.A. \\ \hline
+PHPNuke & PostNuke & 2001, Sum & Not found & U.A. \\ \hline
+QTExtended & OPIE & 2002, May & No & U.A. \\ \hline
+GraphicsMagick & Graphics & 2002, Nov  & Only after 2003 & U.A. \\ \hline
 \textbf{freeglut} & OpenGLUT & 2004, Mar & Yes & \textbf{Yes} \\ \hline
-Mambo & Joomla! & 2005, Aug & No & N/A \\ \hline
-SER & Kamailio & 2005, Jun & Only after 2006 & N/A \\ \hline
-PHPNuke & RavenNuke & 2005, Nov & Not found & N/A \\ \hline
-Hula & Bongo & 2006, Dec & No & N/A \\ \hline
-Compiere & A Dempiere & 2006, Sept & No Dev. mailing list & N/A \\ \hline
-Compiz & Beryl & 2006, Sept & Only after Jun 2007 & N/A \\ \hline
-SQL-Ledger & LedgerSMB & 2006, Sept & No Dev. mailing list & N/A \\ \hline
+Mambo & Joomla! & 2005, Aug & No & U.A. \\ \hline
+SER & Kamailio & 2005, Jun & Only after 2006 & U.A. \\ \hline
+PHPNuke & RavenNuke & 2005, Nov & Not found & U.A. \\ \hline
+Hula & Bongo & 2006, Dec & No & U.A. \\ \hline
+Compiere & A Dempiere & 2006, Sept & No Dev. mailing list & U.A. \\ \hline
+Compiz & Beryl & 2006, Sept & Only after Jun 2007 & U.A. \\ \hline
+SQL-Ledger & LedgerSMB & 2006, Sept & No Dev. mailing list & U.A. \\ \hline
 \textbf{Asterisk} & Callweaver & 2007, Jun & Yes & \textbf{Yes} \\ \hline
-CodeIgniter & KohanaPHP & 2007, May & Not found & N/A \\ \hline
-OpenOffice.org & Go-oo.org & 2007, Oct & Only after Jun 2011 & N/A \\ \hline
-Mambo & MiaCMS & 2008, May & No & N/A \\ \hline
-TORCS & Speed Dreams & 2008, Nov & Yes, but scarce & N/A \\ \hline
+CodeIgniter & KohanaPHP & 2007, May & Not found & U.A. \\ \hline
+OpenOffice.org & Go-oo.org & 2007, Oct & Only after Jun 2011 & U.A. \\ \hline
+Mambo & MiaCMS & 2008, May & No & U.A. \\ \hline
+TORCS & Speed Dreams & 2008, Nov & Yes, but scarce & U.A. \\ \hline
 MySQL & MariaDB & 2009, Jan & Yes, but too large & No\\ \hline
 Nagios & Icinga & 2009, May & Yes & Req \\ \hline
-Project Darkstar& RedDwarf & 2010, Feb & Yes, but scarce & N/A \\ \hline
-SysCP & Froxlor & 2010, Feb & No & N/A \\ \hline
-Dokeos & Chamilo & 2010, Jan & Not found & N/A \\ \hline
-GNU Zebra & Quagga & 2010, Jul & No & N/A \\ \hline
+Project Darkstar& RedDwarf & 2010, Feb & Yes, but scarce & U.A. \\ \hline
+SysCP & Froxlor & 2010, Feb & No & U.A. \\ \hline
+Dokeos & Chamilo & 2010, Jan & Not found & U.A. \\ \hline
+GNU Zebra & Quagga & 2010, Jul & No & U.A. \\ \hline
 \textbf{rdesktop} & FreeRDP & 2010, Mar & Yes & \textbf{Yes} \\ \hline
-OpenOffice.org & LibreOffice & 2010, Sept & Only after Jun 2011 & N/A \\ \hline
-Redmine & ChiliProject & 2011, Feb & Yes, but scarce & N/A \\
+OpenOffice.org & LibreOffice & 2010, Sept & Only after Jun 2011 & U.A. \\ \hline
+Redmine & ChiliProject & 2011, Feb & Yes, but scarce & U.A. \\
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table*}
 
 \subsubsection{Data Sources}
-The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. Using sentiment analysis, we can quantify the level of positive/negative language usage, and may detect events, for example, in-fighting where people involved in the conflict exchange negative sentiments.
+The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} (Proposed) The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. Using sentiment analysis, we can quantify the level of positive/negative language usage, and may detect events, for example, in-fighting where people involved in the conflict exchange negative sentiments.
 
-The time period data to be collected for is the year in which the fork happened. This should capture the social context prior, and at the time of the fork.
+The time period for which data was collected is the year in which the fork happened. This should supposedly capture the social context prior, and at the time of the fork.
 
 \subsection{Phase 2: Sociogram Formation and Statistical Study}
 
-Many social structures can be represented as graphs. The nodes represent actors/players and the edges represent the interaction between them. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. Two types of analysis can be done on sociograms; \textbf{a)} a \textit{cross-sectional} study, and \textbf{b)} a \textit{longitudinal} study. We are interested in patterns in the run-up to forks, so, we should do a longitudinal study, unlike most existing research on forking.
+Social connections and non-connections can be represented as graphs, in which the nodes represent actors and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. Two types of analysis can be done on sociograms; \textbf{a)} a \textit{cross-sectional} study, and \textbf{b)} a \textit{longitudinal} study. We are interested in patterns in the run-up to forks, so, we choose to do a longitudinal study, unlike most existing research on forking. This is a novel contribution of our study.
 
-Our longitudinal study can look at the sociograms in two distinct approaches: \textbf{a)} a \textit{network-specific} approach, in which, we focus on the actual networks under study, to describe the structure of the \textit{observed network} with numeric summaries/descriptors to describe the structure and what we actually see, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Or, \textbf{b)} a \textit{population-processes} approach, in which, we treat the observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. To this end, the observed network, is only good to help us understand the social forces/processes that generated it. 
+A longitudinal study can look at the sociograms in two distinct approaches: \textbf{a)} a \textit{network-specific} approach, in which, we focus on the actual networks under study, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors to describe the structure and what we actually see, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Or, \textbf{b)} a \textit{population-processes} approach, in which, we treat the observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. To this end, the observed network, is only good to help us understand the social forces/processes that generated it.
 
-Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness as well as the limitation of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and shows how a network-specific approach may or may not help us understand the network dynamics.  
+Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness as well as the limitation of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
 
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes approach}.
 
-\subsubsection{Why bother finding a statistical model?}
+\subsubsection{Why a statistical model is needed?}
 
-One may wonder why we should look beyond the observed network. We need to find a well-fitting statistical model of our observed interactions network, because of the following reasons: \textbf{a)} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large perturbation in the numeric descriptors used to describe static graphs. \textbf{b)} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data are relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \textbf{c)} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, and to weed out the properties generated by random processes, and to find the statistically significant network statistics. In short, with a statistical model, we can draw inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \textbf{d)} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \textbf{e)} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g., structural balance, or through node-level effects, e.g., homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. \textbf{f)} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
+One may wonder why we should look beyond the observed network. We need to find a well-fitting statistical model of our observed interactions network, because of the following reasons: 
+
+\paragraph{} For the \textit{observed network}, a small observation error or sampling error, and the uncertainty involved with real-world communication, can result in large perturbation in the numeric descriptors used to describe static graphs. 
+\paragraph{} The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data are relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. \paragraph{} In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, and to weed out the properties generated by random processes, and to find the statistically significant network statistics. In short, with a statistical model, we can draw inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. \paragraph{} Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}. \paragraph{} Different social processes may manifest similar network structures. For example, clustering in a network might be because of structural effects, e.g., structural balance, or through node-level effects, e.g., homophily. To determine which one is the case in our observed network, a statistical model that incorporates both covariates can help. We then can assess the contribution of each covariate, and infer which social process underlies the observed network \cite{Robins}. 
+\paragraph{} Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
 
 \subsubsection{Theories}
 Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following three theories about human behavior are the bases for the hypotheses in this research study. They are complement each other in term of explaining the context of forking .
 
-\textbf{1)} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
+\paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 
 We may explain U.F. forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
 %
@@ -343,80 +357,146 @@ We may explain U.F. forked projects because of ``personal differences'' as a res
 %
 %We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
-\textbf{2)} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
+\paragraph{} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 
 We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
 
-\subsubsection{The statistical model}
+\subsection{Statistical Model}
 \label{statisticalModel}
-A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter's effect is significant, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
 
-The general form of the exponential family random graph models is \cite{Krivitsky}: 
+Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another actor, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks. (status quo counts twice: maintaining a non-connection or maintaining a connection). We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
 
-\begin{equation} P(Y=y)=\frac{\exp(\theta'g(y))}{k(\theta)} \end{equation}
-where:
-\begin{itemize}
-\item Y is the random variable for the state of the network,
-\item \( g(y) \) is the vector of model statistics for network y,
-\item \( \theta \) is the vector of coefficients for model statistics, 
-\item \( k(\theta) \) represents the quantity in the numerator summed over all possible networks with the same node set as y \cite{Krivitsky}.
-\end{itemize}
-This can be written in terms of the conditional log-odds of a single actor pair \cite{Krivitsky}:
+The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of actors changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process.
 
-\begin{equation} \operatorname{logit}{(Y_{ij}=1|y^{c}_{ij})=\theta'\delta(y_{ij})} \end{equation}
-where: 
-\begin{itemize}
-\item \( Y_{ij} \) is the random variable for the state of the actor pair \( i,j \) (with realization \( y_{ij} \)), 
-\item \( y^{c}_{ij} \) signifies the complement of \( y_{ij} \), i.e., all dyads in the network other than \( y_{ij} \). 
-\item \( \delta(y_{ij}) \) equals \( g(y^{+}_{ij})-g(y^{-}_{ij}) \), where 
-\item \( y^{+}_{ij} \) is defined as \( y^{c}_{ij} \) along with \( y_{ij} \) set to 1,
-\item \( y^{-}_{ij} \) is defined as \( y^{c}_{ij} \) along with \( y_{ij} \) set to 0.
-\item That is, \( \delta(y_{ij}) \) equals the value of \( g(y) \) when \( y_{ij}=1 \) minus the value of \( g(y) \) when \( y_{ij}=0 \), but all other dyads are as in \( g(y) \). This emphasizes the log-odds of an individual tie conditional on all others. 
-\item \( g(y) \) is called the \textit{statistics} of the model, and \(\delta(y_{ij}) \) the ``\textit{change statistics}'' for actor pair \( y_{ij} \) \cite{Krivitsky}.
-\end{itemize}
+Let the data for our statistical actor-oriented model be $M$ repeated observations on a network with \textit{g} actors. The $M$ observed networks (at least two) are represented as directed graphs with adjacency matrices $X(t_m) = (X_{ij}(t_m)))$ for $m = 1,...,M$, where $i$ and $j$ range from a to $g$. The variable $X_{ij}$ shows whether at time $t$ there exists a tie from $i$ to $j$ (value 1) or not (value 0). Be definition, $\forall i, X_{ii}=0$ (i.e. the diagonal of the adjacency matrices).
 
-The model parameters are usually estimated using a pseudo-likelihood estimation (PLE) method or Markov chain Monte Carlo maximum likelihood estimation (MCMCMLE) \cite{SnijdersMCMCMLE}. 
+In order to model the network evolution from $X(t_1)$ to $X(t_2)$, and so on, it is natural to treat the network dynamics as the result of a series of small atomic changes, and not bound to the observation moment, but rather as a more of less continuous process. In this way, the current network structure is a determinant of the likelihood of the changes that might happen next \cite{Coleman1964}. 
 
-As in the case of our longitudinal study of dynamic networks, we need to use an extension of ERGMs, namely, Separable Temporal Exponential Family Random Graph Models (STERGM), which takes two models, one for the formation, and another for dissolution \cite{Krivitsky}.
+For each change, the model focuses on the actor whose tie is changing. We assume that actor $i$ has control over the set of outgoing  tie variables $(X_{i1}, ..., X_{ig})$ (i.e. the $i^{th}$ row of the adjacency matrix). The network changes one tie at a time. We call such an atomic change  a \textit{ministep}. The moment at which actor $i$ changes of of his ties, and the kind of change that he makes, can depend on attributes represented by observed covariates, and the network structure. The moment is stochastically determined by the \textit{rate function}, and the particular change to make, is determined by the \textit{objective function} and the \textit{gratification function}. These three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
+
+\subsubsection{Rate Function}
+
+The \textit{rate function} $\lambda_i(x)$ for actor $i$ is the rate at which in actor $i$'s outgoing ties changes occur. It models how frequently the actors make ministeps.\\
+The rate function is formally defined by
+\begin{equation}
+\lambda_i(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X_{ij}(t + dt) \neq X_{ij}(t) \quad for \quad some \quad j \in \{i, ..., g\} | X(t) = x)}\big).
+\end{equation}
+
+The simplest specification of the rate of change is that a;; actors have the same rate of change of their ties. 
+
+\subsubsection{Objective Function}
+
+The \textit{objective function} $f_i(s)$ for actor $i$ is the value attached to the network configuration $x$. 
+
+The idea is that, given the opportunity to make a change in his outgoing tie variables $(X_{i1},...,X_{ig})$, actor $i$ selects the change that gives the greatest increase in the objective function. We assume that if there is difference between actors in their objective functions, these differences can be represented based on the model covariates. 
+
+Let's denote the present network by $x = X(t)$. The new network that would be the result of a ministep (i.e. changing a single tie variable $x_{ij}$ into its opposite $1 - x_{ij}$ ) by actor $i$ is denoted by $x(i \mapsto j)$. This choice is modeled in the following way: 
+
+Let $U(j)$ denote a random variable which represents the attraction for $i$ to $j$. We assume that these $U_j$ are random variables distributed symmetrically about 0, and independently generated for each new ministep. In this way, The actor $i$ choose to change his tie variable with the other actor $j$ for whom the following value is the highest:
+
+\begin{equation}
+f_i(x(i \mapsto j)) + U(j)
+\end{equation} 
+
+This is a myopic stochastic optimization rule: myopic because only the situation one step after the current step is considered; and stochastic because the unexplained part is modeled by a random variable $U(j)$. 
+
+$U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. In this way, the probability that actor $i$ chooses to change $x_{ij}$ for any particular $j$, given that such a change happens, is,
+
+\begin{equation}
+p_{ij}(x) = \frac{exp(f_i(i \mapsto j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) - f_i(x))}
+\end{equation}
+
+\subsubsection{Gratification Function}
+Sometimes the order in which changes occur makes a difference for the desirability of the network. Such differences cannot be represented by the objective function. So, we need another function, called gratification function. \\
+
+The \textit{gratification function} $g_i(x,j)$ for actor $i$ is the value attached to this actor (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
+
+In the case that a gratification function is included, the actor $i$ chooses to change $x_{ij}$ for that other actor $j$ for whom the following value is the highest:
+
+\begin{equation}
+f_i(x(i \mapsto j)) + g_i(x, j) + U(j)
+\end{equation} 
+
+And we will have \begin{equation}
+p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))}
+\end{equation}
 
 
-\begin{table*}
-\centering
-\caption{Summary of expectations for the statistical model covariates, and sentiment analysis for each forking category. An expected ``no significant change'' is denoted by a dash ($-$) line.}
-\label{tabelSummaryExpectationModelParameters}       
-\begin{tabular}{m{0.4\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth}}
-\hline\noalign{\smallskip}
-\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Outdegree & - & - & - & - \\ \hline
-Reciprocity & decrease & - & - & - \\ \hline
-Balance & - & - & - & - \\ \hline
-3-cycle & decrease & decrease & - & - \\ \hline
-Transitive triplets & - & - & - & - \\ \hline
-Transitive ties & - & - & - & - \\ \hline
-Betweenness & increase & - & increase & - \\ \hline
-Clustering Coefficient & - & - & - & - \\ \hline
-Preferential Attachment & - & - & - & - \\ \hline
-Assortativity & - & increase & - & - \\
-%CUSUM betweenness & sharp increase & - & increase & - \\ \hline
-%Sentiment Analysis & increase in negativity & - & - & - \\
-\noalign{\smallskip}\hline
-\end{tabular}
-\end{table*}
 
-\subsubsection{Model Covariates}
-\label{modelCovariates}
-What covariates to include depends on the context, and the data available for developers.
-Table \ref{tableCovariates} lists several explanatory variables that can be included for modeling the community evolution. Table \ref{tabelSummaryExpectationModelParameters} lists what we expect to see associated with different types of forking. Specifically, for each of the following forking categories, we expect the following model parameters:
+\pagebreak
 
-For ``personal differences'' forks (U.F.), we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
-
-For ``more community-driven development'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
-
-For  ``technical differences'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
-
-For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter's effect is significant, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
+%
+%The general form of the exponential family random graph models is \cite{Krivitsky}: 
+%
+%\begin{equation} P(Y=y)=\frac{\exp(\theta'g(y))}{k(\theta)} \end{equation}
+%where:
+%\begin{itemize}
+%\item Y is the random variable for the state of the network,
+%\item \( g(y) \) is the vector of model statistics for network y,
+%\item \( \theta \) is the vector of coefficients for model statistics, 
+%\item \( k(\theta) \) represents the quantity in the numerator summed over all possible networks with the same node set as y \cite{Krivitsky}.
+%\end{itemize}
+%This can be written in terms of the conditional log-odds of a single actor pair \cite{Krivitsky}:
+%
+%\begin{equation} \operatorname{logit}{(Y_{ij}=1|y^{c}_{ij})=\theta'\delta(y_{ij})} \end{equation}
+%where: 
+%\begin{itemize}
+%\item \( Y_{ij} \) is the random variable for the state of the actor pair \( i,j \) (with realization \( y_{ij} \)), 
+%\item \( y^{c}_{ij} \) signifies the complement of \( y_{ij} \), i.e., all dyads in the network other than \( y_{ij} \). 
+%\item \( \delta(y_{ij}) \) equals \( g(y^{+}_{ij})-g(y^{-}_{ij}) \), where 
+%\item \( y^{+}_{ij} \) is defined as \( y^{c}_{ij} \) along with \( y_{ij} \) set to 1,
+%\item \( y^{-}_{ij} \) is defined as \( y^{c}_{ij} \) along with \( y_{ij} \) set to 0.
+%\item That is, \( \delta(y_{ij}) \) equals the value of \( g(y) \) when \( y_{ij}=1 \) minus the value of \( g(y) \) when \( y_{ij}=0 \), but all other dyads are as in \( g(y) \). This emphasizes the log-odds of an individual tie conditional on all others. 
+%\item \( g(y) \) is called the \textit{statistics} of the model, and \(\delta(y_{ij}) \) the ``\textit{change statistics}'' for actor pair \( y_{ij} \) \cite{Krivitsky}.
+%\end{itemize}
+%
+%The model parameters are usually estimated using a pseudo-likelihood estimation (PLE) method or Markov chain Monte Carlo maximum likelihood estimation (MCMCMLE) \cite{SnijdersMCMCMLE}. 
+%
+%As in the case of our longitudinal study of dynamic networks, we need to use an extension of ERGMs, namely, Separable Temporal Exponential Family Random Graph Models (STERGM), which takes two models, one for the formation, and another for dissolution \cite{Krivitsky}.
+%
+%
+%\begin{table*}
+%\centering
+%\caption{Summary of expectations for the statistical model covariates, and sentiment analysis for each forking category. An expected ``no significant change'' is denoted by a dash ($-$) line.}
+%\label{tabelSummaryExpectationModelParameters}       
+%\begin{tabular}{m{0.4\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth}}
+%\hline\noalign{\smallskip}
+%\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%Outdegree & - & - & - & - \\ \hline
+%Reciprocity & decrease & - & - & - \\ \hline
+%Balance & - & - & - & - \\ \hline
+%3-cycle & decrease & decrease & - & - \\ \hline
+%Transitive triplets & - & - & - & - \\ \hline
+%Transitive ties & - & - & - & - \\ \hline
+%Betweenness & increase & - & increase & - \\ \hline
+%Clustering Coefficient & - & - & - & - \\ \hline
+%Preferential Attachment & - & - & - & - \\ \hline
+%Assortativity & - & increase & - & - \\
+%%CUSUM betweenness & sharp increase & - & increase & - \\ \hline
+%%Sentiment Analysis & increase in negativity & - & - & - \\
+%\noalign{\smallskip}\hline
+%\end{tabular}
+%\end{table*}
+%
+%\subsubsection{Model Covariates}
+%\label{modelCovariates}
+%What covariates to include depends on the context, and the data available for developers.
+%Table \ref{tableCovariates} lists several explanatory variables that can be included for modeling the community evolution. Table \ref{tabelSummaryExpectationModelParameters} lists what we expect to see associated with different types of forking. Specifically, for each of the following forking categories, we expect the following model parameters:
+%
+%For ``personal differences'' forks (U.F.), we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
+%
+%For ``more community-driven development'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
+%
+%For  ``technical differences'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
+%
+%For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table*}[!ht]
 \centering
