@@ -450,11 +450,41 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \end{enumerate}
 
 \subsection{Model Specification}
+The functions described above need to be supplied with a specific model for the rate, objective and gratification functions. These functions depend on unknown parameters that need to be estimated based on the data. In the following, we explain what functions can be included in these functions.
+
+\subsubsection{Objective Function}
+The following weighted sum represents the objective function:
+
+\begin{equation}
+f_i(\beta, x) = \sum_{k = 1}^{L} \beta_k s_{ik}(x)
+\end{equation}
+
+Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{ik}(x)$ can be the following \cite{Snijders2004}:
+
+\paragraph{Structural Effects}
+\begin{enumerate}
+\item{Reciprocity}
+\item{Closure}
+
+For example, 
+\begin{enumerate}
+\item Transitive triplets effect. 
+\item Transitive ties.
+\item Balance
+\item Number of actors at distance two
+\end{enumerate}
+\item{Three-cycles}
+\item{Betweenness}
+represents brokerage
+\item{Density}
+\item{Activity}
+\item{Actor-oriented covariate V-related popularity}
+\item{Actor-oriented covariate V-related activity}
+\item{Actor-oriented covariate V-related dissimilarity}
+
+\end{enumerate}
 
 
-\subsubsection{Covariates}
-xxx 
-list
 
 
 \pagebreak
