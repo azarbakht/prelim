@@ -418,9 +418,38 @@ In the case that a gratification function is included, the actor $i$ chooses to 
 f_i(x(i \mapsto j)) + g_i(x, j) + U(j)
 \end{equation} 
 
-And we will have \begin{equation}
+And we will have 
+\begin{equation}
+\label{ObjectiveFunctionWithGratification}
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))}
 \end{equation}
+
+\subsubsection{Markov Chain Intensity Matrix}
+The components of the actor-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ actors. 
+
+The Intensity matrix for this model is given by
+\begin{multline}
+\label{intensityMatrix}
+q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \mapsto j) | X(t) = x)}\big) \\ = \lambda_i(x) p_{ij}(x)
+\end{multline}
+
+Expression (\ref{intensityMatrix}) shows the rate at which actor $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
+
+\subsubsection{Markov Chain Simulation}
+The Markov chain can be simulated by repeating the following steps \cite{Snijders2004}:
+
+Start at time $t$ with directed graph $x$. 
+\begin{enumerate}
+\item Define $\lambda_{+} = \sum_{i=1}^g \lambda_i(x)$ and let $\Delta t$ be a random variable with the exponential distribution with parameter $\lambda_{+}(x)$.
+\item The actor $i$ is chosen randomly with probabilities $\frac{\lambda_{i}(x)}{\lambda_{+}(x)}$
+\item Given this $i$, choose actor $j$ randomly with probabilities 
+\begin{equation}
+p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))} \nonumber
+\end{equation}
+\item Now change $t$ to $t + \Delta t$ and change $x_{ij}$ to $(1 - x_{ij})$
+\end{enumerate}
+
+
 
 
 
