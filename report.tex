@@ -378,22 +378,22 @@ For each change, the model focuses on the actor whose tie is changing. We assume
 \subsubsection{Rate Function}
 
 The \textit{rate function} $\lambda_i(x)$ for actor $i$ is the rate at which in actor $i$'s outgoing ties changes occur. It models how frequently the actors make ministeps.\\
-The rate function is formally defined by
+The rate function is formally defined \cite{Snijders2004} by
 \begin{equation}
 \lambda_i(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X_{ij}(t + dt) \neq X_{ij}(t) \quad for \quad some \quad j \in \{i, ..., g\} | X(t) = x)}\big).
 \end{equation}
 
-The simplest specification of the rate of change is that a;; actors have the same rate of change of their ties. 
+The simplest specification of the rate of change is that all actors have the same rate of change of their ties. 
 
 \subsubsection{Objective Function}
 
 The \textit{objective function} $f_i(s)$ for actor $i$ is the value attached to the network configuration $x$. 
 
-The idea is that, given the opportunity to make a change in his outgoing tie variables $(X_{i1},...,X_{ig})$, actor $i$ selects the change that gives the greatest increase in the objective function. We assume that if there is difference between actors in their objective functions, these differences can be represented based on the model covariates. 
+The idea is that, given the opportunity to make a change in his outgoing tie variables $(X_{i1},...,X_{ig})$, actor $i$ selects the change that gives the greatest increase in the objective function. We assume that if there is difference between actors in their objective functions, these differences can be represented based on the model covariates \cite{Snijders2004}. 
 
 Let's denote the present network by $x = X(t)$. The new network that would be the result of a ministep (i.e. changing a single tie variable $x_{ij}$ into its opposite $1 - x_{ij}$ ) by actor $i$ is denoted by $x(i \mapsto j)$. This choice is modeled in the following way: 
 
-Let $U(j)$ denote a random variable which represents the attraction for $i$ to $j$. We assume that these $U_j$ are random variables distributed symmetrically about 0, and independently generated for each new ministep. In this way, The actor $i$ choose to change his tie variable with the other actor $j$ for whom the following value is the highest:
+Let $U(j)$ denote a random variable which represents the attraction for $i$ to $j$. We assume that these $U_j$ are random variables distributed symmetrically about 0, and independently generated for each new ministep. In this way, the actor $i$ chooses to change his tie variable with the other actor $j$ for whom the following value \cite{Snijders2004} is the highest:
 
 \begin{equation}
 f_i(x(i \mapsto j)) + U(j)
@@ -401,7 +401,7 @@ f_i(x(i \mapsto j)) + U(j)
 
 This is a myopic stochastic optimization rule: myopic because only the situation one step after the current step is considered; and stochastic because the unexplained part is modeled by a random variable $U(j)$. 
 
-$U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. In this way, the probability that actor $i$ chooses to change $x_{ij}$ for any particular $j$, given that such a change happens, is,
+$U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. In this way, the probability that actor $i$ chooses to change $x_{ij}$ for any particular $j$, given that such a change happens, is \cite{Snijders2004},
 
 \begin{equation}
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) - f_i(x))}
@@ -412,7 +412,7 @@ Sometimes the order in which changes occur makes a difference for the desirabili
 
 The \textit{gratification function} $g_i(x,j)$ for actor $i$ is the value attached to this actor (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
 
-In the case that a gratification function is included, the actor $i$ chooses to change $x_{ij}$ for that other actor $j$ for whom the following value is the highest:
+In the case that a gratification function is included, the actor $i$ chooses to change $x_{ij}$ for that other actor $j$ for whom the following value \cite{Snijders2004} is the highest:
 
 \begin{equation}
 f_i(x(i \mapsto j)) + g_i(x, j) + U(j)
@@ -424,10 +424,10 @@ And we will have
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))}
 \end{equation}
 
-\subsubsection{Markov Chain Intensity Matrix}
+\subsubsection{Markov Chain Transition Rate Matrix}
 The components of the actor-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ actors. 
 
-The Intensity matrix for this model is given by
+The transition rate matrix (also called intensity matrix), for this model is given by
 \begin{multline}
 \label{intensityMatrix}
 q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \mapsto j) | X(t) = x)}\big) \\ = \lambda_i(x) p_{ij}(x)
@@ -436,7 +436,7 @@ q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \maps
 Expression (\ref{intensityMatrix}) shows the rate at which actor $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
 
 \subsubsection{Markov Chain Simulation}
-The Markov chain can be simulated by repeating the following steps \cite{Snijders2004}:
+Our Markov chain can be simulated by repeating the following steps \cite{Snijders2004}:
 
 Start at time $t$ with directed graph $x$. 
 \begin{enumerate}
@@ -610,6 +610,7 @@ Figure \ref{figureKamailioGraph} shows four key frames from the Kamailio project
 \label{figureKamailioGraph} 
 \end{figure*} 
 
+
 \begin{figure*}[!htb]
 \centering
 \epsfig{file=Kamailio_chart.eps, width=\textwidth}
@@ -624,7 +625,7 @@ Figure \ref{figureKamailioStackedAreaChart} shows the betweenness centrality of 
 This technique can be used to identify the people involved in conflict and the date the fork happened with a months accuracy, even if the rival project does not emerge immediately.
 
 \subsubsection{Amarok Project}
-\begin{figure*}[H]
+\begin{figure*}
 \centering
 \epsfig{file=Amarok_chart.eps, width=\textwidth}
 \justifying
@@ -636,7 +637,7 @@ This technique can be used to identify the people involved in conflict and the d
 The video for the Amarok project fork is available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAmarokStachedAreaChart}. The results show that the network diameter has not increased over the period of the fork, which shows a resilient network. The video shows the dynamic changes in the network structure, again typical of a healthy network, rather than of simmering conflict. These indicators suggest that the Amarok fork in 2010 belongs to the ``addition of technical functionality'' rationale for forking, as there are no visible social conflict.
 
 \subsubsection{Asterisk Project}
-\begin{figure*}[H]
+\begin{figure*}
 \centering
 \epsfig{file=Asterisk_chart.eps, width=\textwidth}
 \justifying
@@ -654,7 +655,7 @@ We also visualized the dynamic graphs (available online) and as stacked area cha
 
 More importantly, the initial study showed the limitations of a \textit{network-specific} approach, and hence, we need to adopt a \textit{population-processes} approach for our proposed main study.
 
-\section{Yet To Be Done}
+\section{To Be Done}
 \label{YetToBeDone}
 
 We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category.
