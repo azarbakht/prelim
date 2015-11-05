@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  5 NOV 2015 11:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  5 NOV 2015 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,8 +459,7 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/tabto-ltx/tabto.sty
 Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
 \CurrentLineWidth=\dimen166
-)
-No file report.aux.
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -477,6 +476,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
@@ -527,67 +527,20 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
+
+(./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
+ [1
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `Storey' on page 1 undefined on input line 73.
-
-
-LaTeX Warning: Citation `NymanCodeForking' on page 1 undefined on input line 73
-.
-
-
-LaTeX Warning: Citation `Robles' on page 1 undefined on input line 75.
-
-
-LaTeX Warning: Citation `Bezrukova' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `Robles' on page 1 undefined on input line 79.
-
-
-LaTeX Warning: Reference `tableReasonsForForking' on page 1 undefined on input 
-line 79.
-
-
-LaTeX Warning: Citation `Baishakhi' on page 1 undefined on input line 79.
-
-
-LaTeX Warning: Citation `NymanHackersForking' on page 1 undefined on input line
- 79.
-
-
-LaTeX Warning: Citation `NymanToForkOrNotToFork' on page 1 undefined on input l
-ine 79.
-
-
-LaTeX Warning: Citation `NymanForkingSustainability' on page 1 undefined on inp
-ut line 79.
-
-
-LaTeX Warning: Citation `Syeed' on page 1 undefined on input line 79.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
+ination with the same identifier (name{page.1}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
 l.80 
       [1]
-
-LaTeX Warning: Citation `Forrest' on page 2 undefined on input line 85.
-
-
-LaTeX Warning: Citation `Oh' on page 2 undefined on input line 85.
-
-
-LaTeX Warning: Citation `Oh' on page 2 undefined on input line 85.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
@@ -597,182 +550,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
-[2]
-
-LaTeX Warning: Citation `Robles' on page 3 undefined on input line 91.
-
-
-LaTeX Warning: Citation `Robles' on page 3 undefined on input line 91.
-
-
-LaTeX Warning: Citation `Robles' on page 3 undefined on input line 110.
-
-
-LaTeX Warning: Citation `Robles' on page 3 undefined on input line 110.
-
-<ForkingReasonsPieChart.png, id=23, 877.2775pt x 641.39626pt>
+[2] <ForkingReasonsPieChart.png, id=114, 877.2775pt x 641.39626pt>
 File: ForkingReasonsPieChart.png Graphic file (type png)
 
 <use ForkingReasonsPieChart.png>
 Package pdftex.def Info: ForkingReasonsPieChart.png used on input line 112.
 (pdftex.def)             Requested size: 345.0pt x 252.23793pt.
 
-
-LaTeX Warning: Reference `relatedwork' on page 3 undefined on input line 115.
-
-
-LaTeX Warning: Reference `ResearchGoals' on page 3 undefined on input line 116.
-
-
-
-LaTeX Warning: Reference `methodology' on page 3 undefined on input line 116.
-
-
-LaTeX Warning: Reference `sectionInitialStudy' on page 3 undefined on input lin
-e 116.
-
-
-LaTeX Warning: Reference `timelineSection' on page 3 undefined on input line 11
-6.
-
-
-LaTeX Warning: Reference `threatsToValidity' on page 3 undefined on input line 
-116.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
-[3 <./ForkingReasonsPieChart.png>]
-
-LaTeX Warning: Citation `Bird' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `Guzzi' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `HowisonSocialDynamics' on page 4 undefined on input li
-ne 121.
-
-
-LaTeX Warning: Citation `HowisonFlossMole' on page 4 undefined on input line 12
-1.
-
-
-LaTeX Warning: Citation `Nakakoji' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `Sowe' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `Nakakoji' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `NymanForkingSustainability' on page 4 undefined on inp
-ut line 121.
-
-
-LaTeX Warning: Citation `NymanCodeForking' on page 4 undefined on input line 12
-1.
-
-
-LaTeX Warning: Citation `Ernst' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `Bird' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `Kunegis' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `Kuechler' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `AzarbakhtOSS2014' on page 4 undefined on input line 12
-1.
-
-
-LaTeX Warning: Citation `AzarbakhtINSNA2014' on page 4 undefined on input line 
-121.
-
-
-LaTeX Warning: Citation `DavidsonVLHCC2014' on page 4 undefined on input line 1
-21.
-
-
-LaTeX Warning: Citation `Torres' on page 4 undefined on input line 121.
-
-
-LaTeX Warning: Citation `CrowstonFLOSSWhatWeKnow' on page 4 undefined on input 
-line 121.
-
-
-LaTeX Warning: Citation `Baishakhi' on page 4 undefined on input line 123.
-
-
-LaTeX Warning: Citation `Baishakhi' on page 4 undefined on input line 123.
-
-
-LaTeX Warning: Citation `JoseWebKit' on page 4 undefined on input line 125.
-
-
-LaTeX Warning: Citation `JoseWebKit' on page 4 undefined on input line 125.
-
-
-LaTeX Warning: Citation `Zachary' on page 4 undefined on input line 127.
-
-
-LaTeX Warning: Citation `LeskovecGraphsOverTime' on page 4 undefined on input l
-ine 127.
-
-
-LaTeX Warning: Citation `LeskovecStatisticalPropertiesOfCommunityStructure' on 
-page 4 undefined on input line 127.
-
-
-LaTeX Warning: Citation `Zachary' on page 4 undefined on input line 127.
-
-
-LaTeX Warning: Citation `Ford' on page 4 undefined on input line 127.
-
-
-LaTeX Warning: Citation `Zachary' on page 4 undefined on input line 127.
-
-[4]
-
-LaTeX Warning: Citation `Asur' on page 5 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Asur' on page 5 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Asur' on page 5 undefined on input line 132.
-
-
-LaTeX Warning: Citation `Asur' on page 5 undefined on input line 132.
-
-
-LaTeX Warning: Citation `HowisonSocialDynamics' on page 5 undefined on input li
-ne 146.
-
-
-LaTeX Warning: Citation `Kunegis' on page 5 undefined on input line 148.
-
-
-LaTeX Warning: Reference `TableDiversityMeasuresKunegisEtAl' on page 5 undefine
-d on input line 148.
-
-
-LaTeX Warning: Citation `Kunegis' on page 5 undefined on input line 148.
-
-
-LaTeX Warning: Citation `Kunegis' on page 5 undefined on input line 152.
-
-
-LaTeX Warning: Citation `Kunegis' on page 5 undefined on input line 152.
-
-
+[3 <./ForkingReasonsPieChart.png>] [4]
 Underfull \hbox (badness 1769) in paragraph at lines 157--157
 []|\OT1/cmr/bx/n/10 Network is di-verse
  []
@@ -792,22 +581,7 @@ Overfull \hbox (1.50316pt too wide) in paragraph at lines 154--166
  [][] 
  []
 
-
-LaTeX Warning: Citation `Hannemann' on page 5 undefined on input line 168.
-
-[5]
-
-LaTeX Warning: Citation `Robles' on page 6 undefined on input line 174.
-
-
-LaTeX Warning: Reference `tableReasonsForForking' on page 6 undefined on input 
-line 174.
-
-
-LaTeX Warning: Reference `ResearchObjective' on page 6 undefined on input line 
-177.
-
-
+[5] [6]
 Underfull \hbox (badness 10000) in paragraph at lines 181--181
 
  []
@@ -818,24 +592,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--183
  []
 
 
-LaTeX Warning: Reference `methodology' on page 6 undefined on input line 185.
-
-[6]
 Underfull \hbox (badness 10000) in paragraph at lines 187--187
 
  []
 
 
-LaTeX Warning: Reference `statisticalModel' on page 7 undefined on input line 1
-91.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 193--193
 
  []
-
-
-LaTeX Warning: Reference `methodology' on page 7 undefined on input line 195.
 
 [7]
 Underfull \hbox (badness 10000) in paragraph at lines 236--236
@@ -852,29 +616,7 @@ Overfull \hbox (77.32205pt too wide) in paragraph at lines 234--253
  [][] 
  []
 
-
-LaTeX Warning: Citation `Robles' on page 8 undefined on input line 255.
-
-
-LaTeX Warning: Reference `tableReasonsForForking' on page 8 undefined on input 
-line 255.
-
-
-LaTeX Warning: Reference `statisticalModel' on page 8 undefined on input line 2
-55.
-
-
-LaTeX Warning: Reference `forkedProjectsDataCollected' on page 8 undefined on i
-nput line 255.
-
 [8]
-
-LaTeX Warning: Citation `Robles' on page 9 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Robles' on page 9 undefined on input line 259.
-
-
 Overfull \hbox (17.88652pt too wide) in paragraph at lines 263--264
 []|\OT1/cmr/bx/n/10 Collected?| 
  []
@@ -883,12 +625,6 @@ Overfull \hbox (17.88652pt too wide) in paragraph at lines 263--264
 Overfull \hbox (42.74895pt too wide) in paragraph at lines 261--283
  [][] 
  []
-
-
-LaTeX Warning: Citation `Robles' on page 9 undefined on input line 288.
-
-
-LaTeX Warning: Citation `Robles' on page 9 undefined on input line 288.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 292--292
@@ -1045,68 +781,13 @@ Overfull \hbox (25.4979pt too wide) in paragraph at lines 290--324
  [][] 
  []
 
-[9]
-
-LaTeX Warning: Reference `figureNodesEdgesTimeR' on page 10 undefined on input 
-line 335.
-
-
-LaTeX Warning: Reference `figureDiameterTimeR' on page 10 undefined on input li
-ne 335.
-
-
-LaTeX Warning: Reference `figureNodesEdgesTimeR' on page 10 undefined on input 
-line 337.
-
-
-LaTeX Warning: Reference `figureDiameterTimeR' on page 10 undefined on input li
-ne 337.
-
-
-LaTeX Warning: Reference `figureNodesEdgesTimeR' on page 10 undefined on input 
-line 337.
-
-
-LaTeX Warning: Reference `figureDiameterTimeR' on page 10 undefined on input li
-ne 337.
-
-[10]
-
-LaTeX Warning: Citation `Heider' on page 11 undefined on input line 346.
-
-
+[9] [10]
 Overfull \hbox (11.20383pt too wide) in paragraph at lines 346--346
  \OT1/cmr/bx/n/10 5.2.1.2 [] \OT1/cmr/m/n/10 The tra-di-tional \OT1/cmr/m/it/10
  network-specific \OT1/cmr/m/n/10 ap-proach as-sumes edges in so-ciograms
  []
 
-
-LaTeX Warning: Citation `Robins' on page 11 undefined on input line 346.
-
-
-LaTeX Warning: Citation `Robins' on page 11 undefined on input line 346.
-
-
-LaTeX Warning: Citation `Robins' on page 11 undefined on input line 346.
-
-
-LaTeX Warning: Citation `Robins' on page 11 undefined on input line 347.
-
-[11]
-
-LaTeX Warning: Citation `Heider' on page 12 undefined on input line 352.
-
-
-LaTeX Warning: Citation `Snijders2010' on page 12 undefined on input line 370.
-
-
-LaTeX Warning: Citation `Coleman1964' on page 12 undefined on input line 374.
-
-[12]
-
-LaTeX Warning: Citation `Snijders2004' on page 13 undefined on input line 376.
-
-[13]
+[11] [12] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
@@ -1118,25 +799,11 @@ Overfull \hbox (7.91727pt too wide) in paragraph at lines 428--429
  []
 
 
-LaTeX Warning: Reference `intensityMatrix' on page 14 undefined on input line 4
-36.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
-
-LaTeX Warning: Citation `Snijders2004' on page 14 undefined on input line 439.
-
 [14] [15]
-
-LaTeX Warning: Citation `Steglich' on page 16 undefined on input line 536.
-
-
-LaTeX Warning: Citation `Steglich' on page 16 undefined on input line 536.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 540--540
 []|\OT1/cmr/bx/n/10 Network
  []
@@ -1167,25 +834,6 @@ Overfull \hbox (36.0pt too wide) in paragraph at lines 538--554
 LaTeX Warning: Float too large for page by 69.63768pt on input line 554.
 
 
-LaTeX Warning: Citation `AzarbakhtOpenSym2013' on page 16 undefined on input li
-ne 557.
-
-
-LaTeX Warning: Citation `AzarbakhtOSS2013' on page 16 undefined on input line 5
-57.
-
-
-LaTeX Warning: Citation `AzarbakhtVLHCC2014' on page 16 undefined on input line
- 557.
-
-
-LaTeX Warning: Citation `Brandes' on page 16 undefined on input line 557.
-
-
-LaTeX Warning: Reference `figureKamailioStackedAreaChart' on page 16 undefined 
-on input line 557.
-
-
 LaTeX Warning: Reference `figureAmarokStachedAreaChart' on page 16 undefined on
  input line 557.
 
@@ -1203,7 +851,7 @@ Package epstopdf Info: Source file: <centrality.eps>
 o.pdf centrality.eps>
 (epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
-<centrality-eps-converted-to.pdf, id=135, 1004.75375pt x 998.73125pt>
+<centrality-eps-converted-to.pdf, id=331, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use centrality-eps-converted-to.pdf>
@@ -1211,43 +859,12 @@ Package pdftex.def Info: centrality-eps-converted-to.pdf used on input line 561
 .
 (pdftex.def)             Requested size: 241.49895pt x 240.0509pt.
 
-
-LaTeX Warning: Citation `Rocchini' on page 16 undefined on input line 562.
-
-
-LaTeX Warning: Citation `Rocchini' on page 16 undefined on input line 562.
-
-
-LaTeX Warning: Citation `Chakrabarti' on page 16 undefined on input line 566.
-
-
-LaTeX Warning: Citation `Chakrabarti' on page 16 undefined on input line 566.
-
-
-LaTeX Warning: Citation `Page' on page 16 undefined on input line 566.
-
-
 Overfull \hbox (2.61179pt too wide) in paragraph at lines 566--567
 []\OT1/cmr/m/n/10 There are many ways of look-ing at an in-di-vid-ual's im-por-
 tance/prestige/status
  []
 
 [16 <./centrality-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `Chakrabarti' on page 17 undefined on input line 568.
-
-
-LaTeX Warning: Citation `Bastian' on page 17 undefined on input line 571.
-
-
-LaTeX Warning: Citation `Bastian' on page 17 undefined on input line 572.
-
-
-LaTeX Warning: Citation `Fruchterman' on page 17 undefined on input line 572.
-
-
-LaTeX Warning: Citation `Noack' on page 17 undefined on input line 572.
-
 Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 (epstopdf)                    date: 2015-11-02 10:36:39
 (epstopdf)                    size: 30957 bytes
@@ -1258,7 +875,8 @@ Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 ed-to.pdf NodesEdgesTime.eps>
 (epstopdf)             \includegraphics on input line 580.
 Package epstopdf Info: Output file is already uptodate.
-<NodesEdgesTime-eps-converted-to.pdf, id=148, 744.7825pt x 697.60625pt>
+
+<NodesEdgesTime-eps-converted-to.pdf, id=358, 744.7825pt x 697.60625pt>
 File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
@@ -1277,23 +895,18 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)             \includegraphics on input line 587.
 Package epstopdf Info: Output file is already uptodate.
 
-<DiameterTime-eps-converted-to.pdf, id=157, 744.7825pt x 697.60625pt>
+<DiameterTime-eps-converted-to.pdf, id=371, 744.7825pt x 697.60625pt>
 File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
 Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 5
 87.
 (pdftex.def)             Requested size: 345.0pt x 323.15942pt.
-
-
-LaTeX Warning: Reference `figureKamailioGraph' on page 18 undefined on input li
-ne 593.
-
-[18 <./NodesEdgesTime-eps-converted-to.pdf>]
-<2.png, id=176, 502.87875pt x 520.94624pt> <use 2.png>
-<3.png, id=177, 576.1525pt x 636.3775pt> <use 3.png>
-<5.png, id=178, 591.20876pt x 576.1525pt> <use 5.png>
-<7.png, id=179, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
+ [18 <./NodesEdgesTime-eps-converted-to.pdf>] <2.png, id=390, 502.87875pt x 520
+.94624pt> <use 2.png>
+<3.png, id=391, 576.1525pt x 636.3775pt> <use 3.png>
+<5.png, id=392, 591.20876pt x 576.1525pt> <use 5.png>
+<7.png, id=393, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
@@ -1327,7 +940,7 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 ed-to.pdf Kamailio_chart.eps>
 (epstopdf)             \includegraphics on input line 615.
 Package epstopdf Info: Output file is already uptodate.
-<Kamailio_chart-eps-converted-to.pdf, id=180, 1229.59375pt x 506.89375pt>
+<Kamailio_chart-eps-converted-to.pdf, id=394, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
@@ -1345,28 +958,16 @@ erted-to.pdf Kamailio_diameter.eps>
 (epstopdf)             \includegraphics on input line 617.
 Package epstopdf Info: Output file is already uptodate.
 
-<Kamailio_diameter-eps-converted-to.pdf, id=181, 1229.59375pt x 145.54375pt>
+<Kamailio_diameter-eps-converted-to.pdf, id=395, 1229.59375pt x 145.54375pt>
 File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Kamailio_diameter-eps-converted-to.pdf used on input l
 ine 617.
 (pdftex.def)             Requested size: 345.0pt x 40.83635pt.
-
-
-LaTeX Warning: Reference `figureKamailioStackedAreaChart' on page 19 undefined 
-on input line 622.
-
-
-LaTeX Warning: Reference `figureKamailioStackedAreaChart' on page 19 undefined 
-on input line 622.
-
-
-LaTeX Warning: Citation `Hannemann' on page 19 undefined on input line 622.
-
-[19 <./DiameterTime-eps-converted-to.pdf>] [20 <./2.png (PNG copy)> <./3.png (P
-NG copy)> <./5.png (PNG copy)> <./7.png (PNG copy)> <./Kamailio_chart-eps-conve
-rted-to.pdf> <./Kamailio_diameter-eps-converted-to.pdf>]
+ [19 <./DiameterTime-eps-converted-to.pdf>] [20 <./2.png (PNG copy)> <./3.png (
+PNG copy)> <./5.png (PNG copy)> <./7.png (PNG copy)> <./Kamailio_chart-eps-conv
+erted-to.pdf> <./Kamailio_diameter-eps-converted-to.pdf>]
 
 LaTeX Warning: File `Amarok_chart.eps' not found on input line 629.
 
@@ -1378,7 +979,7 @@ Package epstopdf Info: Source file: <Amarok_chart.eps>
 -to.pdf Amarok_chart.eps>
 (epstopdf)             \includegraphics on input line 629.
 Package epstopdf Info: Output file is already uptodate.
-<Amarok_chart-eps-converted-to.pdf, id=213, 1233.60875pt x 521.95pt>
+<Amarok_chart-eps-converted-to.pdf, id=427, 1233.60875pt x 521.95pt>
 File: Amarok_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_chart-eps-converted-to.pdf>
@@ -1396,7 +997,7 @@ ted-to.pdf Amarok_diameter.eps>
 (epstopdf)             \includegraphics on input line 631.
 Package epstopdf Info: Output file is already uptodate.
 
-<Amarok_diameter-eps-converted-to.pdf, id=214, 1229.59375pt x 145.54375pt>
+<Amarok_diameter-eps-converted-to.pdf, id=428, 1229.59375pt x 145.54375pt>
 File: Amarok_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_diameter-eps-converted-to.pdf>
@@ -1419,7 +1020,7 @@ Package epstopdf Info: Source file: <Asterisk_chart.eps>
 ed-to.pdf Asterisk_chart.eps>
 (epstopdf)             \includegraphics on input line 641.
 Package epstopdf Info: Output file is already uptodate.
-<Asterisk_chart-eps-converted-to.pdf, id=217, 1223.57124pt x 523.9575pt>
+<Asterisk_chart-eps-converted-to.pdf, id=431, 1223.57124pt x 523.9575pt>
 File: Asterisk_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_chart-eps-converted-to.pdf>
@@ -1437,7 +1038,7 @@ erted-to.pdf Asterisk_diameter.eps>
 (epstopdf)             \includegraphics on input line 643.
 Package epstopdf Info: Output file is already uptodate.
 
-<Asterisk_diameter-eps-converted-to.pdf, id=218, 1230.5975pt x 145.54375pt>
+<Asterisk_diameter-eps-converted-to.pdf, id=432, 1230.5975pt x 145.54375pt>
 File: Asterisk_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_diameter-eps-converted-to.pdf>
@@ -1449,19 +1050,10 @@ ine 643.
 LaTeX Warning: Reference `figureAsteriskStackedAreaChart' on page 21 undefined 
 on input line 648.
 
-
-LaTeX Warning: Citation `Robles' on page 21 undefined on input line 651.
-
-
-LaTeX Warning: Citation `Hannemann' on page 21 undefined on input line 651.
-
 [21]
-
-LaTeX Warning: Reference `timeline' on page 22 undefined on input line 669.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 678.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -1486,28 +1078,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 774.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 774.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 774.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 934D34B9DF32D1A3260DABAC1583D11D;1036.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  934D34B9DF32D1A3260DABAC1583D11D;1036.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 774.
  ) 
 Here is how much of TeX's memory you used:
- 9023 strings out of 494985
- 136995 string characters out of 6180356
+ 9046 strings out of 494985
+ 137306 string characters out of 6180356
  277792 words of memory out of 5000000
- 11960 multiletter control sequences out of 15000+600000
+ 11977 multiletter control sequences out of 15000+600000
  10276 words of font info for 37 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  44i,24n,49p,2239b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1527,10 +1110,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (30 pages, 2132498 bytes).
+Output written on report.pdf (30 pages, 2136581 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
+ 583 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
  160 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
