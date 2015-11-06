@@ -14,6 +14,14 @@
 \usepackage{float}
 \usepackage{mathtools}
 
+\usepackage{xparse}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\NewDocumentCommand{\normL}{ s O{} m }{%
+  \IfBooleanTF{#1}{\norm*{#3}}{\norm[#2]{#3}}_{L_2(\Omega)}%
+}
+
 %\usepackage[demo]{graphicx}
 %\usepackage[margin=0.6in]{geometry}
 %\usepackage{wrapfig}
@@ -436,6 +444,7 @@ q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \maps
 Expression (\ref{intensityMatrix}) shows the rate at which actor $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
 
 \subsubsection{Markov Chain Simulation}
+\label{MarkovChainSimulationSteps}
 Our Markov chain can be simulated by repeating the following steps \cite{Snijders2004}:
 
 Start at time $t$ with directed graph $x$. 
@@ -517,13 +526,58 @@ $r_{ij1}(x) = x_{ij} x_{ji}$
 $r_{ij3}(x) = x_{ij}w_{ij}$
 \end{enumerate}
 
-
-
-
 \subsection{Markov Chain Monte Carlo (MCMC) Estimation}
-Network evolution can be simulated using a MCMC estimation method. The method of moments (MoM) can be used in the following way \cite{Snijders2004} \\
+Network evolution can be simulated using a MCMC estimation method. The method of moments (MoM) can be used in the following way \cite{Snijders2004}: \\
 
 Let $x^{obs}(t_m), m = 1, ..., M$ be the observed networks, and the objective function be $f_i(\beta, x) = \sum_{k=1}^L \beta_k s_{ik}(x)$. 
+In MoM, the goal is to determine the parameters $\beta_k$ such that, summed over $i$ and $m$, the expected values of the $s_{ik}(X(t_{m+1}))$ are equal to the observed values. In other words, MoM fits the \textit{observed} to the \textit{expected}. 
+The observed target values are:
+\begin{equation}
+s_k^{obs} = \sum_{m=1}^{M-1}\sum_{i=1}^g s_{ik}(x^{obs}(t_{m+1})) \quad (k = 1, ..., L)
+\end{equation}
+
+The simulations run as follows \cite{Snijders2004}:
+\begin{enumerate}
+\item The distance between two directed graphs $x$ and $y$ is defined as
+\begin{equation}
+\norm{x -y} = \sum_{i,j}\abs{x_{ij} - y_{ij}}
+\end{equation}
+and let the observed distances for m = 1, ..., M-1 be 
+\begin{equation}
+c_m = \norm{x^{obs}(t_{m+1})-x^{obs}(t_m)}
+\end{equation}
+\item Use the $\beta$ parameter vector and the rate of change $\lambda_{i}(x) = 1$
+
+\item Do the following for m = 1, ..., M-1
+\begin{enumerate}
+\item Define the time as 0, and start with $X_m(0) = x^{obs}(t_m)$
+\item Simulate the model, as described in \ref{MarkovChainSimulationSteps} until the first time point, where 
+\begin{equation}
+\norm{X_m(R_m) - x^{obs}(t_m)} = c_m
+\end{equation}
+\end{enumerate}
+\item For k = 1, ..., L, calculate the following statistics:
+\begin{equation}
+S_k = \sum_{m = 1}^{M-1}\sum_{i=1}^{g}s_{ik}(X_m(R_m))
+\end{equation}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \pagebreak
