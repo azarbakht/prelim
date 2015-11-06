@@ -568,7 +568,6 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 \subsection{Hypothesis Testing}
 \subsubsection{Single Parameter Test}
 Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors (S.E.). 
-
 For example, for testing the null hypothesis that a component $k$ of the parameter vector $\beta$ is 0, the test has approximately a standard normal distribution. For this null hypothesis: 
 \begin{equation}
 H_0: \beta_k = 0;
@@ -581,7 +580,7 @@ Given a p-value $\leq$ 0.05 would indicate a strong evidence that the network dy
 
 \subsubsection{Multi-Parameter Differences Between Groups}
 
-Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their standard errors $S.E._a$ and $S.E._b$, the differences between two groups can be tested using the following t-statistics, which under the null hypothesis of equal parameters has an approximately standard normal distribution:
+Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their standard errors $S.E._a$ and $S.E._b$, the differences between two groups can be tested using the following t-statistics. This t-statistics, under the null hypothesis of equal parameters, has an approximately standard normal distribution:
 \begin{equation}
 \frac{\hat{\beta_a}-\hat{\beta_b}}{\sqrt{S.E._a^2 + S.E._b^2}}
 \end{equation}
