@@ -566,10 +566,17 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 % $\mathcal{E}_{\hat{\beta}}S = s^{obs}$.
 
 \subsection{Hypothesis Testing}
-Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors. 
+Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors (S.E.). 
 
-
-
+For example, for testing the null hypothesis that a component $k$ of the parameter vector $\beta$ is 0, the test has approximately a standard normal distribution. For this null hypothesis: 
+\begin{equation}
+H_0: \beta_k = 0;
+\end{equation}
+the t-test can be done using the following t-statistic:
+\begin{equation}
+\frac{\hat{\beta_k}}{S.E.(\hat{\beta_k})}
+\end{equation}
+Given a p-value $\leq$ 0.05 would indicate a strong evidence that the network dynamics depends on the corresponding parameter's effect. 
 
 
 
