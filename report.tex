@@ -463,8 +463,8 @@ Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{i
 
 \paragraph{Structural Effects}
 \begin{enumerate}
-\item{Reciprocity}
-\item{Closure}
+\item{The reciprocity effect}
+\item{The closure effect}
 
 For example, 
 \begin{enumerate}
@@ -481,10 +481,49 @@ represents brokerage
 \item{Actor-oriented covariate V-related popularity}
 \item{Actor-oriented covariate V-related activity}
 \item{Actor-oriented covariate V-related dissimilarity}
+\item{in-in degree assortativity}
+\item{in-out degree assortativity}
+\item{out-in degree assortativity}
+\item{out-out degree assortativity}
+\end{enumerate}
 
+\paragraph{Behavior-related Effects\\}
+Let's denote a dependent behavior variable as $Z$.
+\begin{enumerate}
+\item{Shape effect: Explains the drive toward high values on Z}
+
+\item{Quadratic Shape Effect}
+\item{Similarity}
+\begin{enumerate}
+\item{average similarity}
+\item{total similarity}
+\end{enumerate}
+\item{average alter effect}
+\end{enumerate}
+
+\subsubsection{Gratification Function}
+The following weighted sum represents the gratification function:
+
+\begin{equation}
+g_i(\gamma, x, j) = \sum_{h = 1}^{H} \gamma_h r_{ijh}(x)
+\end{equation}
+
+Some possibile functions $r_{ijh}(x)$ are the following \cite{Snijders2004}:
+\begin{enumerate}
+\item Breaking off a reciprocated tie:\\ 
+$r_{ij1}(x) = x_{ij} x_{ji}$
+\item Number of indirected links for creating a new tie:\\ $r_{ij2}(x) = (1 - x_{ij}) \sum_h x_{ih} x_{hj}$
+\item Effect of dyadic covariate W on breaking off a tie:\\
+$r_{ij3}(x) = x_{ij}w_{ij}$
 \end{enumerate}
 
 
+
+
+\subsection{Markoc Chain Monte Carlo (MCMC) Estimation}
+
+\subsubsection{Method of Moments}
+Using the method of moments (MoM)
 
 
 \pagebreak
