@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  5 NOV 2015 19:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  5 NOV 2015 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,7 +1030,7 @@ Package epstopdf Info: Source file: <centrality.eps>
 o.pdf centrality.eps>
 (epstopdf)             \includegraphics on input line 684.
 Package epstopdf Info: Output file is already uptodate.
-<centrality-eps-converted-to.pdf, id=396, 1004.75375pt x 998.73125pt>
+<centrality-eps-converted-to.pdf, id=397, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use centrality-eps-converted-to.pdf>
@@ -1055,7 +1055,7 @@ ed-to.pdf NodesEdgesTime.eps>
 (epstopdf)             \includegraphics on input line 703.
 Package epstopdf Info: Output file is already uptodate.
 
-<NodesEdgesTime-eps-converted-to.pdf, id=426, 744.7825pt x 697.60625pt>
+<NodesEdgesTime-eps-converted-to.pdf, id=427, 744.7825pt x 697.60625pt>
 File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
@@ -1074,18 +1074,18 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)             \includegraphics on input line 710.
 Package epstopdf Info: Output file is already uptodate.
 
-<DiameterTime-eps-converted-to.pdf, id=440, 744.7825pt x 697.60625pt>
+<DiameterTime-eps-converted-to.pdf, id=441, 744.7825pt x 697.60625pt>
 File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
 Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 7
 10.
 (pdftex.def)             Requested size: 345.0pt x 323.15942pt.
- [20 <./NodesEdgesTime-eps-converted-to.pdf>] <2.png, id=458, 502.87875pt x 520
+ [20 <./NodesEdgesTime-eps-converted-to.pdf>] <2.png, id=459, 502.87875pt x 520
 .94624pt> <use 2.png>
-<3.png, id=459, 576.1525pt x 636.3775pt> <use 3.png>
-<5.png, id=460, 591.20876pt x 576.1525pt> <use 5.png>
-<7.png, id=461, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
+<3.png, id=460, 576.1525pt x 636.3775pt> <use 3.png>
+<5.png, id=461, 591.20876pt x 576.1525pt> <use 5.png>
+<7.png, id=462, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
@@ -1119,7 +1119,7 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 ed-to.pdf Kamailio_chart.eps>
 (epstopdf)             \includegraphics on input line 739.
 Package epstopdf Info: Output file is already uptodate.
-<Kamailio_chart-eps-converted-to.pdf, id=462, 1229.59375pt x 506.89375pt>
+<Kamailio_chart-eps-converted-to.pdf, id=463, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
@@ -1137,7 +1137,7 @@ erted-to.pdf Kamailio_diameter.eps>
 (epstopdf)             \includegraphics on input line 741.
 Package epstopdf Info: Output file is already uptodate.
 
-<Kamailio_diameter-eps-converted-to.pdf, id=463, 1229.59375pt x 145.54375pt>
+<Kamailio_diameter-eps-converted-to.pdf, id=464, 1229.59375pt x 145.54375pt>
 File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
@@ -1158,7 +1158,7 @@ Package epstopdf Info: Source file: <Amarok_chart.eps>
 -to.pdf Amarok_chart.eps>
 (epstopdf)             \includegraphics on input line 753.
 Package epstopdf Info: Output file is already uptodate.
-<Amarok_chart-eps-converted-to.pdf, id=495, 1233.60875pt x 521.95pt>
+<Amarok_chart-eps-converted-to.pdf, id=496, 1233.60875pt x 521.95pt>
 File: Amarok_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_chart-eps-converted-to.pdf>
@@ -1176,7 +1176,7 @@ ted-to.pdf Amarok_diameter.eps>
 (epstopdf)             \includegraphics on input line 755.
 Package epstopdf Info: Output file is already uptodate.
 
-<Amarok_diameter-eps-converted-to.pdf, id=496, 1229.59375pt x 145.54375pt>
+<Amarok_diameter-eps-converted-to.pdf, id=497, 1229.59375pt x 145.54375pt>
 File: Amarok_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_diameter-eps-converted-to.pdf>
@@ -1195,7 +1195,7 @@ Package epstopdf Info: Source file: <Asterisk_chart.eps>
 ed-to.pdf Asterisk_chart.eps>
 (epstopdf)             \includegraphics on input line 765.
 Package epstopdf Info: Output file is already uptodate.
-<Asterisk_chart-eps-converted-to.pdf, id=500, 1223.57124pt x 523.9575pt>
+<Asterisk_chart-eps-converted-to.pdf, id=501, 1223.57124pt x 523.9575pt>
 File: Asterisk_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_chart-eps-converted-to.pdf>
@@ -1213,7 +1213,7 @@ erted-to.pdf Asterisk_diameter.eps>
 (epstopdf)             \includegraphics on input line 767.
 Package epstopdf Info: Output file is already uptodate.
 
-<Asterisk_diameter-eps-converted-to.pdf, id=501, 1230.5975pt x 145.54375pt>
+<Asterisk_diameter-eps-converted-to.pdf, id=502, 1230.5975pt x 145.54375pt>
 File: Asterisk_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_diameter-eps-converted-to.pdf>
@@ -1251,13 +1251,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 898.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 898.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 898.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: C072805DD3E1F9CCFC8F2F93CC8C9DCC;1130.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: C072805DD3E1F9CCFC8F2F93CC8C9DCC;1130
+(rerunfilecheck)             After:  38EDE3873D6B89A49F1F899450FDB909;1202.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 898.
  ) 
 Here is how much of TeX's memory you used:
- 14502 strings out of 494985
- 251636 string characters out of 6180356
+ 14503 strings out of 494985
+ 251652 string characters out of 6180356
  367928 words of memory out of 5000000
  17308 multiletter control sequences out of 15000+600000
  10276 words of font info for 37 fonts, out of 8000000 for 9000
@@ -1279,10 +1286,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (33 pages, 2816911 bytes).
+Output written on report.pdf (33 pages, 2817205 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 585 compressed objects within 6 object streams
- 207 named destinations out of 1000 (max. 500000)
+ 680 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
+ 208 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
