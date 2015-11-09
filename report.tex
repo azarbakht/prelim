@@ -588,9 +588,19 @@ Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their sta
 \subsubsection{Multivariate Analysis of Variance Between Multiple Groups}
 To test the statistical significance of the mean differences between groups (in our case, the different categories of forking), we may use Multivariate Analysis of Variance (MANOVA) method. In contrast to ANOVA, MANOVA method tests for the difference in two or more vectors of means. 
 
-\subsection{Research Questions}
+\subsection{Research Questions and Hypotheses}
 
-\pagebreak
+\subsubsection{Null Hypothesis \# 1:} 
+There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in H.F. category and No.F. category.
+
+\subsubsection{Null Hypothesis \# 2:} 
+There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in O.F. category and No.F. category.
+
+\subsubsection{Null Hypothesis \# 3:} 
+There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in H.F. category and O.F. category.
+
+
+
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -666,7 +676,7 @@ To test the statistical significance of the mean differences between groups (in 
 
 \begin{table*}[!ht]
 \centering
-\caption{Explanatory variables to include in the initial model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
+\caption{Examples of explanatory variables to include in the model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
 \label{tableCovariates}
 \begin{tabular}{m{0.2\textwidth} m{0.3\textwidth} m{0.5\textwidth}}
 \hline\noalign{\smallskip}
@@ -680,11 +690,11 @@ Covariate similarity & \begin{equation*} \sum_j x_{ij} sim_{ij} \end{equation*} 
 Transitive triplets & \begin{equation*} \sum_j x_{ij} \sum_h x_{ih}x_{hj} \end{equation*} &  Tendency toward triadic closure of the neighborhood (linear effect of the number of indirect ties) \\
 Transitive ties & \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} & Tendency toward triadic closure of the neighborhood (binary effect of indirect ties) \\
 Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*} & Main effect of alter's behavior (covariate determines popularity in network) \\ 
-Covariate ego & \begin{equation*} \sum_j x_{ij} (z_i - \bar z) \end{equation*} & Main effect of ego's behavior on tie preference (covariate determines activity in network) \\
 Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*} & Tendency to keep others at social distance 2 (negative measure of triadic closure; lower means stronger network closure) \\ 
-\noalign{\smallskip}\hline
+\noalign{\smallskip}
 \end{tabular}
 \end{table*}
+
 \section{Initial study: Temporal network-specific analysis}
 \label{sectionInitialStudy}
 In our initial study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured the betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
