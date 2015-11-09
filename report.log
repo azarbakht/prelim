@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  9 NOV 2015 12:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  9 NOV 2015 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,7 +1053,13 @@ Overfull \hbox (62.47102pt too wide) in paragraph at lines 565--567
 S[]; R[]; :::; R[]\OT1/cmr/m/n/10.95 )$.
  []
 
-[20] [21]
+[20]
+Overfull \hbox (1.77806pt too wide) in paragraph at lines 588--588
+[]\OT1/cmr/bx/n/10.95 Multivariate Anal-y-sis of Vari-ance Be-tween Mul-ti-ple 
+Groups 
+ []
+
+[21]
 Underfull \hbox (badness 3601) in paragraph at lines 673--673
 []|\OT1/cmr/bx/n/10.95 Network ef-
  []
@@ -1336,7 +1342,7 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (39 pages, 2818055 bytes).
+Output written on report.pdf (39 pages, 2817912 bytes).
 PDF statistics:
  718 PDF objects out of 1000 (max. 8388607)
  618 compressed objects within 7 object streams
