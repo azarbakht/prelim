@@ -375,7 +375,7 @@ We may explain U.F. forked projects because of ``more community-driven developme
 
 Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another actor, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks. (status quo counts twice: maintaining a non-connection or maintaining a connection). We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
 
-The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of actors changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process.
+The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of actors changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as OpenSourceDeveloper-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
 
 Let the data for our statistical actor-oriented model be $M$ repeated observations on a network with \textit{g} actors. The $M$ observed networks (at least two) are represented as directed graphs with adjacency matrices $X(t_m) = (X_{ij}(t_m)))$ for $m = 1,...,M$, where $i$ and $j$ range from a to $g$. The variable $X_{ij}$ shows whether at time $t$ there exists a tie from $i$ to $j$ (value 1) or not (value 0). Be definition, $\forall i, X_{ii}=0$ (i.e. the diagonal of the adjacency matrices).
 
@@ -385,7 +385,7 @@ For each change, the model focuses on the actor whose tie is changing. We assume
 
 \subsubsection{Rate Function}
 
-The \textit{rate function} $\lambda_i(x)$ for actor $i$ is the rate at which in actor $i$'s outgoing ties changes occur. It models how frequently the actors make ministeps.\\
+The rate function for a developer is the rate at which that developer's outgoing connections changes occur. Or, more formally, we can say, the \textit{rate function} $\lambda_i(x)$ for actor $i$ is the rate at which in actor $i$'s outgoing ties changes occur. It models how frequently the actors make ministeps.\\
 The rate function is formally defined \cite{Snijders2004} by
 \begin{equation}
 \lambda_i(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X_{ij}(t + dt) \neq X_{ij}(t) \quad for \quad some \quad j \in \{i, ..., g\} | X(t) = x)}\big).
