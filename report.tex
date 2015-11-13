@@ -11,7 +11,7 @@
 \usepackage{url}
 \usepackage{ragged2e}
 \usepackage[hidelinks]{hyperref}
-\usepackage{float}
+\usepackage{float}			% to suppress floating of images and to force table figure position
 \usepackage{mathtools}
 \usepackage{xparse}
 
@@ -232,8 +232,8 @@ Detecting change patterns, requires gathering  relevant data, cleaning it, and a
 \subsubsection{Not all forks are equal: Undesirable forking}
 To find patterns uniquely associated with undesirable forks, we need to gather data on projects from the following three categories: 
 
-\begin{table}
-\caption{Not all forks are bad; The three types of projects for which data is collected}
+\begin{table} [H]
+\caption{The three types of projects for which data is collected in this study}
 \label{tableUndesirableForkingDataCollect} 
 \begin{tabular}{p{0.6\columnwidth} p{0.3\columnwidth}}
 \hline\noalign{\smallskip}
@@ -273,7 +273,7 @@ GlusterFS & Not forked & Not forked & No.F.\\
 \end{tabular}
 \end{table*}
 
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. For No.F. category, we chose well-known, stable projects, that,  have been active long enough (to experience turbulence); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. 
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. For No.F. category, we chose well-known, stable projects, that,  have been active long enough (to experience turbulence); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. 
 
 \begin{table*}
 \centering
