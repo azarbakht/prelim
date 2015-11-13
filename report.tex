@@ -87,6 +87,7 @@ In this study, we propose using statistical modeling of longitudinal social coll
 
 This may help predict formation of unhealthy dynamics, which gives the community a heads-up when they can still take action to ensure the sustainability of the project.
 
+\pagebreak
 
 \section{Introduction}
 \label{introduction}
@@ -134,6 +135,7 @@ Legal issues & X.Org \& XFree\\
 
 This proposal report is organized as follows: Section \ref{relatedwork} presents related literature on open source social communities, the gap in the literature, and discusses why the issue needs to be studied. 
 Then, Section \ref{ResearchGoals} presents our research objective and research questions. After that, in section \ref{methodology} presents how data gathering, statistical modeling, and qualitative analysis are proposed to be done, as well as our initial hypotheses. In section \ref{sectionInitialStudy}, we present results of our initial study. Section \ref{timelineSection}, shows the proposed timeline for the research and the author's graduation. And lastly, section \ref{threatsToValidity} we discuss the threats to validity.\\
+\pagebreak
 
 \section{Related Work}
 \label{relatedwork}
@@ -167,7 +169,7 @@ The communication patterns of free and open source software developers in a bug 
 
 The tension between diversity and homogeneity in a community was studied by Kunegis et al. \cite{Kunegis}. They defined five network statistics, listed in Table \ref{TableDiversityMeasuresKunegisEtAl}, used to examine the evolution of large-scale networks over time. They found that except for the diameter, all other measures of diversity shrunk as the networks matured over their lifespan. Kunegis et al. \cite{Kunegis} argued that one possible reason could be that the community structure consolidates as projects mature.
 
-\begin{table*}[!htbp]
+\begin{table}
 \centering
 \caption{The measures of diversity used by Kunegis et al. \cite{Kunegis}}
 \label{TableDiversityMeasuresKunegisEtAl}
@@ -183,15 +185,15 @@ Random walks  & Random walks have high probability of return & Weighted spectral
 Control of nodes  & Nodes are hard to control & Number of driver nodes \\
 \noalign{\smallskip}\hline
 \end{tabular}
-\end{table*}
+\end{table}
 
 Community dynamics was the focus of a more recent study by Hannemann and Klamma \cite{Hannemann} on three open source bioinformatics communities. They measured "age" of users, as starting from their first activity and found survival rates and two indicators for significant changes in the core of the community. They identified a survival rate pattern of 20-40-90\%, meaning that only 20\% of the newcomers survived after their first year, 40\% of the survivors survived through the second year, and 90\% of the remaining ones, survived over the next years. As for the change in the core, they suggested that a falling maximum betweenness in combination with an increasing network diameter as an indicator for a significant change in the core, e.g., retirement of a central person in the community. Our initial network-specific study built on their findings, and the evolution of betweenness centralities and network diameters for the projects in our study are explained in the following sections.
-n
+\pagebreak
 
 \section{Research Goals}
 \label{ResearchGoals}
 
-Social interactions reflect the changes the community goes through, and so, it can be used to describe the context surrounding a forking event. Social interactions in FOSS can happen, for example, in the form of mailing list email correspondence, bug report issue follow-ups, and source code co-authoring. At least, three of the six main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} and Figure \ref{tableReasonsForForking} are socially related, and so, their effects should be reflected in the developers' interactions data. These three reasons are (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. Given the data, these are the three categories that may be identified using longitudinal modeling of the interactions, without digging into the contents of the communications. The other categories could be the focus of another research study, whose scope does not have a large overlap with the scope of this study. \\
+Social interactions reflect the changes the community goes through, and so, it can be used to describe the context surrounding a forking event. Social interactions in FOSS can happen, for example, in the form of mailing list email correspondence, bug report issue follow-ups, and source code co-authoring. At least, three of the seven main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} and Figure \ref{tableReasonsForForking} are socially related, and so, their effects should be reflected in the developers' interactions data. These three reasons are (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. Given the data, these are the three categories that may be identified using longitudinal modeling of the interactions, without digging into the contents of the communications. The other categories could be the focus of another research study, whose scope does not have a large overlap with the scope of this study. \\
 As an example, if a fork occurred because of a desire for ``more community-driven development'', we expect to see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community. In other words, in this case, the power stays in the hands of the same people throughout, as new people come and go. 
 
 In this study, we plan to analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time.
@@ -221,6 +223,7 @@ What quantitative measure(s) can be used as an early warning sign of an inflecti
 %
 
 %To complement the study, a literature review and web research will be done to gather data that was written about the project, before the fork and after the fork dates. The content of the messages send and received by the top contributors of the project in the month leading to the forking events can be a read and analyzed to complement the findings of the interview study. 
+\pagebreak
 
 \section{Methodology}
 \label{methodology}
@@ -228,8 +231,9 @@ What quantitative measure(s) can be used as an early warning sign of an inflecti
 Detecting change patterns, requires gathering  relevant data, cleaning it, and analyzing it. In the following subsections, we describe the proposed process in detail. 
 
 \subsection{Phase 1: Data Collection}
+\label{DataCollection}
 
-\subsubsection{Not all forks are equal: Undesirable forking}
+\subsubsection{The Case of Undesirable forking}
 To find patterns uniquely associated with undesirable forks, we need to gather data on projects from the following three categories: 
 
 \begin{table} [H]
@@ -246,36 +250,9 @@ No forking at all & No.F. \\
 \end{tabular}
 \end{table}
 
-Our results will only be valid if the patterns found in the \textit{undesirable forking} (U.F.) category are unique to that category, and is not shared in the other two control groups (H.F. and No.F.).
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 forked projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} the forking was recent, i.e., happened after the year 2000, \textbf{b)} its data was existent and available to access and download online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers, which means it would be large enough to make a sociogram for a meaningful statistical analysis. For the No.F. category, we chose well-known, stable projects that have been active long enough (to experience turbulence); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. 
 
-\begin{table*}
-\centering
-\caption{Projects in U.F. H.F., and No.F. categories  for our study}
-\label{forkedProjectsDataCollected}
-\begin{tabular}{p{0.4\textwidth} p{0.48\textwidth} p{0.135\textwidth} p{0.07\textwidth}}
-\hline\noalign{\smallskip}
-\textbf{Projects} & \textbf{Reason for forking} & \textbf{Year forked} & \textbf{Type}\\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Kamailio \& OpenSIPS & Differences among developer team & 2008 & U.F.\\ \hline
-ffmpeg \& libav & Differences among developer team & 2011 & U.F.\\ \hline
-Asterisk \& Callweaver & More community-driven development & 2007 & U.F.\\ \hline
-rdesktop \& FreeRDP  & More community-driven development & 2010 & U.F.\\ \hline
-freeglut \& OpenGLUT & More community-driven development & 2004 & U.F.\\ \hline
-Amarok \& Clementine Player & Technical (Addition of functionality) & 2010 & H.F.\\ \hline
-ApacheCouchDB \& BigCouch & Technical (Addition of functionality) & 2010 & H.F.\\ \hline
-Pidgin \& Carrier & Technical (Addition of functionality) & 2008 & H.F.\\ \hline
-MPlayer \& MPlayerXP & Technical (Addition of functionality) & 2005 & H.F.\\ \hline
-Ceph  & Not forked & Not forked & No.F.\\ \hline
-Python & Not forked & Not forked & No.F.\\ \hline
-OpenStack Neutron & Not forked & Not forked & No.F.\\ \hline
-GlusterFS & Not forked & Not forked & No.F.\\ 
-\noalign{\smallskip}\hline
-\end{tabular}
-\end{table*}
-
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, as listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as a U.F. or H.F. if \textbf{a)} it was recent, i.e., happened after the year 2000, \textbf{b)} its data was accessible online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers; large enough to make a sociogram for our statistical analysis. For No.F. category, we chose well-known, stable projects, that,  have been active long enough (to experience turbulence); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. 
-
-\begin{table*}
+\begin{table}
 \centering
 \caption{All projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
 \label{tabelProjectsForkedCat1PersonalDiffereces}       
@@ -301,10 +278,10 @@ Aldrin & Neil & 2009, ? & No & U.A. \\ \hline
 Ffmpeg & libav & 2011, Mar & Yes & Yes\\
 \noalign{\smallskip}\hline
 \end{tabular}
-\end{table*}
+\end{table}
 
 
-\begin{table*}
+\begin{table}
 \centering
 \caption{All projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
 \label{tableProjectsForkedCat2CommunityDriven}
@@ -342,7 +319,33 @@ OpenOffice.org & LibreOffice & 2010, Sept & Only after Jun 2011 & U.A. \\ \hline
 Redmine & ChiliProject & 2011, Feb & Yes, but scarce & U.A. \\
 \noalign{\smallskip}\hline
 \end{tabular}
-\end{table*}
+\end{table}
+
+
+\begin{table}
+\centering
+\caption{Projects in U.F. H.F., and No.F. categories selected based on the criteria described in section \ref{DataCollection} for our study}
+\label{forkedProjectsDataCollected}
+\begin{tabular}{p{0.39\textwidth} p{0.48\textwidth} p{0.135\textwidth} p{0.07\textwidth}}
+\hline\noalign{\smallskip}
+\textbf{Projects} & \textbf{Reason for forking} & \textbf{Year forked} & \textbf{Type}\\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Kamailio \& OpenSIPS & Differences among developer team & 2008 & U.F.\\ \hline
+ffmpeg \& libav & Differences among developer team & 2011 & U.F.\\ \hline
+Asterisk \& Callweaver & More community-driven development & 2007 & U.F.\\ \hline
+rdesktop \& FreeRDP  & More community-driven development & 2010 & U.F.\\ \hline
+freeglut \& OpenGLUT & More community-driven development & 2004 & U.F.\\ \hline
+Amarok \& Clementine Player & Technical (Addition of functionality) & 2010 & H.F.\\ \hline
+Apache CouchDB \& BigCouch & Technical (Addition of functionality) & 2010 & H.F.\\ \hline
+Pidgin \& Carrier & Technical (Addition of functionality) & 2008 & H.F.\\ \hline
+MPlayer \& MPlayerXP & Technical (Addition of functionality) & 2005 & H.F.\\ \hline
+Ceph  & Not forked & - & No.F.\\ \hline
+Python & Not forked & - & No.F.\\ \hline
+OpenStack Neutron & Not forked & - & No.F.\\ \hline
+GlusterFS & Not forked & - & No.F.\\ 
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
 
 \subsubsection{Data Sources}
 The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} (Proposed) The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. Using sentiment analysis, we can quantify the level of positive/negative language usage, and may detect events, for example, in-fighting where people involved in the conflict exchange negative sentiments.
@@ -699,7 +702,7 @@ There are no statistically significant differences in vectors of means of the ac
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table*}
+\begin{table}
 \centering
 \caption{Examples of explanatory variables to include in the model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
 \label{tableCovariates}
@@ -718,7 +721,9 @@ Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*}
 Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*} & Tendency to keep others at social distance 2 (negative measure of triadic closure; lower means stronger network closure) \\ 
 \noalign{\smallskip}
 \end{tabular}
-\end{table*}
+\end{table}
+
+\pagebreak
 
 \section{Initial study: Temporal network-specific analysis}
 \label{sectionInitialStudy}
@@ -823,6 +828,8 @@ We also visualized the dynamic graphs (available online) and as stacked area cha
 
 More importantly, the initial study showed the limitations of a \textit{network-specific} approach, and hence, we need to adopt a \textit{population-processes} approach for our proposed main study.
 
+\pagebreak
+
 \section{To Be Done}
 \label{YetToBeDone}
 
@@ -831,6 +838,8 @@ We proposed to model the developers interactions statistically, to find the popu
 Data collection for mailing list archives is completed. The issue tracking system, and source code interactions data is in the progress. Once all data is collected an cleaned, we will do the statistical modeling. Next, we will conduct the interview study, which will conclude the proposed research. 
 
 We expect to find patterns specific to each category, which then may be used to identify early warning signs of forking. The identification of such measures may inform those who are interested in the sustainability of their project community to stay informed and take action to amend undesirable dynamics. 
+
+\pagebreak
 
 \section{Timeline}
 \label{timelineSection}
@@ -859,6 +868,8 @@ June 2016 & Defense (Hopefully) & \\
 \end{tabular}
 \label{timeline}
 \end{table}
+
+\pagebreak
 
 \section{Threats to Validity}
 \label{threatsToValidity}
