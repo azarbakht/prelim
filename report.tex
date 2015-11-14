@@ -49,6 +49,10 @@
 
 \setcounter{secnumdepth}{10}
 
+\setcounter{tocdepth}{3}
+
+\usepackage[toc,page]{appendix}
+
 %%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -70,6 +74,14 @@ Prof. Drew Gerkey\\
 }
 
 \maketitle
+
+\tableofcontents
+
+\thispagestyle{empty}
+\listoffigures
+\listoftables
+
+\pagebreak
 
 \section{Abstract}
 
@@ -109,7 +121,7 @@ Our research proposes using temporal social network analysis to study the evolut
 
 \begin{table}[!ht]
 \centering
-\caption{The main reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
+\caption[The main reasons for forking]{The main reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
 \label{tableReasonsForForking}
 \begin{tabular}{p{0.5\columnwidth} p{0.4\columnwidth}}
 \hline\noalign{\smallskip}
@@ -128,7 +140,7 @@ Legal issues & X.Org \& XFree\\
 
 \begin{figure} [!ht]
 \centering
-\caption{The frequency of reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
+\caption[The frequency of reasons for forking]{The frequency of reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
 \label{figureReasonsForForkingPieChart}
 \epsfig{file=ForkingReasonsPieChart.png, width=\columnwidth}
 \end{figure}
@@ -199,7 +211,7 @@ As an example, if a fork occurred because of a desire for ``more community-drive
 In this study, we plan to analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time.
 Specifically, our research objectives and research questions are listed in the following subsections \ref{ResearchObjective} and \ref{RQs}.
 
-\subsection{Research Objective:}
+\subsection{Research Objectives}
 \label{ResearchObjective}
 \subsection*{What are the social patterns associated with different types of undesirable forking?\\}
 
@@ -237,7 +249,7 @@ Detecting change patterns, requires gathering  relevant data, cleaning it, and a
 To find patterns uniquely associated with undesirable forks, we need to gather data on projects from the following three categories: 
 
 \begin{table} [H]
-\caption{The three types of projects for which data is collected in this study}
+\caption[Undesirable forking vs. Other categories]{The three types of projects for which data is collected in this study}
 \label{tableUndesirableForkingDataCollect} 
 \begin{tabular}{p{0.6\columnwidth} p{0.3\columnwidth}}
 \hline\noalign{\smallskip}
@@ -254,7 +266,7 @@ To find projects in U.F. and H.F. categories, we looked at the list of all signi
 
 \begin{table}
 \centering
-\caption{All projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
+\caption[List of all projects forked because of ``\textit{personal differences among the developer team}'' (U.F.)]{List of all projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
 \label{tabelProjectsForkedCat1PersonalDiffereces}       
 \begin{tabular}{m{0.2\columnwidth} m{0.15\columnwidth} m{0.2\columnwidth} m{0.3\columnwidth} m{0.1\columnwidth}}
 \hline\noalign{\smallskip}
@@ -283,7 +295,7 @@ Ffmpeg & libav & 2011, Mar & Yes & Yes\\
 
 \begin{table}
 \centering
-\caption{All projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
+\caption[List of all projects forked because of the need for ``\textit{more community-driven development}'' (U.F.)]{List of all projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order. U.A. means Unavailable}
 \label{tableProjectsForkedCat2CommunityDriven}
 \begin{tabular}{m{0.2\textwidth} m{0.2\textwidth} m{0.15\textwidth} m{0.2\textwidth} m{0.2\textwidth}}
 \hline\noalign{\smallskip}
@@ -324,7 +336,7 @@ Redmine & ChiliProject & 2011, Feb & Yes, but scarce & U.A. \\
 
 \begin{table}
 \centering
-\caption{Projects in U.F. H.F., and No.F. categories selected based on the criteria described in section \ref{DataCollection} for our study}
+\caption{List of projects in U.F. H.F., and No.F. categories selected based on the criteria described in section \ref{DataCollection} for our study}
 \label{forkedProjectsDataCollected}
 \begin{tabular}{p{0.39\textwidth} p{0.48\textwidth} p{0.135\textwidth} p{0.07\textwidth}}
 \hline\noalign{\smallskip}
@@ -380,24 +392,12 @@ One may wonder why we should look beyond the observed network. We need to find a
 
 \item  Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
 
-\item 
 \end{enumerate}
 
-\subsubsection{Theories}
-Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following three theories about human behavior are the bases for the hypotheses in this research study. They are complement each other in term of explaining the context of forking .
 
-\paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
-
-We may explain U.F. forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
-%
 %\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
 %
 %We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
-
-\paragraph{} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
-
-We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
-
 
 \subsection{Statistical Model}
 \label{statisticalModel}
@@ -630,6 +630,20 @@ There are no statistically significant differences in vectors of means of the ac
 There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in U.F. category and H.F. category.
 
 
+\subsection{Predictions}
+Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following three theories about human behavior are the bases for the hypotheses in this research study. They are complement each other in term of explaining the context of forking .
+
+\subsubsection{Behavior Models}
+\paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
+
+We may explain U.F. forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
+
+\paragraph{} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
+
+We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
+
+
+
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter's effect is significant, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
@@ -702,9 +716,10 @@ There are no statistically significant differences in vectors of means of the ac
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \begin{table}
 \centering
-\caption{Examples of explanatory variables to include in the model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
+\caption[Examples of explanatory effects to include in the statistical model]{Examples of explanatory variables to include in the statistical model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
 \label{tableCovariates}
 \begin{tabular}{m{0.2\textwidth} m{0.3\textwidth} m{0.5\textwidth}}
 \hline\noalign{\smallskip}
@@ -722,111 +737,6 @@ Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}
 \noalign{\smallskip}
 \end{tabular}
 \end{table}
-
-\pagebreak
-
-\section{Initial study: Temporal network-specific analysis}
-\label{sectionInitialStudy}
-In our initial study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured the betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
-
-\begin{figure}[!ht]
-\centering
-\epsfig{file=centrality.eps, width=0.7\columnwidth}
-\caption{Heat-map color-coded examples are shown above. Nodes with higher centrality metric are colored with warmer color: red is the warmest color here. The same network is analyzed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
-\label{figureCentrality}
-\end{figure}
-
-There are many ways of looking at an individual's importance/prestige/status within a network. One is called \textit{closeness centrality}. The \textit{farness} of a node is defined as the sum of its distances to all other nodes. The \textit{closeness} of a node is defined as the inverse of the farness. More informally, the more central a node is the lower its total distance to all other nodes. \textit{Closeness centrality} can be used as a measure of how fast information will spread through the network \cite{Chakrabarti}. Secondly, if we are looking for people who can serve as bridges between two distinct communities, we could measure the node's \textit{betweenness centrality}. Betweenness centralities for mediators who act as intermediate entities between other nodes are higher \cite{Chakrabarti}.  Third, if cross-community collaboration is the focus, we can measure \textit{edge betweenness centrality}.  Edges connecting nodes from different communities have higher edge centrality values. In the community collaboration graph, edge betweenness or stress of an edge is the number of these shortest paths that the edge belongs to, considering all shortest paths between all pairs of nodes in the graph. Fourth, one can claim that certain people in the community are more important than others, and whoever is close to them, is relatively more important than others. In graph terms, this is measured by \textit{eigenvector centrality}, which is based on the assumption that connections to high-profile nodes contribute more to the importance of a node. Google's PageRank link-analysis algorithm \cite{Page} is a variant of the eigenvector centrality measure. In short, centrality measures have been used in several studies to identify key player in a community.
-
-In addition to the centrality measures, we planned to look into the \textit{resilience} of the community as well. By resilience, we mean how well the network holds its structure and form when some parts of it are deleted, added, or changed. For a graph, the resilience of a graph is a measure of its robustness to node or edge failures. This could occur for instance when an influential member of the community leaves. Many real-world graphs are resilient to random failures but vulnerable to targeted attacks. Resilience can be related to the \textit{graph diameter}: a graph whose diameter does not increase much on node or edge removal has higher resilience \cite{Chakrabarti}.
-
-\subsection{Visualization}
-Several visualization techniques and tools are used in the field of social network analysis, for instance, Gephi \cite{Bastian}, which is a FOSS tool for exploring and manipulating networks. It is capable of handling large networks with more than 20,000 nodes and features several SNA algorithms. We used it for dynamic network visualization.
-We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos\footnote{\label{footnote1}Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}} show how the community graph is structured, using a continuous force-directed linear-linear model, in which the nodes are positioned near or far from one another proportional to the graph distance between them. This results in a graph shape between Fr\"{u}chterman \& Rheingold's \cite{Fruchterman} layout and Noack's LinLog \cite{Noack}.
-
-
-\subsection{Initial study results and discussion}
-\label{results}
-
-\begin{figure}[!Ht]
-\centering
-\epsfig{file=NodesEdgesTime.eps, width=\columnwidth}
-\caption{Nodes and Edges over Time. The number of nodes and number of edges are normalized to the range [0,1] to make comparison across projects meaningful, by emphasizing change in ratio, rather than the varying counts. Hence, the measurements were normalized for drawing this graph. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
-\label{figureNodesEdgesTimeR}
-\end{figure}
-
-\begin{figure}[!Ht]
-\centering
-\epsfig{file=DiameterTime.eps, width=\columnwidth}
-\caption{Diameter changes over Time. Note that the diameter measurements were normalized to the range [0,1]. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
-\label{figureDiameterTimeR}
-\end{figure}
-
-\subsubsection{Kamailio Project}
-Figure \ref{figureKamailioGraph} shows four key frames from the Kamailio project's social graph around the time of their fork (the events described here are easier to fully grasp by watching the video. A node's size in a proportional to the number of interactions the node (contributor) has had within the study period and the position and edges of the nodes change if they had interactions within the time window shown, with six day steps per frame. The 1 minute and 37 seconds video shows the life of the Kamailio project between October 2007, and March 2009. Nodes are colored based on the modularity of the network. The community starts with the GeneralList as the the biggest node, and four larger core contributors and three lesser size core contributors. The big red-colored node's transitions are hard to miss, as this major contributor departs from the core to the periphery of the network (Video minute 1:02) and then leaves the community (Video minute 1:24) capturing either a conflict or retirement. This corresponds to the personal difference category of forking reasons.
-
-\begin{figure*}[!htb]
-\centering
-\def\tabularxcolumn#1{m{#1}} 
-\begin{tabularx}{\linewidth}{@{}cXX@{}}
-\begin{tabular}{cccc} 
-\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{2}} 
-&
-\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{3}}
-&
-\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{5}} 
-& 
-\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{7}}
-\end{tabular} 
-\end{tabularx} 
-\caption{Snapshots from video visualization of Kamailio's graph (Oct. 2007 - Mar. 2009) in which a core contributor (colored red) moves to the periphery and eventually departs the community.} 
-\label{figureKamailioGraph} 
-\end{figure*} 
-
-
-\begin{figure*}[!htb]
-\centering
-\epsfig{file=Kamailio_chart.eps, width=\textwidth}
-\justifying
-\epsfig{file=Kamailio_diameter.eps, width=\textwidth}
-\caption{Kamailio top contributors' betweenness centralities and network diameter over time (Oct. 2007 to Mar. 2009) in 3-month time windows with 1.5-month overlaps}
-\label{figureKamailioStackedAreaChart}
-\end{figure*}
-
-Figure \ref{figureKamailioStackedAreaChart} shows the betweenness centrality of the major contributors of Kamailio project over the same time period. The horizontal axis marks the dates, (each mark represents a 3-month time window with 1.5 months overlap). The vertical axis shows the percentage of the top betweenness centralities for each node. The saliency of the GeneralList -- colored as light blue -- is apparent because of its continuous and dominant presence in the stacked area chart. The chart legend lists the contributors based on the color and in the same order of appearance on the chart starting from the bottom. Around the "Aug. 15, 2008 - Nov. 15, 2008" tick mark on the horizontal axis, several contributors' betweenness centralities shrink to almost zero and disappear. This suggests the date of fork with a month accuracy. The network diameter of the Kamailio project over the same time period is also shown in Figure \ref{figureKamailioStackedAreaChart}. An increase in the network diameter during this period is noticeable; this coincides with findings of Hannemann and Klamma \cite{Hannemann}.
-
-This technique can be used to identify the people involved in conflict and the date the fork happened with a months accuracy, even if the rival project does not emerge immediately.
-
-\subsubsection{Amarok Project}
-\begin{figure*}
-\centering
-\epsfig{file=Amarok_chart.eps, width=\textwidth}
-\justifying
-\epsfig{file=Amarok_diameter.eps, width=0.925\textwidth}
-\caption{Amarok project's top contributors' betweenness centralities and network diameter over time between Oct. 2009 to Mar. 2011 in 3-months time windows with 1.5 months overlaps}
-\label{figureAmarokStachedAreaChart}
-\end{figure*}
-
-The video for the Amarok project fork is available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAmarokStachedAreaChart}. The results show that the network diameter has not increased over the period of the fork, which shows a resilient network. The video shows the dynamic changes in the network structure, again typical of a healthy network, rather than of simmering conflict. These indicators suggest that the Amarok fork in 2010 belongs to the ``addition of technical functionality'' rationale for forking, as there are no visible social conflict.
-
-\subsubsection{Asterisk Project}
-\begin{figure*}
-\centering
-\epsfig{file=Asterisk_chart.eps, width=\textwidth}
-\justifying
-\epsfig{file=Asterisk_diameter.eps, width=0.94\textwidth}
-\caption{Asterisk project's top contributors' betweenness centralities and network diameter over time between Oct. 2009 to Mar. 2011 in 3-months time windows with 1.5 months overlaps}
-\label{figureAsteriskStackedAreaChart}
-\end{figure*}
-
-The video for the Asterisk project is also available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAsteriskStackedAreaChart}. The results show that the network diameter remained steady at 6 throughout the period. The Asterisk community was by far the most crowded project, with 932 nodes and 4282 edges. The stacked area chart shows the distribution of centralities, where we see an 80\%-20\% distribution (i.e., 80\% or more of the activity is attributed to six major players, with the rest of the community accounting for only 20\%). This is evident in the video representation as well, as the top-level structure of the network holds throughout the time period. The results from the visual and quantitative analysis links the Asterisk fork to the more community-driven category of forking reasons.
-
-\subsubsection{Initial study conclusion}
-We studied the collaboration networks of three FOSS projects using a combination of temporal visualization and quantitative analysis. We based our study on two papers by Robles and Gonzalez-Barahona \cite{Robles} and Hannemann and Klamma \cite{Hannemann}, and identified three projects that had forked in the recent past. We mined the collaboration data, formed dynamic collaboration graphs, and measured social network metrics over an 18-month period time window.
-
-We also visualized the dynamic graphs (available online) and as stacked area charts over time. The visualizations and the quantitative results showed the differences among the projects in the three forking reasons of personal differences among the developer teams, technical differences (addition of new functionality) and more community-driven development. The novelty of the approach was in applying the network-specific \textit{temporal} analysis rather than static analysis, and in the temporal visualization of community structure. We showed that this approach shed light on the structure of these projects and reveal information that cannot be seen otherwise.
-
-More importantly, the initial study showed the limitations of a \textit{network-specific} approach, and hence, we need to adopt a \textit{population-processes} approach for our proposed main study.
 
 \pagebreak
 
@@ -884,6 +794,120 @@ I would also like to thank the open source developers of the projects studied fo
 % initial runs of your .tex file to
 % produce the bibliography for the citations in your paper.
 %\bibliographystyle{abbrv}
+
+\pagebreak
+
+\begin{appendices}
+
+\section{Appendix A: Initial study: Temporal analysis using the network-specific measurement approach}
+\label{sectionInitialStudy}
+In our initial study\cite{AzarbakhtOpenSym2013}\cite{AzarbakhtOSS2013}\cite{AzarbakhtVLHCC2014}, which was a network-specific study, we wanted to analyze the network-specific changes that happen to the community over a given period of time, e.g., three months before and three months after the year in which the forking event happened. For this network-specific study, we measured the betweenness centrality \cite{Brandes} of the most significant nodes in the graph, and the graph diameter over time. Figures \ref{figureKamailioStackedAreaChart}, \ref{figureAmarokStachedAreaChart}, and \ref{figureAsteriskStackedAreaChart} show the betweenness centralities over the 1.5 year period for the Kamailio, Amarok and Asterisk projects respectively. To do temporal analysis, we had two options; 1) look at snapshots of the network state over time, (e.g., to look at the network snapshots in every week, the same way that a video is composed of many consecutive frames), and 2) look at a period through a time window. We preferred the second approach, and looked through a time window three months wide with 1.5 month overlaps. To create the visualizations, we used a 3 months time frame that progressed six days a frame. In this way, we would have had a relatively smooth transition.
+
+\begin{figure}[!ht]
+\centering
+\epsfig{file=centrality.eps, width=0.7\columnwidth}
+\caption[Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities]{Heat-map color-coded examples are shown above. Nodes with higher centrality metric are colored with warmer color: red is the warmest color here. The same network is analyzed four times with the following centrality measures:  A) Degree centrality, B) Closeness centrality, C) Betweenness centrality and D) Eigenvector centrality \cite{Rocchini}}
+\label{figureCentrality}
+\end{figure}
+
+There are many ways of looking at an individual's importance/prestige/status within a network. One is called \textit{closeness centrality}. The \textit{farness} of a node is defined as the sum of its distances to all other nodes. The \textit{closeness} of a node is defined as the inverse of the farness. More informally, the more central a node is the lower its total distance to all other nodes. \textit{Closeness centrality} can be used as a measure of how fast information will spread through the network \cite{Chakrabarti}. Secondly, if we are looking for people who can serve as bridges between two distinct communities, we could measure the node's \textit{betweenness centrality}. Betweenness centralities for mediators who act as intermediate entities between other nodes are higher \cite{Chakrabarti}.  Third, if cross-community collaboration is the focus, we can measure \textit{edge betweenness centrality}.  Edges connecting nodes from different communities have higher edge centrality values. In the community collaboration graph, edge betweenness or stress of an edge is the number of these shortest paths that the edge belongs to, considering all shortest paths between all pairs of nodes in the graph. Fourth, one can claim that certain people in the community are more important than others, and whoever is close to them, is relatively more important than others. In graph terms, this is measured by \textit{eigenvector centrality}, which is based on the assumption that connections to high-profile nodes contribute more to the importance of a node. Google's PageRank link-analysis algorithm \cite{Page} is a variant of the eigenvector centrality measure. In short, centrality measures have been used in several studies to identify key player in a community.
+
+In addition to the centrality measures, we planned to look into the \textit{resilience} of the community as well. By resilience, we mean how well the network holds its structure and form when some parts of it are deleted, added, or changed. For a graph, the resilience of a graph is a measure of its robustness to node or edge failures. This could occur for instance when an influential member of the community leaves. Many real-world graphs are resilient to random failures but vulnerable to targeted attacks. Resilience can be related to the \textit{graph diameter}: a graph whose diameter does not increase much on node or edge removal has higher resilience \cite{Chakrabarti}.
+
+\subsection{Visualization}
+Several visualization techniques and tools are used in the field of social network analysis, for instance, Gephi \cite{Bastian}, which is a FOSS tool for exploring and manipulating networks. It is capable of handling large networks with more than 20,000 nodes and features several SNA algorithms. We used it for dynamic network visualization.
+We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos\footnote{\label{footnote1}Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}} show how the community graph is structured, using a continuous force-directed linear-linear model, in which the nodes are positioned near or far from one another proportional to the graph distance between them. This results in a graph shape between Fr\"{u}chterman \& Rheingold's \cite{Fruchterman} layout and Noack's LinLog \cite{Noack}.
+
+
+\subsection{Initial study results and discussion}
+\label{results}
+
+\begin{figure}[!Ht]
+\centering
+\epsfig{file=NodesEdgesTime.eps, width=\columnwidth}
+\caption[The number of nodes and edges over time, as network-specific measurements]{Nodes and Edges over Time. The number of nodes and number of edges are normalized to the range [0,1] to make comparison across projects meaningful, by emphasizing change in ratio, rather than the varying counts. Hence, the measurements were normalized for drawing this graph. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
+\label{figureNodesEdgesTimeR}
+\end{figure}
+
+\begin{figure}[!Ht]
+\centering
+\epsfig{file=DiameterTime.eps, width=\columnwidth}
+\caption[The network diameter change over time, as network-specific measurements]{Diameter changes over Time. Note that the diameter measurements were normalized to the range [0,1]. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
+\label{figureDiameterTimeR}
+\end{figure}
+
+\subsubsection{Kamailio Project}
+Figure \ref{figureKamailioGraph} shows four key frames from the Kamailio project's social graph around the time of their fork (the events described here are easier to fully grasp by watching the video. A node's size in a proportional to the number of interactions the node (contributor) has had within the study period and the position and edges of the nodes change if they had interactions within the time window shown, with six day steps per frame. The 1 minute and 37 seconds video shows the life of the Kamailio project between October 2007, and March 2009. Nodes are colored based on the modularity of the network. The community starts with the GeneralList as the the biggest node, and four larger core contributors and three lesser size core contributors. The big red-colored node's transitions are hard to miss, as this major contributor departs from the core to the periphery of the network (Video minute 1:02) and then leaves the community (Video minute 1:24) capturing either a conflict or retirement. This corresponds to the personal difference category of forking reasons.
+
+\begin{figure*}[!htb]
+\centering
+\def\tabularxcolumn#1{m{#1}} 
+\begin{tabularx}{\linewidth}{@{}cXX@{}}
+\begin{tabular}{cccc} 
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{2}} 
+&
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{3}}
+&
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{5}} 
+& 
+\subfloat[]{\includegraphics[width=0.25\textwidth, height=0.25\textwidth]{7}}
+\end{tabular} 
+\end{tabularx} 
+\caption[Snapshots from video visualization of Kamailio project's graph]{Snapshots from video visualization of Kamailio's graph (Oct. 2007 - Mar. 2009) in which a core contributor (colored red) moves to the periphery and eventually departs the community.} 
+\label{figureKamailioGraph} 
+\end{figure*} 
+
+
+\begin{figure*}[!htb]
+\centering
+\epsfig{file=Kamailio_chart.eps, width=\textwidth}
+\justifying
+\epsfig{file=Kamailio_diameter.eps, width=\textwidth}
+\caption[Kamailio top contributors' betweenness centralities and network diameter over time]{Kamailio top contributors' betweenness centralities and network diameter over time (Oct. 2007 to Mar. 2009) in 3-month time windows with 1.5-month overlaps}
+\label{figureKamailioStackedAreaChart}
+\end{figure*}
+
+Figure \ref{figureKamailioStackedAreaChart} shows the betweenness centrality of the major contributors of Kamailio project over the same time period. The horizontal axis marks the dates, (each mark represents a 3-month time window with 1.5 months overlap). The vertical axis shows the percentage of the top betweenness centralities for each node. The saliency of the GeneralList -- colored as light blue -- is apparent because of its continuous and dominant presence in the stacked area chart. The chart legend lists the contributors based on the color and in the same order of appearance on the chart starting from the bottom. Around the "Aug. 15, 2008 - Nov. 15, 2008" tick mark on the horizontal axis, several contributors' betweenness centralities shrink to almost zero and disappear. This suggests the date of fork with a month accuracy. The network diameter of the Kamailio project over the same time period is also shown in Figure \ref{figureKamailioStackedAreaChart}. An increase in the network diameter during this period is noticeable; this coincides with findings of Hannemann and Klamma \cite{Hannemann}.
+
+This technique can be used to identify the people involved in conflict and the date the fork happened with a months accuracy, even if the rival project does not emerge immediately.
+
+\subsubsection{Amarok Project}
+\begin{figure*}
+\centering
+\epsfig{file=Amarok_chart.eps, width=\textwidth}
+\justifying
+\epsfig{file=Amarok_diameter.eps, width=0.925\textwidth}
+\caption[Amarok project's top contributors' betweenness centralities and network diameter over time]{Amarok project's top contributors' betweenness centralities and network diameter over time between Oct. 2009 to Mar. 2011 in 3-months time windows with 1.5 months overlaps}
+\label{figureAmarokStachedAreaChart}
+\end{figure*}
+
+The video for the Amarok project fork is available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAmarokStachedAreaChart}. The results show that the network diameter has not increased over the period of the fork, which shows a resilient network. The video shows the dynamic changes in the network structure, again typical of a healthy network, rather than of simmering conflict. These indicators suggest that the Amarok fork in 2010 belongs to the ``addition of technical functionality'' rationale for forking, as there are no visible social conflict.
+
+\subsubsection{Asterisk Project}
+\begin{figure*}
+\centering
+\epsfig{file=Asterisk_chart.eps, width=\textwidth}
+\justifying
+\epsfig{file=Asterisk_diameter.eps, width=0.94\textwidth}
+\caption[Asterisk project's top contributors' betweenness centralities and network diameter over time]{Asterisk project's top contributors' betweenness centralities and network diameter over time between Oct. 2009 to Mar. 2011 in 3-months time windows with 1.5 months overlaps}
+\label{figureAsteriskStackedAreaChart}
+\end{figure*}
+
+The video for the Asterisk project is also available online\footnote{Video visualizations available at \href{http://eecs.oregonstate.edu/~azarbaam/OSS2014/}{http://eecs.oregonstate.edu/\textasciitilde azarbaam/OSS2014/}}, and the results from our quantitative analysis of the betweenness centralities and the network diameters are shown in Figure \ref{figureAsteriskStackedAreaChart}. The results show that the network diameter remained steady at 6 throughout the period. The Asterisk community was by far the most crowded project, with 932 nodes and 4282 edges. The stacked area chart shows the distribution of centralities, where we see an 80\%-20\% distribution (i.e., 80\% or more of the activity is attributed to six major players, with the rest of the community accounting for only 20\%). This is evident in the video representation as well, as the top-level structure of the network holds throughout the time period. The results from the visual and quantitative analysis links the Asterisk fork to the more community-driven category of forking reasons.
+
+\subsubsection{Initial study conclusion}
+We studied the collaboration networks of three FOSS projects using a combination of temporal visualization and quantitative analysis. We based our study on two papers by Robles and Gonzalez-Barahona \cite{Robles} and Hannemann and Klamma \cite{Hannemann}, and identified three projects that had forked in the recent past. We mined the collaboration data, formed dynamic collaboration graphs, and measured social network metrics over an 18-month period time window.
+
+We also visualized the dynamic graphs (available online) and as stacked area charts over time. The visualizations and the quantitative results showed the differences among the projects in the three forking reasons of personal differences among the developer teams, technical differences (addition of new functionality) and more community-driven development. The novelty of the approach was in applying the network-specific \textit{temporal} analysis rather than static analysis, and in the temporal visualization of community structure. We showed that this approach shed light on the structure of these projects and reveal information that cannot be seen otherwise.\\
+
+More importantly, the initial study showed the limitations of a \textit{network-specific} approach, and hence, we adopted a \textit{population-processes} approach for our main study as explained in section \ref{relatedwork}.
+
+\end{appendices}
+
+\pagebreak
+
+
+
 
 \input{referenc}
 \bibliography{referenc}  
