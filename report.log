@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  13 NOV 2015 16:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  13 NOV 2015 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,8 +937,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 727--729
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
-[]|\OT1/cmr/bx/n/10.95 M.L. data avail-
+Overfull \hbox (7.77797pt too wide) in paragraph at lines 739--739
+[]\OT1/cmr/bx/n/14.4 Appendix A: List of all projects forked in socially-
  []
 
 
@@ -952,33 +952,13 @@ Overfull \hbox (2.0658pt too wide) in paragraph at lines 763--763
  []
 
 
-Overfull \hbox (41.9989pt too wide) in paragraph at lines 747--769
+Overfull \hbox (23.9978pt too wide) in paragraph at lines 747--769
  [][] 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 779--779
-[]|\OT1/cmr/bx/n/10.95 M.L. data
- []
-
-
 Overfull \hbox (5.12267pt too wide) in paragraph at lines 786--786
 []|\OT1/cmr/m/n/10.95 GraphicsMagick| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 786--786
-[]|\OT1/cmr/m/n/10.95 Only af-ter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
-[]|\OT1/cmr/m/n/10.95 Only af-ter
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 800--800
-[]|\OT1/cmr/m/n/10.95 Yes, but too
  []
 
 
@@ -987,13 +967,9 @@ Underfull \hbox (badness 2932) in paragraph at lines 802--802
  []
 
 
-Overfull \hbox (41.99341pt too wide) in paragraph at lines 777--811
+Overfull \hbox (77.9956pt too wide) in paragraph at lines 777--811
  [][] 
  []
-
-
-Overfull \vbox (64.13249pt too high) has occurred while \output is active []
-
 
 [33]
 Overfull \hbox (9.79459pt too wide) in paragraph at lines 816--816
@@ -1218,7 +1194,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 992.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 992.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 992.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 8D758568268F31287A619780C917BD11;1578.
+(rerunfilecheck)             Checksum: D48C164270A640BC7D31C01DDCD673FE;1608.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 992.
  ) 
 Here is how much of TeX's memory you used:
@@ -1244,7 +1220,7 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (48 pages, 2831004 bytes).
+Output written on report.pdf (48 pages, 2831057 bytes).
 PDF statistics:
  842 PDF objects out of 1000 (max. 8388607)
  732 compressed objects within 8 object streams

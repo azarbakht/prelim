@@ -40,7 +40,7 @@
 \contentsline {section}{\numberline {7}Timeline}{29}{section.0.7}
 \contentsline {section}{\numberline {8}Threats to Validity}{30}{section.0.8}
 \contentsline {chapter}{Appendices}{31}{section*.14}
-\contentsline {section}{\numberline {1}Appendix A: List of all projects forked in U.F. and H.F. Categories}{32}{section.1..1}
+\contentsline {section}{\numberline {1}Appendix A: List of all projects forked in socially-related Undesirable Forking (U.F.) Category}{32}{section.1..1}
 \contentsline {section}{\numberline {2}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{34}{section.1..2}
 \contentsline {subsection}{\numberline {2.1}Visualization}{36}{subsection.1..2.1}
 \contentsline {subsection}{\numberline {2.2}Initial study results and discussion}{36}{subsection.1..2.2}
