@@ -339,10 +339,10 @@ In summary, a measurement-only approach would not be able to explain the longitu
 %
 %We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
-\subsection{Statistical Model}
+\subsection{The Statistical Model}
 \label{statisticalModel}
 
-Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another actor, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks. (status quo counts twice: maintaining a non-connection or maintaining a connection). We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
+Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another actor, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
 
 The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of actors changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as OpenSourceDeveloper-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
 
@@ -585,7 +585,7 @@ There are no statistically significant differences in vectors of means of the ac
 
 
 \subsection{Predictions}
-Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following three theories about human behavior are the bases for the hypotheses in this research study. They are complement each other in term of explaining the context of forking .
+Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following theories about human behavior are the bases for our hypotheses. They complement each other in term of explaining the context of forking.
 
 \subsubsection{Behavior Models}
 \paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
@@ -677,7 +677,7 @@ We may explain U.F. forked projects because of ``more community-driven developme
 \label{tableCovariates}
 \begin{tabular}{m{0.2\textwidth} m{0.3\textwidth} m{0.5\textwidth}}
 \hline\noalign{\smallskip}
-\textbf{Network effect} & \textbf{Network Statistic} & \textbf{Description} \\
+\textbf{Effect} & \textbf{Statistic} & \textbf{Description} \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 Outdegree & \begin{equation*} \sum_j x_{ij} \end{equation*} & Overall tendency to have ties (Negative parameter means, on average, cost of friendship ties higher than their benefits) \\ 
 Reciprocity & \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*} & Tendency to have reciprocated ties \\ 
