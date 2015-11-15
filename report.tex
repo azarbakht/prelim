@@ -313,8 +313,8 @@ Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examp
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes approach}.
 
 \subsubsection{Why a statistical model is needed?}
-
-One may wonder why we should look beyond the observed network. We need to find a well-fitting statistical model of our observed interactions network, because of the following reasons: 
+One may wonder why we should look beyond the observed network. We can do measurements on the observed networks data, and get some descriptive statistics. This would be a superficial look at the data, and even though necessary, is not good enough and has several shortcomings. 
+There is another way of looking at these networks, in a less-superficial way; namely, finding a model that fits the data and its longitudinal change. So, instead of a superficial look at the data, we can find a well-fitting statistical model of our observed interactions network. The following lists the reasons why we need to go beyond a superficial measurement-only approach. 
 
 \begin{enumerate}
 
@@ -331,6 +331,8 @@ One may wonder why we should look beyond the observed network. We need to find a
 \item  Localized processes might not scale to the entire network well. The combination of the overall structure and the localized processes is hard to investigate without a model. (This micro-macro difference may be investigated through model simulation.)\cite{Robins}
 
 \end{enumerate}
+
+In summary, a measurement-only approach would not be able to explain the longitudinal changes in an open source community's network properly. It can confuse us, and it can mislead us. Our initial study, described in section \ref{results}, is an example of a measurement-only approach, which shows such limitations. This initial study guided in the proper direction; namely, trying to find a statistical model that can explain the networks' longitudinal changes. In the following section \ref{statisticalModel}, we described such a model.  
 
 
 %\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
@@ -494,6 +496,10 @@ $r_{ij3}(x) = x_{ij}w_{ij}$
 \end{enumerate}
 
 \subsection{Markov Chain Monte Carlo (MCMC) Estimation}
+The described statistical model for longitudinal analysis of open source software development communities is a complex model and it is not possible to calculate exactly. However, we can simulate the longitudinal evolution, and estimate the model based on the simulations. Then we can choose an estimated model that has a good fit to the network data.
+The following section described the simulation and estimation procedures. 
+
+
 Network evolution can be simulated using a MCMC estimation method. The method of moments (MoM) can be used in the following way \cite{Snijders2004}: \\
 
 Let $x^{obs}(t_m), m = 1, ..., M$ be the observed networks, and the objective function be $f_i(\beta, x) = \sum_{k=1}^L \beta_k s_{ik}(x)$. 
@@ -533,8 +539,11 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 % $\mathcal{E}_{\hat{\beta}}S = s^{obs}$.
 
 \subsection{Hypothesis Testing}
-So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we can test several hypothesis about these models. For example, we can test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}. 
+So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we can test several hypothesis about these models. For example, we can test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}.
 
+Or, alternatively, we can compare two models for two open source project communities, and make statements about the difference in several model effects, for example, reciprocity and three-cycles, using the method described in section \ref{multiParameterTest}. 
+
+Or, lastly, we may compare several open source communities (or such networks) and test the statistical significance of the differences between their models, using the methods described in section \ref{MANOVA}. This allows us to compare within-group and across-group comparisons of longitudinal models of open-source projects. In this study, we do all three discussed forms of tests of significance. In the following subsections, the details of these tests are described.   
 
 
 \subsubsection{Single Parameter Test}
@@ -551,17 +560,19 @@ the t-test can be done using the following t-statistic:
 Given a p-value $\leq$ 0.05 would indicate a strong evidence that the network dynamics depends on the corresponding parameter's effect. 
 
 \subsubsection{Multi-Parameter Differences Between Groups}
-
+\label{multiParameterTest}
 Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their standard errors $S.E._a$ and $S.E._b$, the differences between two groups can be tested using the following t-statistics. This t-statistics, under the null hypothesis of equal parameters, has an approximately standard normal distribution:
 \begin{equation}
 \frac{\hat{\beta_a}-\hat{\beta_b}}{\sqrt{S.E._a^2 + S.E._b^2}}
 \end{equation}
 
 \subsubsection{Multivariate Analysis of Variance Between Multiple Groups}
+\label{MANOVA}
 To test the statistical significance of the mean differences between groups (in our case, the different categories of forking), we may use Multivariate Analysis of Variance (MANOVA) method. In contrast to ANOVA, MANOVA method tests for the difference in two or more vectors of means. 
 
 \subsection{Research Questions and Hypotheses}
 \label{RQs}
+In section \ref{ResearchObjective}, we described the research objectives in general terms. Now that we have described how to model the longitudinal changes in an open source community's collaboration networks, we can be more specific about the research questions, and the hypotheses for our statistical tests. The following are the null hypotheses for across-group comparisons using the Multivariate Analysis of Variance Between Multiple Groups tests.
 
 \subsubsection{Null Hypothesis \# 1:} 
 There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in U.F. category and No.F. category.
