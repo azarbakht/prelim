@@ -297,9 +297,10 @@ GlusterFS & Not forked & - & No.F.\\
 \end{table}
 
 \subsubsection{Data Sources}
-The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. \textbf{d)} (Proposed) The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. Using sentiment analysis, we can quantify the level of positive/negative language usage, and may detect events, for example, in-fighting where people involved in the conflict exchange negative sentiments.
+The data sources to collect are \textbf{a)} developer mailing lists, where developers' interact by sending and receiving emails, \textbf{b)} Issue(bug) tracking systems, where developers interact by reporting an issue/bug, discussing how to resolve it, and closing the issues, and , \textbf{c)} Source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms will be formed based on interactions among developers in any of the preceding data sources. 
+% \textbf{d)} (Proposed) The content of the messages send and received by the top contributors of the project in the months leading to the forking events can be a good data source to be sentiment-analyzed. Using sentiment analysis, we can quantify the level of positive/negative language usage, and may detect events, for example, in-fighting where people involved in the conflict exchange negative sentiments.
 
-The time period for which data was collected is the year in which the fork happened. This should supposedly capture the social context prior, and at the time of the fork.
+The time period for which data was collected is one year leading to when the fork happened. This should supposedly capture the social context prior, and at the time of the fork.
 
 \subsection{Phase 2: Sociogram Formation and Statistical Study}
 
@@ -532,7 +533,12 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 % $\mathcal{E}_{\hat{\beta}}S = s^{obs}$.
 
 \subsection{Hypothesis Testing}
+So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we can test several hypothesis about these models. For example, we can test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}. 
+
+
+
 \subsubsection{Single Parameter Test}
+\label{singleParameterTest}
 Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors (S.E.). 
 For example, for testing the null hypothesis that a component $k$ of the parameter vector $\beta$ is 0, the test has approximately a standard normal distribution. For this null hypothesis: 
 \begin{equation}
