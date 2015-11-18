@@ -448,6 +448,8 @@ f_i(\beta, x) = \sum_{k = 1}^{L} \beta_k s_{ik}(x)
 Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{ik}(x)$ can be the following \cite{Snijders2004}:
 
 \paragraph{Structural Effects}
+For the structural effects, the following can be used. The mathematical formulas for the following effects are included in the appendix section. 
+
 \begin{enumerate}
 \item{The reciprocity effect}
 \item{The closure effect}
@@ -605,8 +607,6 @@ We may explain U.F. forked projects because of ``personal differences'' as a res
 
 We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
-
-
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %A recent method for population-process approach is exponential family random graph models (ERGM) \cite{Robins}, in which, the possible edges between nodes of a graph are regarded as random variables. Assumptions about dependencies among these random variables determine the form of the ERGM model for the network. The model parameters are estimated using the observed network, which in turn, can be used to interpret the underlying processes that generated the observed network. For example, we can infer whether a model parameter's effect is significant, and hence, whether the characteristic seen in the observed network is more or less likely than expected by chance.
@@ -678,28 +678,6 @@ We may explain U.F. forked projects because of ``more community-driven developme
 %For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{table}
-\centering
-\caption[Examples of explanatory effects to include in the statistical model]{Examples of explanatory variables to include in the statistical model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
-\label{tableCovariates}
-\begin{tabular}{m{0.2\textwidth} m{0.3\textwidth} m{0.5\textwidth}}
-\hline\noalign{\smallskip}
-\textbf{Effect} & \textbf{Statistic} & \textbf{Description} \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Outdegree & \begin{equation*} \sum_j x_{ij} \end{equation*} & Overall tendency to have ties (Negative parameter means, on average, cost of friendship ties higher than their benefits) \\ 
-Reciprocity & \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*} & Tendency to have reciprocated ties \\ 
-Balance & \begin{equation*} \sum_j x_{ij}strsim_{ij} \end{equation*} & Tendency to have ties to structurally similar others (structural equivalence with respect to outgoing ties) \\ 
-Covariate similarity & \begin{equation*} \sum_j x_{ij} sim_{ij} \end{equation*} & Tendency to have ties to similar others (homophile selection) \\ 
-3-cycles & \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*} & Tendency to form relationship cycles (negative parameter means absense of hierarchy) \\
-Transitive triplets & \begin{equation*} \sum_j x_{ij} \sum_h x_{ih}x_{hj} \end{equation*} &  Tendency toward triadic closure of the neighborhood (linear effect of the number of indirect ties) \\
-Transitive ties & \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} & Tendency toward triadic closure of the neighborhood (binary effect of indirect ties) \\
-Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*} & Main effect of alter's behavior (covariate determines popularity in network) \\ 
-Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*} & Tendency to keep others at social distance 2 (negative measure of triadic closure; lower means stronger network closure) \\ 
-\noalign{\smallskip}
-\end{tabular}
-\end{table}
 
 \pagebreak
 
@@ -941,6 +919,84 @@ We studied the collaboration networks of three FOSS projects using a combination
 We also visualized the dynamic graphs (available online) and as stacked area charts over time. The visualizations and the quantitative results showed the differences among the projects in the three forking reasons of personal differences among the developer teams, technical differences (addition of new functionality) and more community-driven development. The novelty of the approach was in applying the network-specific \textit{temporal} analysis rather than static analysis, and in the temporal visualization of community structure. We showed that this approach shed light on the structure of these projects and reveal information that cannot be seen otherwise.\\
 
 More importantly, the initial study showed the limitations of a \textit{network-specific} approach, and hence, we adopted a \textit{population-processes} approach for our main study as explained in section \ref{relatedwork}.
+
+\pagebreak
+
+\section{Appendix C: Mathematical Definition of Effects in the Statistical Model}
+\label{EffectsAppendixC}
+
+\subsection{Structural Effects for the Objective Function}
+\begin{enumerate}
+\item Reciprocity \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*}
+\item Closure effect: Transitive triplets \begin{equation*} \sum_{j,h} x_{ih}x_{ij}x_{jh} \end{equation*}
+
+\item Closure effect: Transitive ties \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} 
+
+\item Closure effect: Balance \begin{equation*} \sum_{j = 1}^{n} x_{ij} \sum_{h=1, h \neq i,j}^{n} \abs{(b_0 - x_{ih} - s_{jh})} \end{equation*}
+$b_0$ is a constant equal to the mean of $\abs{x_{ih}-x_{jh}}$
+
+\item Closure effect: Number of actors at distance two \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*}
+
+\item Three-cycles \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*}
+
+\item Betweenness (which represents brokerage) 
+
+\item Density
+
+\item Activity
+
+\item Actor-oriented covariate V-related popularity
+
+\item Actor-oriented covariate V-related activity
+
+\item Actor-oriented covariate V-related dissimilarity
+
+\item in-in degree assortativity
+
+\item in-out degree assortativity
+
+\item out-in degree assortativity
+
+\item out-out degree assortativity
+
+\end{enumerate}
+
+\subsection{Behavior-related Effects}
+
+\begin{enumerate}
+\item Shape
+
+\item Quadratic Shape
+
+\item Total Similarity
+
+\item Average Similarity
+
+\item Average alter
+
+\end{enumerate}
+
+%\begin{table}
+%\centering
+%\caption[Examples of explanatory effects to include in the statistical model]{Examples of explanatory variables to include in the statistical model. \cite{Steglich} The network is denoted by x, where $ x_{ij} $ stands for the value of the directed relationship between actors i and j. The behavioral variable is denoted by z. We assume that $ x_{ij} = 1 $ stands for presence of a tie and $ x_{ij} = 0 $ for absence. } 
+%\label{tableCovariates}
+%\begin{tabular}{m{0.2\textwidth} m{0.3\textwidth} m{0.5\textwidth}}
+%\hline\noalign{\smallskip}
+%\textbf{Effect} & \textbf{Statistic} & \textbf{Description} \\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%Outdegree & \begin{equation*} \sum_j x_{ij} \end{equation*} & Overall tendency to have ties (Negative parameter means, on average, cost of friendship ties higher than their benefits) \\ 
+%Reciprocity & \begin{equation*} \sum_j x_{ij} x_{ji} \end{equation*} & Tendency to have reciprocated ties \\ 
+%Balance & \begin{equation*} \sum_j x_{ij}strsim_{ij} \end{equation*} & Tendency to have ties to structurally similar others (structural equivalence with respect to outgoing ties) \\ 
+%Covariate similarity & \begin{equation*} \sum_j x_{ij} sim_{ij} \end{equation*} & Tendency to have ties to similar others (homophile selection) \\ 
+%3-cycles & \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*} & Tendency to form relationship cycles (negative parameter means absense of hierarchy) \\
+%Transitive triplets & \begin{equation*} \sum_j x_{ij} \sum_h x_{ih}x_{hj} \end{equation*} &  Tendency toward triadic closure of the neighborhood (linear effect of the number of indirect ties) \\
+%Transitive ties & \begin{equation*} \sum_j x_{ij} max_h (x_{ih}x_{hj}) \end{equation*} & Tendency toward triadic closure of the neighborhood (binary effect of indirect ties) \\
+%Covariate alter & \begin{equation*} \sum_j x_{ij} (z_j - \bar z) \end{equation*} & Main effect of alter's behavior (covariate determines popularity in network) \\ 
+%Actors at distance 2 & \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*} & Tendency to keep others at social distance 2 (negative measure of triadic closure; lower means stronger network closure) \\ 
+%\noalign{\smallskip}
+%\end{tabular}
+%\end{table}
+
 
 \end{appendices}
 
