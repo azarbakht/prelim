@@ -935,31 +935,52 @@ More importantly, the initial study showed the limitations of a \textit{network-
 \item Closure effect: Balance \begin{equation*} \sum_{j = 1}^{n} x_{ij} \sum_{h=1, h \neq i,j}^{n} \abs{(b_0 - x_{ih} - s_{jh})} \end{equation*}
 $b_0$ is a constant equal to the mean of $\abs{x_{ih}-x_{jh}}$
 
-\item Closure effect: Number of actors at distance two \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*}
+\item Closure effect: The number of actors at distance two \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*}
 
 \item Three-cycles \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*}
 
-\item Betweenness (which represents brokerage) 
+\item Betweenness \begin{equation*}
+\sum_{j,h} x_{hj} x_{ij}(1 - x_{hj})
+\end{equation*}
 
-\item Density
+\item Density (or out-degree) \begin{equation*}
+\sum_j x_{ij}
+\end{equation*}
 
-\item Activity
+\item Activity: Out-degree \begin{equation*}
+\sum_j x_{ij} x_{j+} = \sum_j x_{ij} \sum_h x_{jh} 
+\end{equation*}
 
-\item Actor-oriented covariate V-related popularity
+\item Covariate V-related popularity \begin{equation*}
+\sum_j x_{ij}v_j
+\end{equation*}
 
-\item Actor-oriented covariate V-related activity
+\item Covariate V-related activity \begin{equation*}
+v_i x_{i+}
+\end{equation*}
 
-\item Actor-oriented covariate V-related dissimilarity
+\item Covariate V-related dissimilarity \begin{equation*}
+\sum_j x_{ij}\abs{v_i - v_j}
+\end{equation*}
 
-\item in-in degree assortativity
+\item in-in degree assortativity \begin{equation*}
+\sum_j x_{ij}x_{+i}^{1/c}x_{+j}^{1/c}
+\end{equation*} with c = {1 or 2}
 
-\item in-out degree assortativity
+\item in-out degree assortativity \begin{equation*}
+\sum_j x_{ij}x_{+i}^{1/c}x_{j+}^{1/c}
+\end{equation*} with c = {1 or 2}
 
-\item out-in degree assortativity
 
-\item out-out degree assortativity
+\item out-in degree assortativity \begin{equation*}
+\sum_j x_{ij}x_{i+}^{1/c}x_{+j}^{1/c}
+\end{equation*} with c = {1 or 2}
 
+\item out-out degree assortativity \begin{equation*}
+\sum_j x_{ij}x_{i+}^{1/c}x_{j+}^{1/c}
+\end{equation*} with c = {1 or 2}
 \end{enumerate}
+
 
 \subsection{Behavior-related Effects}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  18 NOV 2015 13:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  18 NOV 2015 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1171,24 +1171,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 919--920
  []
 
 [42 <./Asterisk_chart-eps-converted-to.pdf> <./Asterisk_diameter-eps-converted-
-to.pdf>] [43] [44] [45] (./referenc.tex [46
+to.pdf>] [43] [44] [45] [46] (./referenc.tex [47
 
-] [47] [48] [49])
+] [48] [49] [50])
 No file report.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1074.
-[50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1074.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1095.
+[51]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1095.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1074.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1074.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1095.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1095.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 600A7109C8B9DD9073E47664C73E05BD;1914.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1074.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1095.
  ) 
 Here is how much of TeX's memory you used:
- 14694 strings out of 494985
- 254110 string characters out of 6180356
+ 14695 strings out of 494985
+ 254117 string characters out of 6180356
  356960 words of memory out of 5000000
  17423 multiletter control sequences out of 15000+600000
  12326 words of font info for 44 fonts, out of 8000000 for 9000
@@ -1209,10 +1209,10 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (51 pages, 2836693 bytes).
+Output written on report.pdf (52 pages, 2837812 bytes).
 PDF statistics:
- 902 PDF objects out of 1000 (max. 8388607)
- 790 compressed objects within 8 object streams
- 268 named destinations out of 1000 (max. 500000)
+ 906 PDF objects out of 1000 (max. 8388607)
+ 793 compressed objects within 8 object streams
+ 269 named destinations out of 1000 (max. 500000)
  271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
