@@ -448,7 +448,7 @@ f_i(\beta, x) = \sum_{k = 1}^{L} \beta_k s_{ik}(x)
 Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{ik}(x)$ can be the following \cite{Snijders2004}:
 
 \paragraph{Structural Effects}
-For the structural effects, the following can be used. The mathematical formulas for the following effects are included in the appendix section. 
+For the structural effects, the following can be used. The mathematical formulas for the following effects are included in the appendix section \ref{EffectsAppendixC}. 
 
 \begin{enumerate}
 \item{The reciprocity effect}
@@ -476,17 +476,17 @@ represents brokerage
 \end{enumerate}
 
 \paragraph{Behavior-related Effects\\}
+For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following effects.
+
 Let's denote a dependent behavior variable as $Z$.
 \begin{enumerate}
-\item{Shape effect: Explains the drive toward high values on Z}
-
-\item{Quadratic Shape Effect}
-\item{Similarity}
+\item{Shape: Tells us the drive toward high values on the variable Z.}
+\item{Similarity:}
 \begin{enumerate}
-\item{average similarity}
-\item{total similarity}
+\item{Average similarity: Tells us the preference of the actor i to be similar to his alters, with regard to the behavior variable Z}
+\item{Total similarity: Tells us the preference of the actor i to be similar to his alters. The total influence of the alters depends on the number of the alters}
 \end{enumerate}
-\item{average alter effect}
+\item{Average alter: Tells us that the actors who have alters with higher average values of Z, have a stronger tendency to having high values of Z.}
 \end{enumerate}
 
 \subsubsection{Gratification Function}
@@ -983,17 +983,30 @@ v_i x_{i+}
 
 
 \subsection{Behavior-related Effects}
+For a behavior variable $s_{ik}^z(x,z)$, the following formulas cab be used.
 
 \begin{enumerate}
-\item Shape
+\item Shape $z_i$
 
-\item Quadratic Shape
+\item Quadratic Shape $z_i^2$
 
-\item Total Similarity
+\item Total Similarity \begin{equation*}
+\sum_j x_{ij}(sim_{ij}^z - \bar{sim^z})
+\end{equation*}
+where \begin{equation*}
+sim_{ij}^z = (1 - \abs{z_i - z_j}/max_{ij}\abs{z_i-z_j})
+\end{equation*}
 
-\item Average Similarity
+\item Average Similarity \begin{equation*}
+\frac{1}{x_{i+}} \sum_j x_{ij}(sim_{ij}^z - \bar{sim^z})
+\end{equation*}
+where \begin{equation*}
+sim_{ij}^z = (1 - \abs{z_i - z_j}/max_{ij}\abs{z_i-z_j})
+\end{equation*}
 
-\item Average alter
+\item Average alter \begin{equation*}
+\frac{z_i (\sum_j x_{ij}z_j)}{\sum_j x_{ij}}
+\end{equation*}
 
 \end{enumerate}
 
