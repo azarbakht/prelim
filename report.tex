@@ -304,12 +304,17 @@ Social connections and non-connections can be represented as graphs, in which th
 
 Two types of analysis can be done on sociograms: Either a \textit{cross-sectional} study, in which only one snapshot of the network is looked at and analyzed; or a \textit{longitudinal} study, in which several consecutive snapshots of the network are looked at and studied.  We are interested in patterns in the run-up to forks, so, we do a longitudinal study, unlike most existing research on forking.
 
-A longitudinal study can look at the sociograms in two distinct approaches: \textbf{a)} a \textit{network-specific} approach, which can be called a skin-deep \textit{measurement-specific} look, in which, we focus on the observed networks, measure their properties, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Or, \textbf{b)} a \textit{population-processes} approach, in which we treat an observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. In a population-processes approach, the observed network is only good to help us understand the social forces/processes that generated it, because we are interested in the forces/processes that underlie the structure and changes of the network; these reflect the values shared or not shared by the community members, and represent the group behavior, and behavior change trends that lead to a forking event. 
- 
+A longitudinal study can look at the sociograms in the following two distinct approaches: 
+\begin{enumerate}
+\item A \textit{network-specific} approach, which can be called a skin-deep \textit{measurement-specific} look, in which, we focus on the observed networks, measure their properties, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Many studies measuring centralities as their fall into this category. 
+
+\item A \textit{population-processes} approach, in which we treat an observed network as one realization from a set of all possible networks with the same number of nodes, and with similar characteristics. In a population-processes approach, the observed network is only good to help us understand the social forces/processes that generated it, because we are interested in the forces/processes that underlie the structure and changes of the network; these reflect the values shared or not shared by the community members, and represent the group behavior, and behavior change trends that lead to a forking event. 
+
+\end{enumerate}
 
 Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
 
-The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes approach}.
+The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes} approach.
 
 \subsubsection{Why a statistical model is needed?}
 One may wonder why we should look beyond the observed network. We can do measurements on the observed networks data, and get some descriptive statistics. This would be a superficial look at the data, and even though necessary, is not good enough and has several shortcomings. 
@@ -427,7 +432,11 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \end{enumerate}
 
 \subsection{Model Specification}
-The functions described above need to be supplied with a specific model for the rate, objective and gratification functions. These functions depend on unknown parameters that need to be estimated based on the data. In the following, we explain what functions can be included in these functions.
+In the previous sections, we described why we need a statistical model to describe the longitudinal trends, rather than numerical measurements. We then described a framework for such a model; namely the actor-oriented model. We described the components of this statistical model; the rate function; the objective function, and the gratification function.
+
+In this section, we describe what network effects can be measured and tested in these functions. Specifically, we need to supply these functions with a specific model for the rate, objective and gratification functions. These functions depend on unknown parameters that need to be estimated based on the data. The estimation is explained in section \ref{estimation}. 
+
+In the following, we explain what model effects can be included in the objective and gratification functions, to be estimated later.
 
 \subsubsection{Objective Function}
 The following weighted sum represents the objective function:
@@ -495,6 +504,7 @@ $r_{ij3}(x) = x_{ij}w_{ij}$
 \end{enumerate}
 
 \subsection{Markov Chain Monte Carlo (MCMC) Estimation}
+\label{estimation}
 The described statistical model for longitudinal analysis of open source software development communities is a complex model and it is not possible to calculate exactly. However, we can simulate the longitudinal evolution, and estimate the model based on the simulations. Then we can choose an estimated model that has a good fit to the network data.
 The following section described the simulation and estimation procedures. 
 
