@@ -357,43 +357,43 @@ In summary, a measurement-only approach would not be able to explain the longitu
 \subsection{The Statistical Model}
 \label{statisticalModel}
 
-Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another actor, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
+Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another developer, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
 
 The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of actors changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as OpenSourceDeveloper-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
 
-Let the data for our statistical actor-oriented model be $M$ repeated observations on a network with \textit{g} actors. The $M$ observed networks (at least two) are represented as directed graphs with adjacency matrices $X(t_m) = (X_{ij}(t_m)))$ for $m = 1,...,M$, where $i$ and $j$ range from a to $g$. The variable $X_{ij}$ shows whether at time $t$ there exists a tie from $i$ to $j$ (value 1) or not (value 0). Be definition, $\forall i, X_{ii}=0$ (i.e. the diagonal of the adjacency matrices).
+Let the data for our statistical developer-oriented model be $M$ repeated observations on a network with \textit{g} developers. The $M$ observed networks (at least two) are represented as directed graphs with adjacency matrices $X(t_m) = (X_{ij}(t_m)))$ for $m = 1,...,M$, where $i$ and $j$ range from a to $g$. The variable $X_{ij}$ shows whether at time $t$ there exists a tie from $i$ to $j$ (value 1) or not (value 0). Be definition, $\forall i, X_{ii}=0$ (i.e. the diagonal of the adjacency matrices).
 
 In order to model the network evolution from $X(t_1)$ to $X(t_2)$, and so on, it is natural to treat the network dynamics as the result of a series of small atomic changes, and not bound to the observation moment, but rather as a more of less continuous process. In this way, the current network structure is a determinant of the likelihood of the changes that might happen next \cite{Coleman1964}. 
 
-For each change, the model focuses on the actor whose tie is changing. We assume that actor $i$ has control over the set of outgoing  tie variables $(X_{i1}, ..., X_{ig})$ (i.e. the $i^{th}$ row of the adjacency matrix). The network changes one tie at a time. We call such an atomic change a \textit{ministep}. The moment at which actor $i$ changes of of his ties, and the kind of change that he makes, can depend on attributes represented by observed covariates, and the network structure. The moment is stochastically determined by the \textit{rate function}, and the particular change to make, is determined by the \textit{objective function} and the \textit{gratification function}. These three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
+For each change, the model focuses on the developer whose tie is changing. We assume that developer $i$ has control over the set of outgoing  tie variables $(X_{i1}, ..., X_{ig})$ (i.e. the $i^{th}$ row of the adjacency matrix). The network changes one tie at a time. We call such an atomic change a \textit{ministep}. The moment at which developer $i$ changes of of his ties, and the kind of change that he makes, can depend on attributes represented by observed covariates, and the network structure. The moment is stochastically determined by the \textit{rate function}, and the particular change to make, is determined by the \textit{objective function} and the \textit{gratification function}. These three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
 
 \subsubsection{Rate Function}
 
-The rate function for a developer is the rate at which that developer's outgoing connections changes occur. Or, more formally, we can say, the \textit{rate function} $\lambda_i(x)$ for actor $i$ is the rate at which in actor $i$'s outgoing ties changes occur. It models how frequently the actors make ministeps.\\
+The rate function for a developer is the rate at which that developer's outgoing connections changes occur. Or, more formally, we can say, the \textit{rate function} $\lambda_i(x)$ for developer $i$ is the rate at which in developer $i$'s outgoing ties changes occur. It models how frequently the developers make ministeps.\\
 The rate function is formally defined \cite{Snijders2004} by
 \begin{equation}
 \lambda_i(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X_{ij}(t + dt) \neq X_{ij}(t) \quad for \quad some \quad j \in \{i, ..., g\} | X(t) = x)}\big).
 \end{equation}
 
-The simplest specification of the rate of change is that all actors have the same rate of change of their ties. 
+The simplest specification of the rate of change is that all developers have the same rate of change of their ties. 
 
 \subsubsection{Objective Function}
 
-The \textit{objective function} $f_i(s)$ for actor $i$ is the value attached to the network configuration $x$. 
+The \textit{objective function} $f_i(s)$ for developer $i$ is the value attached to the network configuration $x$. 
 
-The idea is that, given the opportunity to make a change in his outgoing tie variables $(X_{i1},...,X_{ig})$, actor $i$ selects the change that gives the greatest increase in the objective function. We assume that if there is difference between actors in their objective functions, these differences can be represented based on the model covariates \cite{Snijders2004}. 
+The idea is that, given the opportunity to make a change in his outgoing tie variables $(X_{i1},...,X_{ig})$, developer $i$ selects the change that gives the greatest increase in the objective function. We assume that if there is difference between developers in their objective functions, these differences can be represented based on the model covariates \cite{Snijders2004}. 
 
-Let's denote the present network by $x = X(t)$. The new network that would be the result of a ministep (i.e. changing a single tie variable $x_{ij}$ into its opposite $1 - x_{ij}$ ) by actor $i$ is denoted by $x(i \mapsto j)$. This choice is modeled in the following way: 
+Let's denote the present network by $x = X(t)$. The new network that would be the result of a ministep (i.e. changing a single tie variable $x_{ij}$ into its opposite $1 - x_{ij}$ ) by developer $i$ is denoted by $x(i \mapsto j)$. This choice is modeled in the following way: 
 
-Let $U(j)$ denote a random variable which represents the attraction for $i$ to $j$. We assume that these $U_j$ are random variables distributed symmetrically about 0, and independently generated for each new ministep. In this way, the actor $i$ chooses to change his tie variable with the other actor $j$ for whom the following value \cite{Snijders2004} is the highest:
+Let $U(j)$ denote a random variable which represents the attraction for $i$ to $j$. We assume that these $U_j$ are random variables distributed symmetrically about 0, and independently generated for each new ministep. In this way, the developer $i$ chooses to change his tie variable with the other developer $j$ for whom the following value \cite{Snijders2004} is the highest:
 
 \begin{equation}
 f_i(x(i \mapsto j)) + U(j)
 \end{equation} 
 
-This is a myopic stochastic optimization rule: myopic because only the situation one step after the current step is considered; and stochastic because the unexplained part is modeled by a random variable $U(j)$. 
+This is a short-sighted stochastic optimization rule: short-sighted because only the situation one step after the current step is considered; and stochastic because the unexplained part is modeled by a random variable $U(j)$. 
 
-$U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. In this way, the probability that actor $i$ chooses to change $x_{ij}$ for any particular $j$, given that such a change happens, is \cite{Snijders2004},
+$U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. In this way, the probability that developer $i$ chooses to change $x_{ij}$ for any particular $j$, given that such a change happens, is \cite{Snijders2004},
 
 \begin{equation}
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) - f_i(x))}
@@ -402,9 +402,9 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f
 \subsubsection{Gratification Function}
 Sometimes the order in which changes occur makes a difference for the desirability of the network. Such differences cannot be represented by the objective function. So, we need another function, called gratification function. \\
 
-The \textit{gratification function} $g_i(x,j)$ for actor $i$ is the value attached to this actor (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
+The \textit{gratification function} $g_i(x,j)$ for developer $i$ is the value attached to this developer (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
 
-In the case that a gratification function is included, the actor $i$ chooses to change $x_{ij}$ for that other actor $j$ for whom the following value \cite{Snijders2004} is the highest:
+In the case that a gratification function is included, the actor $i$ chooses to change $x_{ij}$ for that other developer $j$ for whom the following value \cite{Snijders2004} is the highest:
 
 \begin{equation}
 f_i(x(i \mapsto j)) + g_i(x, j) + U(j)
@@ -417,7 +417,7 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \end{equation}
 
 \subsubsection{Markov Chain Transition Rate Matrix}
-The components of the actor-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ actors. 
+The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. 
 
 The transition rate matrix (also called intensity matrix), for this model is given by
 \begin{multline}
@@ -425,7 +425,7 @@ The transition rate matrix (also called intensity matrix), for this model is giv
 q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \mapsto j) | X(t) = x)}\big) \\ = \lambda_i(x) p_{ij}(x)
 \end{multline}
 
-Expression (\ref{intensityMatrix}) shows the rate at which actor $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
+Expression (\ref{intensityMatrix}) shows the rate at which developer $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
 
 \subsubsection{Markov Chain Simulation}
 \label{MarkovChainSimulationSteps}
@@ -434,8 +434,8 @@ Our Markov chain can be simulated by repeating the following steps \cite{Snijder
 Start at time $t$ with directed graph $x$. 
 \begin{enumerate}
 \item Define $\lambda_{+} = \sum_{i=1}^g \lambda_i(x)$ and let $\Delta t$ be a random variable with the exponential distribution with parameter $\lambda_{+}(x)$.
-\item The actor $i$ is chosen randomly with probabilities $\frac{\lambda_{i}(x)}{\lambda_{+}(x)}$
-\item Given this $i$, choose actor $j$ randomly with probabilities 
+\item The developer $i$ is chosen randomly with probabilities $\frac{\lambda_{i}(x)}{\lambda_{+}(x)}$
+\item Given this $i$, choose developer $j$ randomly with probabilities 
 \begin{equation}
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))} \nonumber
 \end{equation}
@@ -443,7 +443,7 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \end{enumerate}
 
 \subsection{Model Specification}
-In the previous sections, we described why we need a statistical model to describe the longitudinal trends, rather than numerical measurements. We then described a framework for such a model; namely the actor-oriented model. We described the components of this statistical model; the rate function; the objective function, and the gratification function.
+In the previous sections, we described why we need a statistical model to describe the longitudinal trends, rather than numerical measurements. We then described a framework for such a model; namely the developer-oriented model. We described the components of this statistical model; the rate function; the objective function, and the gratification function.
 
 In this section, we describe what network effects can be measured and tested in these functions. Specifically, we need to supply these functions with a specific model for the rate, objective and gratification functions. These functions depend on unknown parameters that need to be estimated based on the data. The estimation is explained in section \ref{estimation}. 
 
@@ -466,23 +466,23 @@ For the structural effects, the following can be used. The mathematical formulas
 \item{The closure effects}
 For example, 
 \begin{enumerate}
-\item Transitive triplets effect, which reflects the preference of actors to be connected to actors with similar outgoing ties. 
+\item Transitive triplets effect, which reflects the preference of developers to be connected to developers with similar outgoing ties. 
 \item Transitive ties, which reflects network embeddedness. It is similar to transitive triplets effect, however, it only count for the existence of at least one two-path  $i \rightarrow h \rightarrow j$, rather than counting how many such two-paths exists.  
-\item Balance effect, which reflects how similar the outgoing ties of actor i are to the outgoing ties of the other actors to whom i is connected. 
-\item Number of actors at distance two, which reflects and is an inverse measure of, network closure. 
+\item Balance effect, which reflects how similar the outgoing ties of developer i are to the outgoing ties of the other developers to whom i is connected. 
+\item Number of developers at distance two, which reflects and is an inverse measure of, network closure. 
 \end{enumerate}
-\item{Three-cycles, may be interpreted as the tendency toward local hierarchy. It is similar to reciprocity defined for three actors, and is the opposite of hierarchy.}
-\item{Betweenness, which reflects brokerage, is the tendency of actor i to position himself between other not-directly-connected actors.}
+\item{Three-cycles, may be interpreted as the tendency toward local hierarchy. It is similar to reciprocity defined for three developers, and is the opposite of hierarchy.}
+\item{Betweenness, which reflects brokerage, is the tendency of developer i to position himself between other not-directly-connected developers.}
 represents brokerage
-\item{Density effect which reflects the out-degree of an actor i.}
-\item{Activity, which reflects the tendency of actors with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.} 
-\item{Covariate V-related popularity, which reflects the sum of covariate V for all actors to whom actor i is connected}
-\item{Covariate V-related activity, which reflects the actor i's out-degree multiplied by his covariate V value.}
-\item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between actor i and all actors to whom actor i is connected.}
-\item{in-in degree assortativity, which reflects the tendency of actors with high in-degree to be connected to other actors with high in-degrees}
-\item{in-out degree assortativity, which reflects which reflects the tendency of actors with high in-degree to be connected to other actors with high out-degrees}
-\item{out-in degree assortativity, which reflects which reflects the tendency of actors with high out-degree to be connected to other actors with high in-degrees}
-\item{out-out degree assortativity, which reflects which reflects the tendency of actors with high out-degree to be connected to other actors with high out-degrees}
+\item{Density effect which reflects the out-degree of a developer i.}
+\item{Activity, which reflects the tendency of developers with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.} 
+\item{Covariate V-related popularity, which reflects the sum of covariate V for all developers to whom developer i is connected}
+\item{Covariate V-related activity, which reflects the developer i's out-degree multiplied by his covariate V value.}
+\item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between developer i and all developers to whom developer i is connected.}
+\item{in-in degree assortativity, which reflects the tendency of developers with high in-degree to be connected to other developers with high in-degrees}
+\item{in-out degree assortativity, which reflects which reflects the tendency of developers with high in-degree to be connected to other developers with high out-degrees}
+\item{out-in degree assortativity, which reflects which reflects the tendency of developers with high out-degree to be connected to other developers with high in-degrees}
+\item{out-out degree assortativity, which reflects which reflects the tendency of developers with high out-degree to be connected to other developers with high out-degrees}
 \end{enumerate}
 
 \paragraph{Behavior-related Effects\\}
@@ -490,13 +490,13 @@ For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following e
 
 Let's denote a dependent behavior variable as $Z$.
 \begin{enumerate}
-\item{Shape: Tells us the drive toward high values on the variable Z.}
+\item{Shape, which reflects the drive toward high values on the variable Z.}
 \item{Similarity:}
 \begin{enumerate}
-\item{Average similarity: Tells us the preference of the actor i to be similar to his alters, with regard to the behavior variable Z}
-\item{Total similarity: Tells us the preference of the actor i to be similar to his alters. The total influence of the alters depends on the number of the alters}
+\item{Average similarity, which reflects the preference of the developer i to be similar to his alters, with regard to the behavior variable Z}
+\item{Total similarity, which reflects the preference of the developer i to be similar to his alters. The total influence of the alters depends on the number of the alters}
 \end{enumerate}
-\item{Average alter: Tells us that the actors who have alters with higher average values of Z, have a stronger tendency to having high values of Z.}
+\item{Average alter, which reflects that the developers who have alters with higher average values of Z, have a stronger tendency to having high values of Z.}
 \end{enumerate}
 
 \subsubsection{Gratification Function}
@@ -517,7 +517,7 @@ $r_{ij3}(x) = x_{ij}w_{ij}$
 
 \subsection{Markov Chain Monte Carlo (MCMC) Estimation}
 \label{estimation}
-The described statistical model for longitudinal analysis of open source software development communities is a complex model and it is not possible to calculate exactly. However, we can simulate the longitudinal evolution, and estimate the model based on the simulations. Then we can choose an estimated model that has a good fit to the network data.
+The described statistical model for longitudinal analysis of open source software development communities is a complex model and cannot be exactly calculated, but it can be stochastically estimated. We can simulate the longitudinal evolution, and estimate the model based on the simulations. Then we can choose an estimated model that has a good fit to the network data.
 The following section described the simulation and estimation procedures. 
 
 
