@@ -451,28 +451,27 @@ Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{i
 For the structural effects, the following can be used. The mathematical formulas for the following effects are included in the appendix section \ref{EffectsAppendixC}. 
 
 \begin{enumerate}
-\item{The reciprocity effect}
-\item{The closure effect}
-
+\item{The reciprocity effect, which reflects the number of reciprocated ties. }
+\item{The closure effects}
 For example, 
 \begin{enumerate}
-\item Transitive triplets effect. 
-\item Transitive ties.
-\item Balance
-\item Number of actors at distance two
+\item Transitive triplets effect, which reflects the preference of actors to be connected to actors with similar outgoing ties. 
+\item Transitive ties, which reflects network embeddedness. It is similar to transitive triplets effect, however, it only count for the existence of at least one two-path  $i \rightarrow h \rightarrow j$, rather than counting how many such two-paths exists.  
+\item Balance effect, which reflects how similar the outgoing ties of actor i are to the outgoing ties of the other actors to whom i is connected. 
+\item Number of actors at distance two, which reflects and is an inverse measure of, network closure. 
 \end{enumerate}
-\item{Three-cycles}
-\item{Betweenness}
+\item{Three-cycles, may be interpreted as the tendency toward local hierarchy. It is similar to reciprocity defined for three actors, and is the opposite of hierarchy.}
+\item{Betweenness, which reflects brokerage, is the tendency of actor i to position himself between other not-directly-connected actors.}
 represents brokerage
-\item{Density}
-\item{Activity}
-\item{Actor-oriented covariate V-related popularity}
-\item{Actor-oriented covariate V-related activity}
-\item{Actor-oriented covariate V-related dissimilarity}
-\item{in-in degree assortativity}
-\item{in-out degree assortativity}
-\item{out-in degree assortativity}
-\item{out-out degree assortativity}
+\item{Density effect which reflects the out-degree of an actor i.}
+\item{Activity, which reflects the tendency of actors with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.} 
+\item{Covariate V-related popularity, which reflects the sum of covariate V for all actors to whom actor i is connected}
+\item{Covariate V-related activity, which reflects the actor i's out-degree multiplied by his covariate V value.}
+\item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between actor i and all actors to whom actor i is connected.}
+\item{in-in degree assortativity, which reflects }
+\item{in-out degree assortativity, which reflects}
+\item{out-in degree assortativity, which reflects}
+\item{out-out degree assortativity, which reflects}
 \end{enumerate}
 
 \paragraph{Behavior-related Effects\\}
@@ -730,6 +729,7 @@ The presented findings may not be generalized to all FOSS projects. First, One r
 \label{acknowledgments}
 I would like to thank my academic adviser, Prof. Carlos Jensen, and my committee members for their help. I would also like to thank Derric Jacobs, of the Sociology Department at Oregon State University, for his help with search for theories and lending books to me; and also, many thanks goes to Prof. Drew Gerkey, of the Department of Anthropology at Oregon State University for his advice and pointers to theories about human behavior in social sciences.
 I would also like to thank the open source developers of the projects studied for making their data available, without which this study would not have been possible. \\
+
 
 % The following two commands are all you need in the
 % initial runs of your .tex file to
