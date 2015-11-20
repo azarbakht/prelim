@@ -220,19 +220,19 @@ In this study, we plan to analyze, quantify and visualize how the community is s
 
 Specifically, our overall research objective is to identify these traces/social patterns associated with different types of undesirable forking?
 
-In the following and in subsections \ref{RQs}, we will discuss our research objectives and research questions in depth.
+In the following and in section \ref{RQs}, we will discuss our research objectives and research questions in depth.
 
-\subsection{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
+\paragraph*{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
 To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list data, issue tracking systems data, source code data. This is going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
-\subsubsection{\hspace{4 mm} Do different types of forks leave different types of traces?\\}
+\paragraph*{\hspace{4 mm} Do different types of forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a prototypical ``personal differences'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? Is a project labeled as a ``technical differences'' fork only a ``technical differences'' fork? Or, alternatively, can they be a mix of several reason categories?
 
 We are going to investigate this by statistical modeling of the interaction graphs, as explained in detail in section \ref{statisticalModel}.
 
-\subsubsection{\hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
+\paragraph*{\hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
 
 What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Are there metrics that can be used to monitor the odds of change, (e.g. forking-related patterns), ahead of time? This will be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
@@ -473,11 +473,11 @@ Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{i
 For the structural effects, the following can be used. The mathematical formulas for the following effects are included in the appendix section \ref{EffectsAppendixC}. 
 
 \begin{enumerate}
-\item{The reciprocity effect, which reflects the number of reciprocated ties. }
-\item{The closure effects}
+\item{The reciprocity effect, which reflects the tendency toward reciprocation of connections. A high value for its model parameter will indicate a high tendency of developers for reciprocated interactions.}
+\item{The closure effects (e.g. in friendship networks, it means, friends of friends tend to become friends)}
 For example, 
 \begin{enumerate}
-\item Transitive triplets effect, which reflects the preference of developers to be connected to developers with similar outgoing ties. 
+\item Transitive triplets effect, which models the tendency toward network closure. It reflects the preference of developers to be connected to developers with similar outgoing ties.  
 \item Transitive ties, which reflects network embeddedness. It is similar to transitive triplets effect, however, it only count for the existence of at least one two-path  $i \rightarrow h \rightarrow j$, rather than counting how many such two-paths exists.  
 \item Balance effect, which reflects how similar the outgoing ties of developer i are to the outgoing ties of the other developers to whom i is connected. 
 \item Number of developers at distance two, which reflects and is an inverse measure of, network closure. 
@@ -485,11 +485,16 @@ For example,
 \item{Three-cycles, may be interpreted as the tendency toward local hierarchy. It is similar to reciprocity defined for three developers, and is the opposite of hierarchy.}
 \item{Betweenness, which reflects brokerage, is the tendency of developer i to position himself between other not-directly-connected developers.}
 represents brokerage
-\item{Density effect which reflects the out-degree of a developer i.}
-\item{Activity, which reflects the tendency of developers with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.} 
+\item{Density effect which reflects tendency to have connections at all (i.e. the out-degree of a developer i).      }
+\item{Activity, which reflects the tendency of developers with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.}
+\item Covariate effects: Developers' covariates may influence the formation or termination of ties. For example:
+\begin{enumerate}
 \item{Covariate V-related popularity, which reflects the sum of covariate V for all developers to whom developer i is connected}
 \item{Covariate V-related activity, which reflects the developer i's out-degree multiplied by his covariate V value.}
 \item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between developer i and all developers to whom developer i is connected.}
+
+\end{enumerate}
+
 \item{in-in degree assortativity, which reflects the tendency of developers with high in-degree to be connected to other developers with high in-degrees}
 \item{in-out degree assortativity, which reflects which reflects the tendency of developers with high in-degree to be connected to other developers with high out-degrees}
 \item{out-in degree assortativity, which reflects which reflects the tendency of developers with high out-degree to be connected to other developers with high in-degrees}
