@@ -204,6 +204,7 @@ Community dynamics was the focus of a more recent study by Hannemann and Klamma 
 
 \section{Research Goals}
 \label{ResearchGoals}
+\label{ResearchObjective}
 
 Social interactions reflect the changes the community goes through, and so, it can be used to describe the context surrounding a forking event. Social interactions in FOSS can happen, for example, in the form of mailing list email correspondence, bug report issue follow-ups, and source code co-authoring. 
 
@@ -216,13 +217,12 @@ As an example of how these traces of forking can be identified, if a fork occurr
 XXX draw it!\\
 
 In this study, we plan to analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time.
-Specifically, our research objectives and research questions are listed in the following subsections \ref{ResearchObjective} and \ref{RQs}.
 
-\subsection{Research Objectives}
-\label{ResearchObjective}
-\subsection*{What are the social patterns associated with different types of undesirable forking?\\}
+Specifically, our overall research objective is to identify these traces/social patterns associated with different types of undesirable forking?
 
-\subsubsection{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
+In the following and in subsections \ref{RQs}, we will discuss our research objectives and research questions in depth.
+
+\subsection{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
 To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list data, issue tracking systems data, source code data. This is going to be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
 
@@ -365,7 +365,9 @@ Let the data for our statistical developer-oriented model be $M$ repeated observ
 
 In order to model the network evolution from $X(t_1)$ to $X(t_2)$, and so on, it is natural to treat the network dynamics as the result of a series of small atomic changes, and not bound to the observation moment, but rather as a more of less continuous process. In this way, the current network structure is a determinant of the likelihood of the changes that might happen next \cite{Coleman1964}. 
 
-For each change, the model focuses on the developer whose tie is changing. We assume that developer $i$ has control over the set of outgoing  tie variables $(X_{i1}, ..., X_{ig})$ (i.e. the $i^{th}$ row of the adjacency matrix). The network changes one tie at a time. We call such an atomic change a \textit{ministep}. The moment at which developer $i$ changes of of his ties, and the kind of change that he makes, can depend on attributes represented by observed covariates, and the network structure. The moment is stochastically determined by the \textit{rate function}, and the particular change to make, is determined by the \textit{objective function} and the \textit{gratification function}. These three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
+For each change, the model focuses on the developer whose tie is changing. We assume that developer $i$ has control over the set of outgoing  tie variables $(X_{i1}, ..., X_{ig})$ (i.e. the $i^{th}$ row of the adjacency matrix). The network changes one tie at a time. We call such an atomic change a \textit{ministep}. The moment at which developer $i$ changes one of his ties, and the kind of change that he makes, can depend on attributes represented by observed covariates, and the network structure. The moment is stochastically determined by the \textit{rate function}, and the particular change to make, is determined by the \textit{objective function} and the \textit{gratification function}. We cannot calculate this complex model exactly. Rather than calculating exactly, we estimate it using a Monte Carlo Markov Chain method. The estimated model is used to test hypotheses about the forked FOSS communities. 
+
+These above three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
 
 \subsubsection{Rate Function}
 
@@ -606,7 +608,8 @@ There are no statistically significant differences in vectors of means of the de
 
 
 \subsection{Predictions}
-Software development is a collective effort, and software developers are human beings, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following theories about human behavior are the bases for our hypotheses. They complement each other in term of explaining the context of forking.
+Software development is a collective effort, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following theories about human behavior are the bases for our hypotheses. Based on these, we expect to see the predictions listed in section \
+
 
 \subsubsection{Behavior Models}
 \paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
@@ -616,6 +619,10 @@ We may explain U.F. forked projects because of ``personal differences'' as a res
 \paragraph{} \textbf{Assortativity theories}, which tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 
 We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
+
+
+\subsubsection{Expectation}
+
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

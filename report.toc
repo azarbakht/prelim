@@ -1,53 +1,53 @@
-\contentsline {section}{\numberline {1}Abstract}{4}{section.0.1}
-\contentsline {section}{\numberline {2}Introduction}{5}{section.0.2}
-\contentsline {section}{\numberline {3}Related Work}{9}{section.0.3}
-\contentsline {section}{\numberline {4}Research Goals}{12}{section.0.4}
-\contentsline {subsection}{\numberline {4.1}Research Objectives}{12}{subsection.0.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}\hspace {4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}{12}{subsubsection.0.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}\hspace {4 mm} Do different types of forks leave different types of traces?\\}{13}{subsubsection.0.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}\hspace {4 mm} What are the key indicators that let us distinguish between different types of forks?\\}{13}{subsubsection.0.4.1.3}
-\contentsline {section}{\numberline {5}Methodology}{14}{section.0.5}
-\contentsline {subsection}{\numberline {5.1}Phase 1: Data Collection}{14}{subsection.0.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}The Case of Undesirable forking}{14}{subsubsection.0.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Data Sources}{15}{subsubsection.0.5.1.2}
-\contentsline {subsection}{\numberline {5.2}Phase 2: Sociogram Formation and Statistical Study}{16}{subsection.0.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Why a statistical model is needed?}{17}{subsubsection.0.5.2.1}
-\contentsline {subsection}{\numberline {5.3}The Statistical Model}{18}{subsection.0.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Rate Function}{20}{subsubsection.0.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Objective Function}{20}{subsubsection.0.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Gratification Function}{21}{subsubsection.0.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}Markov Chain Transition Rate Matrix}{21}{subsubsection.0.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.5}Markov Chain Simulation}{22}{subsubsection.0.5.3.5}
-\contentsline {subsection}{\numberline {5.4}Model Specification}{22}{subsection.0.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Objective Function}{22}{subsubsection.0.5.4.1}
-\contentsline {paragraph}{\numberline {5.4.1.1}Structural Effects}{23}{paragraph.0.5.4.1.1}
-\contentsline {paragraph}{\numberline {5.4.1.2}Behavior-related Effects\\}{24}{paragraph.0.5.4.1.2}
-\contentsline {subsubsection}{\numberline {5.4.2}Gratification Function}{24}{subsubsection.0.5.4.2}
-\contentsline {subsection}{\numberline {5.5}Markov Chain Monte Carlo (MCMC) Estimation}{25}{subsection.0.5.5}
-\contentsline {subsection}{\numberline {5.6}Hypothesis Testing}{26}{subsection.0.5.6}
-\contentsline {subsubsection}{\numberline {5.6.1}Single Parameter Test}{26}{subsubsection.0.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.2}Multi-Parameter Differences Between Groups}{27}{subsubsection.0.5.6.2}
-\contentsline {subsubsection}{\numberline {5.6.3}Multivariate Analysis of Variance Between Multiple Groups}{27}{subsubsection.0.5.6.3}
-\contentsline {subsection}{\numberline {5.7}Research Questions and Hypotheses}{27}{subsection.0.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}Null Hypothesis \# 1:}{28}{subsubsection.0.5.7.1}
-\contentsline {subsubsection}{\numberline {5.7.2}Null Hypothesis \# 2:}{28}{subsubsection.0.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.3}Null Hypothesis \# 3:}{28}{subsubsection.0.5.7.3}
-\contentsline {subsection}{\numberline {5.8}Predictions}{28}{subsection.0.5.8}
-\contentsline {subsubsection}{\numberline {5.8.1}Behavior Models}{28}{subsubsection.0.5.8.1}
-\contentsline {paragraph}{\numberline {5.8.1.1}}{28}{paragraph.0.5.8.1.1}
-\contentsline {paragraph}{\numberline {5.8.1.2}}{28}{paragraph.0.5.8.1.2}
-\contentsline {section}{\numberline {6}To Be Done}{30}{section.0.6}
-\contentsline {section}{\numberline {7}Timeline}{31}{section.0.7}
-\contentsline {section}{\numberline {8}Threats to Validity}{32}{section.0.8}
-\contentsline {chapter}{Appendices}{33}{section*.13}
-\contentsline {section}{\numberline {1}Appendix A: List of all projects forked in socially-related Undesirable Forking (U.F.) Category}{34}{section.1..1}
-\contentsline {section}{\numberline {2}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{36}{section.1..2}
-\contentsline {subsection}{\numberline {2.1}Visualization}{38}{subsection.1..2.1}
-\contentsline {subsection}{\numberline {2.2}Initial study results and discussion}{38}{subsection.1..2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Kamailio Project}{38}{subsubsection.1..2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Amarok Project}{41}{subsubsection.1..2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Asterisk Project}{42}{subsubsection.1..2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Initial study conclusion}{43}{subsubsection.1..2.2.4}
-\contentsline {section}{\numberline {3}Appendix C: Mathematical Definition of Effects in the Statistical Model}{45}{section.1..3}
-\contentsline {subsection}{\numberline {3.1}Structural Effects for the Objective Function}{45}{subsection.1..3.1}
-\contentsline {subsection}{\numberline {3.2}Behavior-related Effects}{47}{subsection.1..3.2}
+\contentsline {section}{\numberline {1}Abstract}{5}{section.0.1}
+\contentsline {section}{\numberline {2}Introduction}{6}{section.0.2}
+\contentsline {section}{\numberline {3}Related Work}{10}{section.0.3}
+\contentsline {section}{\numberline {4}Research Goals}{13}{section.0.4}
+\contentsline {subsection}{\numberline {4.1}\hspace {4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}{13}{subsection.0.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}\hspace {4 mm} Do different types of forks leave different types of traces?\\}{14}{subsubsection.0.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}\hspace {4 mm} What are the key indicators that let us distinguish between different types of forks?\\}{14}{subsubsection.0.4.1.2}
+\contentsline {section}{\numberline {5}Methodology}{15}{section.0.5}
+\contentsline {subsection}{\numberline {5.1}Phase 1: Data Collection}{15}{subsection.0.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}The Case of Undesirable forking}{15}{subsubsection.0.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Data Sources}{16}{subsubsection.0.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Phase 2: Sociogram Formation and Statistical Study}{17}{subsection.0.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Why a statistical model is needed?}{18}{subsubsection.0.5.2.1}
+\contentsline {subsection}{\numberline {5.3}The Statistical Model}{19}{subsection.0.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Rate Function}{21}{subsubsection.0.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Objective Function}{21}{subsubsection.0.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Gratification Function}{22}{subsubsection.0.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Markov Chain Transition Rate Matrix}{22}{subsubsection.0.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Markov Chain Simulation}{23}{subsubsection.0.5.3.5}
+\contentsline {subsection}{\numberline {5.4}Model Specification}{23}{subsection.0.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Objective Function}{24}{subsubsection.0.5.4.1}
+\contentsline {paragraph}{\numberline {5.4.1.1}Structural Effects}{24}{paragraph.0.5.4.1.1}
+\contentsline {paragraph}{\numberline {5.4.1.2}Behavior-related Effects\\}{25}{paragraph.0.5.4.1.2}
+\contentsline {subsubsection}{\numberline {5.4.2}Gratification Function}{26}{subsubsection.0.5.4.2}
+\contentsline {subsection}{\numberline {5.5}Markov Chain Monte Carlo (MCMC) Estimation}{26}{subsection.0.5.5}
+\contentsline {subsection}{\numberline {5.6}Hypothesis Testing}{27}{subsection.0.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Single Parameter Test}{28}{subsubsection.0.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Multi-Parameter Differences Between Groups}{28}{subsubsection.0.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.3}Multivariate Analysis of Variance Between Multiple Groups}{28}{subsubsection.0.5.6.3}
+\contentsline {subsection}{\numberline {5.7}Research Questions and Hypotheses}{29}{subsection.0.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Null Hypothesis \# 1:}{29}{subsubsection.0.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}Null Hypothesis \# 2:}{29}{subsubsection.0.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.3}Null Hypothesis \# 3:}{29}{subsubsection.0.5.7.3}
+\contentsline {subsection}{\numberline {5.8}Predictions}{29}{subsection.0.5.8}
+\contentsline {subsubsection}{\numberline {5.8.1}Behavior Models}{29}{subsubsection.0.5.8.1}
+\contentsline {paragraph}{\numberline {5.8.1.1}}{29}{paragraph.0.5.8.1.1}
+\contentsline {paragraph}{\numberline {5.8.1.2}}{30}{paragraph.0.5.8.1.2}
+\contentsline {subsubsection}{\numberline {5.8.2}Expectation}{30}{subsubsection.0.5.8.2}
+\contentsline {section}{\numberline {6}To Be Done}{31}{section.0.6}
+\contentsline {section}{\numberline {7}Timeline}{32}{section.0.7}
+\contentsline {section}{\numberline {8}Threats to Validity}{33}{section.0.8}
+\contentsline {chapter}{Appendices}{34}{section*.12}
+\contentsline {section}{\numberline {1}Appendix A: List of all projects forked in socially-related Undesirable Forking (U.F.) Category}{35}{section.1..1}
+\contentsline {section}{\numberline {2}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{37}{section.1..2}
+\contentsline {subsection}{\numberline {2.1}Visualization}{39}{subsection.1..2.1}
+\contentsline {subsection}{\numberline {2.2}Initial study results and discussion}{39}{subsection.1..2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Kamailio Project}{39}{subsubsection.1..2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Amarok Project}{42}{subsubsection.1..2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Asterisk Project}{43}{subsubsection.1..2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Initial study conclusion}{44}{subsubsection.1..2.2.4}
+\contentsline {section}{\numberline {3}Appendix C: Mathematical Definition of Effects in the Statistical Model}{46}{section.1..3}
+\contentsline {subsection}{\numberline {3.1}Structural Effects for the Objective Function}{46}{subsection.1..3.1}
+\contentsline {subsection}{\numberline {3.2}Behavior-related Effects}{48}{subsection.1..3.2}
