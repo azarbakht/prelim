@@ -91,7 +91,11 @@ Social interactions are a ubiquitous part of our lives, and the creation of onli
 
 Forking in FOSS, either as an non-friendly split or a friendly divide, affects the community. Such effects have been studied, shedding light on how forking happens. However, most existing research on forking is post-hoc. In this study, we focus on the seldom-studied run-up to forking events. We propose using statistical modeling of longitudinal social collaboration graphs of software developers to study the evolution and social dynamics of FOSS communities. We aim to identify measures for influence and the shift of influence, measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. 
 
-We use an actor-oriented approach to statistically model the changes a FOSS community goes through in the run-up to a fork. The model represents the tie formation, breakage, and maintenance, and uses several snapshots of the network as observed data, and estimates the influence of several effects in formation of those observed networks. Exact calculation of the model is not trivial, so, instead we simulate the changes and estimate the model using a Markov Chain Monte Carlo approach. When we find a well-fitting model, we can test our hypothesis about model parameters, the contributing effects using T-tests and Multivariate Analysis of Variance Between Multiple Groups (Multivariate ANOVA). Our method enables us to make meaningful statements about whether the network dynamics depends on  particular parameters/effects with a p-value, indicating the statistical significance level. 
+We use an actor-oriented approach to statistically model the changes a FOSS community goes through in the run-up to a fork. The model represents the tie formation, breakage, and maintenance. It uses several snapshots of the network as observed data to estimate the influence of several statistical effects on formation observed networks. Exact calculation of the model is not trivial, so, instead we simulate the changes and estimate the model using a Markov Chain Monte Carlo approach. 
+
+XXX
+
+When we find a well-fitting model, we can test our hypothesis about model parameters, the contributing effects using T-tests and Multivariate Analysis of Variance Between Multiple Groups (Multivariate ANOVA). Our method enables us to make meaningful statements about whether the network dynamics depends on  particular parameters/effects with a p-value, indicating the statistical significance level. 
 
 This approach may help predict formation of unhealthy dynamics, which gives the community a heads-up when they can still take action to ensure the sustainability of the project.
 
@@ -201,8 +205,15 @@ Community dynamics was the focus of a more recent study by Hannemann and Klamma 
 \section{Research Goals}
 \label{ResearchGoals}
 
-Social interactions reflect the changes the community goes through, and so, it can be used to describe the context surrounding a forking event. Social interactions in FOSS can happen, for example, in the form of mailing list email correspondence, bug report issue follow-ups, and source code co-authoring. At least, three of the seven main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} and Figure \ref{tableReasonsForForking} are socially related, and so, their effects should be reflected in the developers' interactions data. These three reasons are (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. Given the data, these are the three categories that may be identified using longitudinal modeling of the interactions, without digging into the contents of the communications. The other categories could be the focus of another research study, whose scope does not have a large overlap with the scope of this study. \\
-As an example, if a fork occurred because of a desire for ``more community-driven development'', we expect to see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community. In other words, in this case, the power stays in the hands of the same people throughout, as new people come and go. 
+Social interactions reflect the changes the community goes through, and so, it can be used to describe the context surrounding a forking event. Social interactions in FOSS can happen, for example, in the form of mailing list email correspondence, bug report issue follow-ups, and source code co-authoring. 
+
+We consider three of the seven main reasons for forking \cite{Robles}, as listed in Table \ref{tableReasonsForForking} and Figure \ref{tableReasonsForForking} to be socially related. By socially-related, we mean, the forking categories that should have left traces in the developers' interactions data. Such traces may be identified using longitudinal modeling of the interactions, without digging into the contents of the communications. These three reasons are (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. 
+
+%The other categories could be the focus of another research study, whose scope does not have a large overlap with the scope of this study. \\
+
+As an example of how these traces of forking can be identified, if a fork occurred because of a desire for ``more community-driven development'', we should see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community (i.e. the power stayed in the hands of the same people throughout, as developers joined and left.) \\
+
+XXX draw it!\\
 
 In this study, we plan to analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time.
 Specifically, our research objectives and research questions are listed in the following subsections \ref{ResearchObjective} and \ref{RQs}.
