@@ -264,7 +264,7 @@ To find patterns uniquely associated with undesirable forks, we need to gather d
 \noalign{\smallskip}\hline\noalign{\smallskip}
 Undesirable \& socially-related forking & U.F. \\ \hline
 Other (Healthy/Other) \& socially-related forking & H.F. \\\hline
-No forking at all & No.F. \\
+No forking at all (as the control group) & No.F. \\
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table}
@@ -275,7 +275,7 @@ Other (Healthy/Other) (H.F.) is defined as projects forked because of \textit{te
 
 These three categories are the socially-related categories, which means, the social context during the run-up to forking arguably should be reflected in their social interactions. 
 
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. They found the reasons behind each fork, listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 forked projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as either a U.F. or H.F. if \textbf{a)} the forking was recent, i.e., happened after the year 2000, \textbf{b)} its data was existent and available to access and download online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers, which means it would be large enough to make a sociogram for a meaningful statistical analysis. For the No.F. category, we chose well-known, stable projects that have been active long enough (to experience turbulence; defined as two years); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. The rest of the 220 forked projects were discarded, because they did not meet the described filtering criteria.
+To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. Their study found the reasons behind each fork, listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 forked projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as either a U.F. or H.F. if \textbf{a)} the forking was recent, i.e., happened after the year 2000, \textbf{b)} its data was existent and available to access and download online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers, which means it would be large enough to make a sociogram for a meaningful statistical analysis. For the No.F. category, we chose well-known, stable projects that have been active long enough (to experience turbulence; defined as two years); and yet have not forked; and are similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. The rest of the 220 forked projects were discarded, because they did not meet the described filtering criteria.
 
 
 \begin{table}
@@ -313,7 +313,7 @@ The time period for which data was collected is one year leading to when the for
 
 Social connections and non-connections can be represented as graphs, in which the nodes represent actors (developers) and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. 
 
-Two types of analysis can be done on sociograms: Either a \textit{cross-sectional} study, in which only one snapshot of the network is looked at and analyzed; or a \textit{longitudinal} study, in which several consecutive snapshots of the network are looked at and studied.  We are interested in patterns in the run-up to forks, so, we do a longitudinal study, unlike most existing research on forking.
+Two types of analysis can be done on sociograms: Either a \textit{cross-sectional} study, in which only one snapshot of the network is looked at and analyzed; or a \textit{longitudinal} study, in which several consecutive snapshots of the network are looked at and studied.  We are interested in patterns in the run-up to forks, therefore, unlike most existing research on forking, we do a longitudinal study.
 
 A longitudinal study can look at the sociograms in the following two distinct approaches: 
 \begin{enumerate}
@@ -323,7 +323,14 @@ A longitudinal study can look at the sociograms in the following two distinct ap
 
 \end{enumerate}
 
-Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
+Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. \\
+
+XXX one limitation figure \ref{figureNodesEdgesTimeR} shows is, \\
+XXX one expressiveness figure \ref{figureNodesEdgesTimeR} shows is, \\
+
+
+
+The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
 
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes} approach.
 
@@ -347,7 +354,7 @@ There is another way of looking at these networks, in a less-superficial way; na
 
 \end{enumerate}
 
-In summary, a measurement-only approach would not be able to explain the longitudinal changes in an open source community's network properly. It can confuse us, and it can mislead us. Our initial study, described in section \ref{results}, is an example of a measurement-only approach, which shows such limitations. This initial study guided in the proper direction; namely, trying to find a statistical model that can explain the networks' longitudinal changes. In the following section \ref{statisticalModel}, we described such a model.  
+In summary, a measurement-only approach would not be able to explain the longitudinal changes in an open source community's network properly. It can confuse us, and it can mislead us. Our initial study, described in appendix section \ref{results}, is an example of a measurement-only approach, which shows such limitations. This initial study guided in the proper direction; namely, trying to find a statistical model that can explain the networks' longitudinal changes. In the following section \ref{statisticalModel}, we described such a model.  
 
 
 %\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
@@ -371,7 +378,7 @@ These above three functions and their definitions taken from \cite{Snijders2004}
 
 \subsubsection{Rate Function}
 
-The rate function for a developer is the rate at which that developer's outgoing connections changes occur. Or, more formally, we can say, the \textit{rate function} $\lambda_i(x)$ for developer $i$ is the rate at which in developer $i$'s outgoing ties changes occur. It models how frequently the developers make ministeps.\\
+The \textit{rate function} $\lambda_i(x)$ for developer $i$ is the rate at which developer $i$'s outgoing connections changes occur. It models how frequently the developers make ministeps.\\
 The rate function is formally defined \cite{Snijders2004} by
 \begin{equation}
 \lambda_i(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X_{ij}(t + dt) \neq X_{ij}(t) \quad for \quad some \quad j \in \{i, ..., g\} | X(t) = x)}\big).
@@ -419,9 +426,11 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \end{equation}
 
 \subsubsection{Markov Chain Transition Rate Matrix}
-The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. 
+The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. This Markov chain is used to estimate the model parameters stochastically, instead of calculating them.\\
 
-The transition rate matrix (also called intensity matrix), for this model is given by
+XXX\\ 
+
+The transition rate matrix (also called intensity matrix), for this model is given by 
 \begin{multline}
 \label{intensityMatrix}
 q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \mapsto j) | X(t) = x)}\big) \\ = \lambda_i(x) p_{ij}(x)
@@ -562,11 +571,11 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 % $\mathcal{E}_{\hat{\beta}}S = s^{obs}$.
 
 \subsection{Hypothesis Testing}
-So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we can test several hypothesis about these models. For example, we can test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}.
+So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we test several hypothesis about these models. For example, we test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}.
 
-Or, alternatively, we can compare two models for two open source project communities, and make statements about the difference in several model effects, for example, reciprocity and three-cycles, using the method described in section \ref{multiParameterTest}. 
+Alternatively, we compare two models for two open source project communities, and make conclusions about the difference in several model effects, for example, reciprocity and three-cycles, using the method described in section \ref{multiParameterTest}. 
 
-Or, lastly, we may compare several open source communities (or such networks) and test the statistical significance of the differences between their models, using the methods described in section \ref{MANOVA}. This allows us to compare within-group and across-group comparisons of longitudinal models of open-source projects. In this study, we do all three discussed forms of tests of significance. In the following subsections, the details of these tests are described.   
+Lastly, we compare several open source communities (or such networks) and test the statistical significance of the differences between their models, using the methods described in section \ref{MANOVA}. This allows us to compare within-group and across-group comparisons of longitudinal models of open-source projects. In this study, we do all three discussed forms of tests of significance. In the following subsections, the details of these tests are described.   
 
 
 \subsubsection{Single Parameter Test}
