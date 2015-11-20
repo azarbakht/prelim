@@ -311,7 +311,7 @@ The time period for which data was collected is one year leading to when the for
 
 \subsection{Phase 2: Sociogram Formation and Statistical Study}
 
-Social connections and non-connections can be represented as graphs, in which the nodes represent actors and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. 
+Social connections and non-connections can be represented as graphs, in which the nodes represent actors (developers) and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. 
 
 Two types of analysis can be done on sociograms: Either a \textit{cross-sectional} study, in which only one snapshot of the network is looked at and analyzed; or a \textit{longitudinal} study, in which several consecutive snapshots of the network are looked at and studied.  We are interested in patterns in the run-up to forks, so, we do a longitudinal study, unlike most existing research on forking.
 
@@ -359,7 +359,7 @@ In summary, a measurement-only approach would not be able to explain the longitu
 
 Longitudinal evolution of a network data is the result of many small atomic changes occurring between the the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another developer, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
 
-The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of actors changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as OpenSourceDeveloper-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
+The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of developers changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as OpenSourceDeveloper-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
 
 Let the data for our statistical developer-oriented model be $M$ repeated observations on a network with \textit{g} developers. The $M$ observed networks (at least two) are represented as directed graphs with adjacency matrices $X(t_m) = (X_{ij}(t_m)))$ for $m = 1,...,M$, where $i$ and $j$ range from a to $g$. The variable $X_{ij}$ shows whether at time $t$ there exists a tie from $i$ to $j$ (value 1) or not (value 0). Be definition, $\forall i, X_{ii}=0$ (i.e. the diagonal of the adjacency matrices).
 
@@ -404,7 +404,7 @@ Sometimes the order in which changes occur makes a difference for the desirabili
 
 The \textit{gratification function} $g_i(x,j)$ for developer $i$ is the value attached to this developer (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
 
-In the case that a gratification function is included, the actor $i$ chooses to change $x_{ij}$ for that other developer $j$ for whom the following value \cite{Snijders2004} is the highest:
+In the case that a gratification function is included, the developer $i$ chooses to change $x_{ij}$ for that other developer $j$ for whom the following value \cite{Snijders2004} is the highest:
 
 \begin{equation}
 f_i(x(i \mapsto j)) + g_i(x, j) + U(j)
@@ -596,13 +596,13 @@ To test the statistical significance of the mean differences between groups (in 
 In section \ref{ResearchObjective}, we described the research objectives in general terms. Now that we have described how to model the longitudinal changes in an open source community's collaboration networks, we can be more specific about the research questions, and the hypotheses for our statistical tests. The following are the null hypotheses for across-group comparisons using the Multivariate Analysis of Variance Between Multiple Groups tests.
 
 \subsubsection{Null Hypothesis \# 1:} 
-There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in U.F. category and No.F. category.
+There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in U.F. category and No.F. category.
 
 \subsubsection{Null Hypothesis \# 2:} 
-There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in H.F. category and No.F. category.
+There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in H.F. category and No.F. category.
 
 \subsubsection{Null Hypothesis \# 3:} 
-There are no statistically significant differences in vectors of means of the actor-oriented model of longitudinal changes of software projects in U.F. category and H.F. category.
+There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in U.F. category and H.F. category.
 
 
 \subsection{Predictions}
@@ -946,7 +946,7 @@ More importantly, the initial study showed the limitations of a \textit{network-
 \item Closure effect: Balance \begin{equation*} \sum_{j = 1}^{n} x_{ij} \sum_{h=1, h \neq i,j}^{n} \abs{(b_0 - x_{ih} - s_{jh})} \end{equation*}
 $b_0$ is a constant equal to the mean of $\abs{x_{ih}-x_{jh}}$
 
-\item Closure effect: The number of actors at distance two \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*}
+\item Closure effect: The number of developers at distance two \begin{equation*} \sum_j (1 - x_{ij}) max_h (x_{ih}x_{hj}) \end{equation*}
 
 \item Three-cycles \begin{equation*} \sum_j x_{ij} \sum_h x_{jh}x_{hi} \end{equation*}
 
