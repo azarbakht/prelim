@@ -212,9 +212,7 @@ We consider three of the seven main reasons for forking \cite{Robles}, as listed
 
 %The other categories could be the focus of another research study, whose scope does not have a large overlap with the scope of this study. \\
 
-As an example of how these traces of forking can be identified, if a fork occurred because of a desire for ``more community-driven development'', we should see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community (i.e. the power stayed in the hands of the same people throughout, as developers joined and left.) \\
-
-XXX draw it!\\
+As an example of how these traces of forking can be identified, if a fork occurred because of a desire for ``more community-driven development'', we should see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community (i.e. the power stayed in the hands of the same people throughout, as developers joined and left.)
 
 In this study, we plan to analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time.
 
@@ -423,11 +421,9 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \end{equation}
 
 \subsubsection{Markov Chain Transition Rate Matrix}
-The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. This Markov chain is used to estimate the model parameters stochastically, instead of calculating them.\\
+The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. This Markov chain is used to estimate the model parameters stochastically, instead of calculating them exactly, which is not possible for us.
 
-XXX\\ 
-
-The transition rate matrix (also called intensity matrix), for this model is given by 
+This Markov chain has a transition rate matrix. The transition rate matrix (also called intensity matrix), for this model is given by 
 \begin{multline}
 \label{intensityMatrix}
 q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \mapsto j) | X(t) = x)}\big) \\ = \lambda_i(x) p_{ij}(x)
