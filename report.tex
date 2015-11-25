@@ -637,6 +637,15 @@ The following are the null hypotheses for across-group comparisons using the Mul
 
 If the data does not exhibit statistically significant differences, then our study fails, and our assumptions cannot be proven. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution.  This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
 
+\subsection{Validation}
+
+To test and validate our findings, we will model projects with ``unknown'' (or treated as ``unknown'') forking history using the same longitudinal modeling method. 
+
+The new model can then be compared to the ``known'' models in each forking category, using the ANOVA test. This comparison will indicate which category of forking reasons is the likely reason for forking or not-forking of the ``unknown'' projects. In this way, we can extrapolate about new projects' collaboration patterns. 
+
+
+
+
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -717,7 +726,7 @@ If the data does not exhibit statistically significant differences, then our stu
 
 We proposed to model the developers interactions statistically, to find the population processes that underlie the formation, changes, and dissolution of developer communities. We expect to see distinct changes of such processes for each forking category.
 
-Data collection for mailing list archives is completed. The issue tracking system, and source code interactions data is in the progress. Once all data is collected an cleaned, we will do the statistical modeling. Next, we will conduct the interview study, which will conclude the proposed research. 
+Data collection for mailing list archives is completed. The issue tracking system, and source code interactions data is in the progress. Once all data is collected an cleaned, we will do the statistical modeling. Next, we will do the validation testing, which will conclude the proposed research. 
 
 We expect to find patterns specific to each category, which then may be used to identify early warning signs of forking. The identification of such measures may inform those who are interested in the sustainability of their project community to stay informed and take action to amend undesirable dynamics. 
 
@@ -755,7 +764,16 @@ June 2016 & Defense (Hopefully) & \\
 
 \section{Threats to Validity}
 \label{threatsToValidity}
-The presented findings may not be generalized to all FOSS projects. First, One reason is that the projects is this research study were selected from a pool of candidate projects, partly because of the availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. Second, the proposed technique uses the data from online communications. The assumption that all the communication can be captured by mining repositories is intuitively imperfect, but inevitable. Third, social interactions data is noisy, and our statistical approach might be affected because of this. 
+The presented findings may not be generalized to all FOSS projects. 
+
+First, One reason is that the projects is this research study were selected from a pool of candidate projects, partly because of the availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. 
+
+Second, the proposed technique uses the data from online communications. The assumption that all the communication can be captured by mining repositories is intuitively imperfect, but inevitable. Third, social interactions data is noisy, and our statistical approach might be affected because of this. 
+
+Third, the statistical model we use to model the longitudinal evolution of collaboration networks is estimated stochastically, rather than being calculated exactly. The stochastic process might not always arrive at the same results. To counter this issue, we run the algorithm several times to double-check for such irregularities.
+
+Fourth, 
+
 
 \section*{Acknowledgment}
 \label{acknowledgments}
