@@ -323,14 +323,11 @@ A longitudinal study can look at the sociograms in the following two distinct ap
 
 \end{enumerate}
 
-Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. \\
-
-XXX one limitation figure \ref{figureNodesEdgesTimeR} shows is, \\
-XXX one expressiveness figure \ref{figureNodesEdgesTimeR} shows is, \\
-
-
+Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. 
 
 The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
+
+As an example of expressiveness, figure \ref{figureNodesEdgesTimeR} shows that a measurements-only approach shows us the trends of change or no-change in the measured metrics. It also shows one limitation of such an approach: even though we can see trend changes, it is hard to make sense of such trends given the short scope of the measurements. Additionally, it is hard to constitutes a reference point and back it up mathematically or statistically.
 
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes} approach.
 
@@ -764,15 +761,13 @@ June 2016 & Defense (Hopefully) & \\
 
 \section{Threats to Validity}
 \label{threatsToValidity}
-The presented findings may not be generalized to all FOSS projects. 
+The study findings may not be generalized to all FOSS projects. 
 
-First, One reason is that the projects is this research study were selected from a pool of candidate projects, partly because of the availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. 
+First, one reason is that the projects is this research study were selected from a pool of candidate projects, based on a filtering criteria that included availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. 
 
-Second, the proposed technique uses the data from online communications. The assumption that all the communication can be captured by mining repositories is intuitively imperfect, but inevitable. Third, social interactions data is noisy, and our statistical approach might be affected because of this. 
+Second, we used data from online communications. The assumption that all the communication can be captured by mining repositories is intuitively imperfect, but inevitable. Third, social interactions data is noisy, and our statistical approach might be affected because of this. 
 
 Third, the statistical model we use to model the longitudinal evolution of collaboration networks is estimated stochastically, rather than being calculated exactly. The stochastic process might not always arrive at the same results. To counter this issue, we run the algorithm several times to double-check for such irregularities.
-
-Fourth, 
 
 
 \section*{Acknowledgment}
