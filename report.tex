@@ -53,6 +53,12 @@
 
 \usepackage[toc,page]{appendix}
 
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\usepackage{graphicx}
+\usepackage{blindtext}
+
 %%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -279,7 +285,29 @@ What quantitative measure(s) can be used as an early warning sign of an inflecti
 \section{Methodology}
 \label{methodology}
 
-Detecting change patterns, requires gathering  relevant data, cleaning it, and analyzing it. In the following subsections, we describe the proposed process in detail. 
+Detecting change patterns, requires gathering  relevant data, cleaning it, and analyzing it. In the following subsections, we describe the proposed process in detail. Figure \ref{FlowChart} shows the overview of our methodology.
+
+\begin{figure}[!ht]
+\centering
+\epsfig{file=flowchart.eps, width=0.9\columnwidth}
+\caption{Proposed methodology in a glance}
+\label{FlowChart}
+\end{figure}
+
+%\blindtext
+%\begin{figure}[h]
+%   \centering
+%   \begin{tabular}{@{}c@{\hspace{.5cm}}c@{}}
+%       \includegraphics[page=1,width=.45\textwidth]{somemultipagepdf} & 
+%       \includegraphics[page=2,width=.45\textwidth]{somemultipagepdf} \\[.5cm]
+%       \includegraphics[page=3,width=.45\textwidth]{somemultipagepdf} \\
+%   \end{tabular}
+% \caption{Test}
+% \label{flowChart}
+%\end{figure}
+%\blindtext
+%
+
 
 \subsection{Phase 1: Data Collection}
 \label{DataCollection}
