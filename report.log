@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  8 DEC 2015 19:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  6 JAN 2016 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,16 +1436,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
 to.pdf>] [45] [46] [47] [48] (./referenc.tex [49
 
 ] [50] [51] [52]) (./report.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1208.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1250.
  [53]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1250.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1250.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: BAC6EC33EF174D23EA33D1FC22D3E0FA;1840.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1208.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1250.
  ) 
 Here is how much of TeX's memory you used:
  23361 strings out of 494985
@@ -1470,7 +1470,7 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (54 pages, 3001007 bytes).
+Output written on report.pdf (54 pages, 3000785 bytes).
 PDF statistics:
  922 PDF objects out of 1000 (max. 8388607)
  805 compressed objects within 9 object streams
