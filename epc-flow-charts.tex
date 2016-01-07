@@ -1,0 +1,193 @@
+% Model flow charts
+% Author: Fabian Schuh
+\documentclass{minimal}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+%%%>
+
+\begin{comment}
+:Title:  Model flow charts
+:Grid: 1x2
+
+
+\end{comment}
+
+\usepackage[utf8]{inputenc}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric, arrows, positioning, calc, matrix}
+
+\tikzset{
+    state/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           minimum height=2em,
+           inner sep=2pt,
+           text centered,
+           },
+}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.0, align=center, on grid, auto, ->,>=stealth']
+
+ % First node
+ % STATE Data Collection
+ % Use previously defined 'state' as layout (see above)
+ % use tabular for content to get columns/rows
+ % parbox to limit width of the listing
+ \node[state] (Data Collection) 
+ {\begin{tabular}{l}
+  \textbf{Data Collection}\\
+  \parbox{4cm}{
+  \begin{itemize}
+   \item Mailing Lists
+   \item Bug Tracking Repositories
+   \item Codebase
+  \end{itemize}
+  }
+  \end{tabular}};
+
+ % STATE Data Cleaning and Wrangling
+ \node[state,       % layout (defined above)
+ node distance=2cm,     % distance to Data Collection
+ text width=5.5cm,        % max text width
+ yshift = -2cm,
+ xshift = 1cm,
+ right of=Data Collection,        % Position is to the right of Data Collection
+ ] (Data Cleaning and Wrangling)    % move 3cm in y
+ {%                     % posistion relative to the center of the 'box'
+ \begin{tabular}{l}     % content
+  \textbf{Data Cleaning and Wrangling}\\
+  \parbox{5cm}{12 equioespaced directed graphs for each project
+}
+ \end{tabular}
+ };
+
+ % STATE Morkov Chain Monte Carlo Estimation
+ \node[state,
+ right of=Data Cleaning and Wrangling,
+ node distance=2cm,
+ text width=7cm, 
+ yshift=-2cm] (Morkov Chain Monte Carlo Estimation) 
+ {%
+ \begin{tabular}{l}
+  \textbf{Morkov Chain Monte Carlo Estimation}\\
+  \parbox{6cm}{
+  \begin{itemize}
+  \item Rate of Change
+  \item Parameter Estimates with p-value and s.e.
+  \end{itemize}
+  }
+ \end{tabular}
+ };
+
+ % STATE Model
+ \node[state,
+ below of=Morkov Chain Monte Carlo Estimation,
+ node distance=1cm, yshift=-1cm, xshift = 2cm] (Model) 
+ {%
+ \begin{tabular}{l}
+  \textbf{Statistical Model}\\
+  \parbox{5cm}{
+	\begin{itemize}
+	\item Test of Goodness of Fit
+	\item Relative Importance of Effects
+\end{itemize}
+  }
+ \end{tabular}
+ };
+
+
+ % STATE MANOVA
+ \node[state,
+ below of=Model,
+ node distance=1cm, yshift=-1cm, xshift = 3cm] (MANOVA) 
+ {%
+ \begin{tabular}{l}
+  \textbf{Multi-Parameter T-test and MANOVA}\\
+  \parbox{6cm}{
+	\begin{itemize}
+	\item Test of Goodness of Fit
+	\item Relative Importance of Effects
+\end{itemize}
+  }
+ \end{tabular}
+ };
+ 
+% % STATE Results
+% \node[state,       % layout (defined above)
+% node distance=5cm,     % distance to Data Collection
+% text width=7cm,        % max text width
+% below of=MANOVA,
+% xshift= 1cm,        
+% ] (Results) {
+%    \begin{tcolorbox}[%
+%        title={Results},
+%    ]
+%	\begin{itemize}
+%	\item Reresented Collaboration with Longitudinal Change
+%	\item Modeled change and Rate of change statistically
+%	\item Expressed underlying properties/values of community Behavior as model effects and their significance and relative importance
+%	\item Could be a starting point for gaining an understanding of longitudinal change and underlying properties of an open source project community
+%	\end{itemize}
+%    \end{tcolorbox}
+%};
+
+ \node[state,
+ below of=MANOVA,
+ node distance=1cm, yshift=-2.2cm, xshift = 1cm] (Results) 
+ {%
+ \begin{tabular}{l}
+  \textbf{Results}\\
+  \parbox{8cm}{
+\begin{itemize}
+	\item Reresented Collaboration with Longitudinal Change
+	\item Modeled change and Rate of change statistically
+	\item Expressed underlying properties/values of community Behavior as model effects and their significance and relative importance
+	\item Good starting point for gaining an understanding of longitudinal change of underlying properties of an open source project community
+	\end{itemize}
+  }
+ \end{tabular}
+ };
+
+ % draw the paths and and print some Text below/above the graph
+ \path 
+(Data Collection) edge[bend right=-10]
+%node[anchor=south,right,text width=1cm]
+%{Raw Data}
+(Data Cleaning and Wrangling)
+                   
+(Data Cleaning and Wrangling) 
+edge [bend right=-10]
+(Morkov Chain Monte Carlo Estimation)
+
+ 
+(Morkov Chain Monte Carlo Estimation)
+edge[bend right=-10]
+%node[anchor=east,right,text width=6cm,xshift=1em]
+%{3} 
+(Model)
+
+(Model)
+edge[bend right=-10]
+(MANOVA)
+
+(MANOVA)
+edge[bend right=-20]
+(Results)
+
+% (Morkov Chain Monte Carlo Estimation)  edge[bend left=45] node[anchor=north,below,text width=6cm,yshift=-1em,xshift=-2em]
+%                  {X31
+%                  } (Data Collection)
+ ;
+\end{tikzpicture}
+\end{document}
