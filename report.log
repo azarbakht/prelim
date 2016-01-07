@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  7 JAN 2016 13:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  7 JAN 2016 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,12 +1035,12 @@ Overfull \hbox (1.40828pt too wide) in paragraph at lines 263--264
 n-tify these traces/social
  []
 
-[11] [12] <flowchart2.pdf, id=351, 500.5631pt x 407.78749pt>
-File: flowchart2.pdf Graphic file (type pdf)
+[11] [12] <epc-flow-charts.pdf, id=351, 557.01099pt x 478.91924pt>
+File: epc-flow-charts.pdf Graphic file (type pdf)
 
-<use flowchart2.pdf>
-Package pdftex.def Info: flowchart2.pdf used on input line 296.
-(pdftex.def)             Requested size: 468.0011pt x 381.27937pt.
+<use epc-flow-charts.pdf>
+Package pdftex.def Info: epc-flow-charts.pdf used on input line 296.
+(pdftex.def)             Requested size: 468.0011pt x 402.39172pt.
 
 Overfull \hbox (108.0011pt too wide) in paragraph at lines 296--297
  [][] 
@@ -1063,7 +1063,7 @@ File: flowchart-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: flowchart-eps-converted-to.pdf used on input line 303.
 
 (pdftex.def)             Requested size: 323.9978pt x 421.7748pt.
- [13 <./flowchart2.pdf>] [14 <./flowchart-eps-converted-to.pdf>]
+ [13 <./epc-flow-charts.pdf>] [14 <./flowchart-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 511--511
 []|\OT1/cmr/bx/n/10.95 Year
  []
@@ -1458,7 +1458,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1415.
  ) 
 Here is how much of TeX's memory you used:
  23369 strings out of 494985
- 434064 string characters out of 6180356
+ 434089 string characters out of 6180356
  527958 words of memory out of 5000000
  25883 multiletter control sequences out of 15000+600000
  12326 words of font info for 44 fonts, out of 8000000 for 9000
@@ -1479,7 +1479,7 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (55 pages, 3005044 bytes).
+Output written on report.pdf (55 pages, 3005608 bytes).
 PDF statistics:
  940 PDF objects out of 1000 (max. 8388607)
  821 compressed objects within 9 object streams

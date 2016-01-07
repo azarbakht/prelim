@@ -77,7 +77,7 @@
  right of=Data Cleaning and Wrangling,
  node distance=2cm,
  text width=7cm, 
- yshift=-2cm] (Morkov Chain Monte Carlo Estimation) 
+ yshift=-2.5cm] (Morkov Chain Monte Carlo Estimation) 
  {%
  \begin{tabular}{l}
   \textbf{Morkov Chain Monte Carlo Estimation}\\
@@ -93,7 +93,7 @@
  % STATE Model
  \node[state,
  below of=Morkov Chain Monte Carlo Estimation,
- node distance=1cm, yshift=-1cm, xshift = 2cm] (Model) 
+ node distance=1cm, yshift=-1.5cm, xshift = 2cm] (Model) 
  {%
  \begin{tabular}{l}
   \textbf{Statistical Model}\\
@@ -110,41 +110,23 @@
  % STATE MANOVA
  \node[state,
  below of=Model,
- node distance=1cm, yshift=-1cm, xshift = 3cm] (MANOVA) 
+ node distance=1cm, yshift=-1.7cm, xshift = 2cm] (MANOVA) 
  {%
  \begin{tabular}{l}
   \textbf{Multi-Parameter T-test and MANOVA}\\
   \parbox{6cm}{
 	\begin{itemize}
-	\item Test of Goodness of Fit
-	\item Relative Importance of Effects
+	\item Project Comparison
+	\item Multivariate Analysis of Variance between Multiple Groups, with p-value
 \end{itemize}
   }
  \end{tabular}
  };
  
-% % STATE Results
-% \node[state,       % layout (defined above)
-% node distance=5cm,     % distance to Data Collection
-% text width=7cm,        % max text width
-% below of=MANOVA,
-% xshift= 1cm,        
-% ] (Results) {
-%    \begin{tcolorbox}[%
-%        title={Results},
-%    ]
-%	\begin{itemize}
-%	\item Reresented Collaboration with Longitudinal Change
-%	\item Modeled change and Rate of change statistically
-%	\item Expressed underlying properties/values of community Behavior as model effects and their significance and relative importance
-%	\item Could be a starting point for gaining an understanding of longitudinal change and underlying properties of an open source project community
-%	\end{itemize}
-%    \end{tcolorbox}
-%};
-
+ % STATE Results
  \node[state,
  below of=MANOVA,
- node distance=1cm, yshift=-2.2cm, xshift = 1cm] (Results) 
+ node distance=1cm, yshift=-3cm, xshift = 1cm] (Results) 
  {%
  \begin{tabular}{l}
   \textbf{Results}\\
@@ -162,27 +144,32 @@
  % draw the paths and and print some Text below/above the graph
  \path 
 (Data Collection) edge[bend right=-10]
-%node[anchor=south,right,text width=1cm]
-%{Raw Data}
+node[anchor=south,right,text width=2cm]
+{Raw Data}
 (Data Cleaning and Wrangling)
                    
 (Data Cleaning and Wrangling) 
 edge [bend right=-10]
+node[anchor=south,right,text width=11cm]
+{12 Directed Graph representation of each project's collaborations}
 (Morkov Chain Monte Carlo Estimation)
 
- 
 (Morkov Chain Monte Carlo Estimation)
 edge[bend right=-10]
-%node[anchor=east,right,text width=6cm,xshift=1em]
-%{3} 
+node[anchor=south,right,text width=5cm]
+{Model parameter estimates}
 (Model)
 
 (Model)
 edge[bend right=-10]
+node[anchor=south,below,text width=12cm]
+{A well-fitting statistical model (i.e. weighted sum of effects) for each project}
 (MANOVA)
 
 (MANOVA)
 edge[bend right=-20]
+node[anchor=south,below,text width=14cm]
+{Between group and cross-group comparison results of significance with p-values}
 (Results)
 
 % (Morkov Chain Monte Carlo Estimation)  edge[bend left=45] node[anchor=north,below,text width=6cm,yshift=-1em,xshift=-2em]

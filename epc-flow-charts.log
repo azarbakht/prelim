@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  7 JAN 2016 13:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  7 JAN 2016 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,7 +696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
  []
 
 
-Overfull \hbox (20.80846pt too wide) in paragraph at lines 192--192
+Overfull \hbox (77.256pt too wide) in paragraph at lines 179--179
 [][] 
  []
 
@@ -704,16 +704,16 @@ Preview: Tightpage -327680 -327680 327680 327680
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./epc-flow-charts.aux) 
 ) 
 Here is how much of TeX's memory you used:
- 12477 strings out of 494985
- 250217 string characters out of 6180356
- 312028 words of memory out of 5000000
- 15448 multiletter control sequences out of 15000+600000
+ 12479 strings out of 494985
+ 250243 string characters out of 6180356
+ 313028 words of memory out of 5000000
+ 15450 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,14n,63p,839b,792s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,14n,63p,839b,824s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on epc-flow-charts.pdf (1 page, 36246 bytes).
+Output written on epc-flow-charts.pdf (1 page, 37906 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream
