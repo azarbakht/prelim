@@ -1,21 +1,21 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces The methodology in a glance\relax }}{13}{figure.caption.12}
 \contentsline {figure}{\numberline {2}{\ignorespaces The methodology overview\relax }}{14}{figure.caption.13}
-\contentsline {figure}{\numberline {3}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{39}{figure.caption.21}
-\contentsline {figure}{\numberline {4}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{41}{figure.caption.22}
-\contentsline {figure}{\numberline {5}{\ignorespaces The network diameter change over time, as network-specific measurements}}{42}{figure.caption.23}
-\contentsline {figure}{\numberline {6}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{43}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{subfigure.6.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{subfigure.6.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{subfigure.6.4}
-\contentsline {figure}{\numberline {7}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{43}{figure.caption.25}
-\contentsline {figure}{\numberline {8}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{44}{figure.caption.26}
-\contentsline {figure}{\numberline {9}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{45}{figure.caption.27}
+\contentsline {figure}{\numberline {3}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{40}{figure.caption.21}
+\contentsline {figure}{\numberline {4}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{42}{figure.caption.22}
+\contentsline {figure}{\numberline {5}{\ignorespaces The network diameter change over time, as network-specific measurements}}{43}{figure.caption.23}
+\contentsline {figure}{\numberline {6}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{44}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{subfigure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{subfigure.6.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{subfigure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{subfigure.6.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{subfigure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{subfigure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{subfigure.6.4}
+\contentsline {figure}{\numberline {7}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{44}{figure.caption.25}
+\contentsline {figure}{\numberline {8}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{45}{figure.caption.26}
+\contentsline {figure}{\numberline {9}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{46}{figure.caption.27}

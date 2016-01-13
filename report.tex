@@ -123,7 +123,7 @@ Additionally, studies of FOSS communities tend to suffer from an important limit
 
 Identification is the first step to rectify an undesirable dynamic before the damage is done. A community that does not manage growing pains may end up stagnating or dissolving. Managing growing pains is especially important in the case of FOSS projects, where near half the project contributors are volunteers \cite{Forrest}. Oh et al. \cite{Oh} have argued that openness in FOSS is ``[...] generally perceived as having a positive connotation, however, the term can also be interpreted as referring to some nonconstructive characteristics, such as unobstructed exit, susceptible, vulnerable, fragile, lacking effective regulation, and so on. The unobstructed exit and lack of regulatory force inherent in the FOSS community can result in a community's susceptibility and vulnerability to herded exits by its participants. Commercial vendor intervention, an alternative project becoming available, and licensing issues can result in some original core members ceasing to provide their loyal service for the community, which can prompt their coworkers to leave as well'' \cite{Oh}. Identification of recipes for success or stagnation, sustainability or fragmentation may lead to a set of best practices and pitfalls.\\
 
-I propose to use temporal social network analysis to study the evolution and social dynamics of FOSS communities. Specifically, we propose using a longitudinal exponential family random graph statistical model to investigate the driving forces in formation and dissolution of communities. Additionally,  to complement the statistical study, we propose doing a qualitative interview study for validating the findings. With these techniques we aim to identify better measures for influence, shifts of influence, measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. One set of dynamics we are especially interested in, are those that lead FOSS projects to fork.\\
+I propose to use temporal social network analysis to study the evolution and social dynamics of FOSS communities. Specifically, we propose using a longitudinal exponential family random graph statistical model to investigate the driving forces in formation and dissolution of communities. Additionally, to complement the statistical study, we propose doing a qualitative interview study for validating the findings. With these techniques we aim to identify better measures for influence, shifts of influence, measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. One set of dynamics we are especially interested in, are those that lead FOSS projects to fork.\\
 
 \begin{table}[!ht]
 \centering
@@ -858,7 +858,14 @@ If the data does not exhibit statistically significant differences, then our stu
 
 \subsection{Validation}
 
-To test and validate our findings, we will model projects with ``unknown'' (or treated as ``unknown'') forking history using the same longitudinal modeling method. 
+\subsubsection{Qualitative Study: Interviews and Survey}
+To validate what our quantitative approach finds, we need to compare it to what people remember of the situation. This validation check requires interviewing and surveying people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation (i.e., when no new information is gained by doing more interviews), as possible. These semi-structured interviews will be recorded, transcribed, and coded according to the statistical model's covariates, to find overlapping and common patterns.
+
+\subsubsection{Sentiment Analysis}
+To complement the study, the content of the messages send and received by the top contributors of the project in the month leading to the forking events will be analyzed. This data will be used as one of the developers' individual attributes in our statistical modeling. 
+
+\subsubsection{Cross-Validation}
+To test and validate our quantitative findings, we will model projects with ``unknown'' (or treated as ``unknown'') forking history using the same longitudinal modeling method. 
 
 The new model can then be compared to the ``known'' models in each forking category, using the ANOVA test. This comparison can provide new insights as to which category of forking reasons is the likely reason for forking or not-forking of the ``unknown'' projects. In this way, we may extrapolate about new projects' collaboration patterns. 
 

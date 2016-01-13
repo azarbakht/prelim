@@ -33,18 +33,21 @@
 \contentsline {subsubsection}{\numberline {5.7.4}Null Hypothesis \# 2:}{31}{subsubsection.0.5.7.4}
 \contentsline {subsubsection}{\numberline {5.7.5}Null Hypothesis \# 3:}{31}{subsubsection.0.5.7.5}
 \contentsline {subsection}{\numberline {5.8}Validation}{31}{subsection.0.5.8}
-\contentsline {section}{\numberline {6}To Be Done}{32}{section.0.6}
-\contentsline {section}{\numberline {7}Timeline}{33}{section.0.7}
-\contentsline {section}{\numberline {8}Threats to Validity}{34}{section.0.8}
-\contentsline {chapter}{Appendices}{35}{section*.18}
-\contentsline {section}{\numberline {1}Appendix A: List of all projects forked in socially-related Undesirable Forking (U.F.) Category}{36}{section.1..1}
-\contentsline {section}{\numberline {2}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{38}{section.1..2}
-\contentsline {subsection}{\numberline {2.1}Visualization}{40}{subsection.1..2.1}
-\contentsline {subsection}{\numberline {2.2}Initial study results and discussion}{40}{subsection.1..2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Kamailio Project}{40}{subsubsection.1..2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Amarok Project}{43}{subsubsection.1..2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Asterisk Project}{44}{subsubsection.1..2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Initial study conclusion}{45}{subsubsection.1..2.2.4}
-\contentsline {section}{\numberline {3}Appendix C: Mathematical Definition of Effects in the Statistical Model}{47}{section.1..3}
-\contentsline {subsection}{\numberline {3.1}Structural Effects for the Objective Function}{47}{subsection.1..3.1}
-\contentsline {subsection}{\numberline {3.2}Behavior-related Effects}{49}{subsection.1..3.2}
+\contentsline {subsubsection}{\numberline {5.8.1}Qualitative Study: Interviews and Survey}{31}{subsubsection.0.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.2}Sentiment Analysis}{31}{subsubsection.0.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.3}Cross-Validation}{32}{subsubsection.0.5.8.3}
+\contentsline {section}{\numberline {6}To Be Done}{33}{section.0.6}
+\contentsline {section}{\numberline {7}Timeline}{34}{section.0.7}
+\contentsline {section}{\numberline {8}Threats to Validity}{35}{section.0.8}
+\contentsline {chapter}{Appendices}{36}{section*.18}
+\contentsline {section}{\numberline {1}Appendix A: List of all projects forked in socially-related Undesirable Forking (U.F.) Category}{37}{section.1..1}
+\contentsline {section}{\numberline {2}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{39}{section.1..2}
+\contentsline {subsection}{\numberline {2.1}Visualization}{41}{subsection.1..2.1}
+\contentsline {subsection}{\numberline {2.2}Initial study results and discussion}{41}{subsection.1..2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Kamailio Project}{41}{subsubsection.1..2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Amarok Project}{44}{subsubsection.1..2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Asterisk Project}{45}{subsubsection.1..2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Initial study conclusion}{46}{subsubsection.1..2.2.4}
+\contentsline {section}{\numberline {3}Appendix C: Mathematical Definition of Effects in the Statistical Model}{48}{section.1..3}
+\contentsline {subsection}{\numberline {3.1}Structural Effects for the Objective Function}{48}{subsection.1..3.1}
+\contentsline {subsection}{\numberline {3.2}Behavior-related Effects}{50}{subsection.1..3.2}
