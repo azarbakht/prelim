@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  13 JAN 2016 13:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  19 JAN 2016 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,7 +1035,7 @@ Overfull \hbox (1.40828pt too wide) in paragraph at lines 263--264
 n-tify these traces/social
  []
 
-[11] [12] <epc-flow-charts.pdf, id=351, 557.01099pt x 478.91924pt>
+[11] [12] <epc-flow-charts.pdf, id=353, 557.01099pt x 478.91924pt>
 File: epc-flow-charts.pdf Graphic file (type pdf)
 
 <use epc-flow-charts.pdf>
@@ -1056,7 +1056,7 @@ Package epstopdf Info: Source file: <flowchart.eps>
 .pdf flowchart.eps>
 (epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
-<flowchart-eps-converted-to.pdf, id=352, 1782.66pt x 2320.67pt>
+<flowchart-eps-converted-to.pdf, id=354, 1782.66pt x 2320.67pt>
 File: flowchart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flowchart-eps-converted-to.pdf>
@@ -1151,93 +1151,137 @@ Overfull \hbox (18.5359pt too wide) in paragraph at lines 708--709
 ith high in-degree/out-
  []
 
-[25]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 727.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 718.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 727.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 718.
 
-Overfull \hbox (6.1766pt too wide) in paragraph at lines 727--728
-[]\OT1/cmr/m/n/10.95 Developer's level of con-tri-bu-tion/activity (e.g. code c
-om-mits per month,
+Overfull \hbox (0.82326pt too wide) in paragraph at lines 719--720
+[]\OT1/cmr/m/n/10.95 Developer's level of priv-i-lege/prestige (e.g. ad-min pri
+vilege-holder
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 769--770
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
 
  []
 
 [27]
-Overfull \hbox (62.47102pt too wide) in paragraph at lines 804--806
+Overfull \hbox (62.47102pt too wide) in paragraph at lines 806--808
 []\OT1/cmr/m/n/10.95 The sim-u-la-tion out-put will be the ran-dom vari-ables $
 (\OML/cmm/m/it/10.95 S; R\OT1/cmr/m/n/10.95 ) = (\OML/cmm/m/it/10.95 S[]; :::; 
 S[]; R[]; :::; R[]\OT1/cmr/m/n/10.95 )$.
  []
 
 [28]
-Overfull \hbox (1.77806pt too wide) in paragraph at lines 835--835
+Overfull \hbox (1.77806pt too wide) in paragraph at lines 836--836
 []\OT1/cmr/bx/n/10.95 Multivariate Anal-y-sis of Vari-ance Be-tween Mul-ti-ple 
 Groups 
  []
 
 [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 865--866
+Underfull \hbox (badness 10000) in paragraph at lines 866--867
 
  []
 
-[31] [32] [33]
-Overfull \hbox (9.36748pt too wide) in paragraph at lines 977--994
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
+[]|\OT1/cmr/bx/n/10.95 U.F.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
+[]|\OT1/cmr/bx/n/10.95 U.F.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
+\OT1/cmr/bx/n/10.95 More
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
+[]|\OT1/cmr/bx/n/10.95 H.F.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--876
+\OT1/cmr/bx/n/10.95 Tech.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--882
+[]|\OT1/cmr/m/n/10.95 Covariate-related
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--883
+[]|\OT1/cmr/m/n/10.95 Preferential At-tach-
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 885--885
+[]|\OT1/cmr/m/n/10.95 Developer's level of
+ []
+
+
+Overfull \hbox (23.99231pt too wide) in paragraph at lines 874--889
+ [][] 
+ []
+
+[31] [32] [33] [34]
+Overfull \hbox (9.36748pt too wide) in paragraph at lines 978--995
 [][]
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1013
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1014
 
  []
 
-[35] [36
+[36] [37
 
 
 ]
-Overfull \hbox (7.77797pt too wide) in paragraph at lines 1024--1024
+Overfull \hbox (7.77797pt too wide) in paragraph at lines 1025--1025
 []\OT1/cmr/bx/n/14.4 Appendix A: List of all projects forked in socially-
  []
 
 
-Overfull \hbox (21.36327pt too wide) in paragraph at lines 1034--1035
+Overfull \hbox (21.36327pt too wide) in paragraph at lines 1035--1036
 []|\OT1/cmr/bx/n/10.95 Collected?| 
  []
 
 
-Overfull \hbox (2.0658pt too wide) in paragraph at lines 1048--1048
+Overfull \hbox (2.0658pt too wide) in paragraph at lines 1049--1049
 []|\OT1/cmr/m/n/10.95 jMonkeyEngine| 
  []
 
 
-Overfull \hbox (23.9978pt too wide) in paragraph at lines 1032--1054
- [][] 
- []
-
-[37]
-Overfull \hbox (5.12267pt too wide) in paragraph at lines 1071--1071
-[]|\OT1/cmr/m/n/10.95 GraphicsMagick| 
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 1087--1087
-[]|\OT1/cmr/m/n/10.95 Project Dark-
- []
-
-
-Overfull \hbox (77.9956pt too wide) in paragraph at lines 1062--1096
+Overfull \hbox (23.9978pt too wide) in paragraph at lines 1033--1055
  [][] 
  []
 
 [38]
-Overfull \hbox (9.79459pt too wide) in paragraph at lines 1101--1101
+Overfull \hbox (5.12267pt too wide) in paragraph at lines 1072--1072
+[]|\OT1/cmr/m/n/10.95 GraphicsMagick| 
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 1088--1088
+[]|\OT1/cmr/m/n/10.95 Project Dark-
+ []
+
+
+Overfull \hbox (77.9956pt too wide) in paragraph at lines 1063--1097
+ [][] 
+ []
+
+[39]
+Overfull \hbox (9.79459pt too wide) in paragraph at lines 1102--1102
 \OT1/cmr/bx/n/14.4 us-ing the network-specific mea-sure-ment ap-proach 
  []
 
@@ -1249,22 +1293,22 @@ Package epstopdf Info: Source file: <centrality.eps>
 (epstopdf)                    size: 759320 bytes
 (epstopdf)             Command: <repstopdf --outfile=centrality-eps-converted-t
 o.pdf centrality.eps>
-(epstopdf)             \includegraphics on input line 1107.
+(epstopdf)             \includegraphics on input line 1108.
 Package epstopdf Info: Output file is already uptodate.
-<centrality-eps-converted-to.pdf, id=632, 1004.75375pt x 998.73125pt>
+<centrality-eps-converted-to.pdf, id=638, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use centrality-eps-converted-to.pdf>
 Package pdftex.def Info: centrality-eps-converted-to.pdf used on input line 110
-7.
+8.
 (pdftex.def)             Requested size: 251.9989pt x 250.47464pt.
 
-Overfull \hbox (21.20966pt too wide) in paragraph at lines 1112--1113
+Overfull \hbox (21.20966pt too wide) in paragraph at lines 1113--1114
 []\OT1/cmr/m/n/10.95 There are many ways of look-ing at an in-di-vid-ual's im-p
 or-tance/prestige/status
  []
 
-[39] [40 <./centrality-eps-converted-to.pdf>]
+[40] [41 <./centrality-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
 (epstopdf)                    size: 30957 bytes
@@ -1273,15 +1317,15 @@ Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 (epstopdf)                    size: 23445 bytes
 (epstopdf)             Command: <repstopdf --outfile=NodesEdgesTime-eps-convert
 ed-to.pdf NodesEdgesTime.eps>
-(epstopdf)             \includegraphics on input line 1126.
+(epstopdf)             \includegraphics on input line 1127.
 Package epstopdf Info: Output file is already uptodate.
 
-<NodesEdgesTime-eps-converted-to.pdf, id=663, 744.7825pt x 697.60625pt>
+<NodesEdgesTime-eps-converted-to.pdf, id=669, 744.7825pt x 697.60625pt>
 File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
 Package pdftex.def Info: NodesEdgesTime-eps-converted-to.pdf used on input line
- 1126.
+ 1127.
 (pdftex.def)             Requested size: 360.0pt x 337.2103pt.
 Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1291,45 +1335,45 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)                    size: 17890 bytes
 (epstopdf)             Command: <repstopdf --outfile=DiameterTime-eps-converted
 -to.pdf DiameterTime.eps>
-(epstopdf)             \includegraphics on input line 1133.
+(epstopdf)             \includegraphics on input line 1134.
 Package epstopdf Info: Output file is already uptodate.
 
-<DiameterTime-eps-converted-to.pdf, id=664, 744.7825pt x 697.60625pt>
+<DiameterTime-eps-converted-to.pdf, id=670, 744.7825pt x 697.60625pt>
 File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
 Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 1
-133.
+134.
 (pdftex.def)             Requested size: 360.0pt x 337.2103pt.
 
-<2.png, id=666, 502.87875pt x 520.94624pt> <use 2.png>
-<3.png, id=667, 576.1525pt x 636.3775pt> <use 3.png>
-<5.png, id=668, 591.20876pt x 576.1525pt> <use 5.png>
-<7.png, id=669, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
+<2.png, id=672, 502.87875pt x 520.94624pt> <use 2.png>
+<3.png, id=673, 576.1525pt x 636.3775pt> <use 3.png>
+<5.png, id=674, 591.20876pt x 576.1525pt> <use 5.png>
+<7.png, id=675, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
-Package pdftex.def Info: 2.png used on input line 1154.
+Package pdftex.def Info: 2.png used on input line 1155.
 (pdftex.def)             Requested size: 90.00015pt x 89.99846pt.
 File: 3.png Graphic file (type png)
  <use 3.png>
-Package pdftex.def Info: 3.png used on input line 1154.
+Package pdftex.def Info: 3.png used on input line 1155.
 (pdftex.def)             Requested size: 89.99722pt x 89.9953pt.
 File: 5.png Graphic file (type png)
  <use 5.png>
-Package pdftex.def Info: 5.png used on input line 1154.
+Package pdftex.def Info: 5.png used on input line 1155.
 (pdftex.def)             Requested size: 89.99457pt x 89.99722pt.
 File: 7.png Graphic file (type png)
  <use 7.png>
-Package pdftex.def Info: 7.png used on input line 1154.
+Package pdftex.def Info: 7.png used on input line 1155.
 (pdftex.def)             Requested size: 89.99722pt x 89.9984pt.
 
-Overfull \hbox (53.98917pt too wide) in alignment at lines 1154--1154
+Overfull \hbox (53.98917pt too wide) in alignment at lines 1155--1155
 [][][]
  []
 
 
-LaTeX Warning: File `Kamailio_chart.eps' not found on input line 1162.
+LaTeX Warning: File `Kamailio_chart.eps' not found on input line 1163.
 
 Package epstopdf Info: Source file: <Kamailio_chart.eps>
 (epstopdf)             Output file: <Kamailio_chart-eps-converted-to.pdf>
@@ -1337,14 +1381,14 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 (epstopdf)                    size: 268635 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kamailio_chart-eps-convert
 ed-to.pdf Kamailio_chart.eps>
-(epstopdf)             \includegraphics on input line 1162.
+(epstopdf)             \includegraphics on input line 1163.
 Package epstopdf Info: Output file is already uptodate.
-<Kamailio_chart-eps-converted-to.pdf, id=670, 1229.59375pt x 506.89375pt>
+<Kamailio_chart-eps-converted-to.pdf, id=676, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
 Package pdftex.def Info: Kamailio_chart-eps-converted-to.pdf used on input line
- 1162.
+ 1163.
 (pdftex.def)             Requested size: 360.0pt x 148.41084pt.
 Package epstopdf Info: Source file: <Kamailio_diameter.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1354,20 +1398,20 @@ Package epstopdf Info: Source file: <Kamailio_diameter.eps>
 (epstopdf)                    size: 11882 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kamailio_diameter-eps-conv
 erted-to.pdf Kamailio_diameter.eps>
-(epstopdf)             \includegraphics on input line 1164.
+(epstopdf)             \includegraphics on input line 1165.
 Package epstopdf Info: Output file is already uptodate.
 
-<Kamailio_diameter-eps-converted-to.pdf, id=671, 1229.59375pt x 145.54375pt>
+<Kamailio_diameter-eps-converted-to.pdf, id=677, 1229.59375pt x 145.54375pt>
 File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Kamailio_diameter-eps-converted-to.pdf used on input l
-ine 1164.
+ine 1165.
 (pdftex.def)             Requested size: 360.0pt x 42.613pt.
- [41] [42 <./NodesEdgesTime-eps-converted-to.pdf>] [43 <./DiameterTime-eps-conv
+ [42] [43 <./NodesEdgesTime-eps-converted-to.pdf>] [44 <./DiameterTime-eps-conv
 erted-to.pdf>]
 
-LaTeX Warning: File `Amarok_chart.eps' not found on input line 1176.
+LaTeX Warning: File `Amarok_chart.eps' not found on input line 1177.
 
 Package epstopdf Info: Source file: <Amarok_chart.eps>
 (epstopdf)             Output file: <Amarok_chart-eps-converted-to.pdf>
@@ -1375,14 +1419,14 @@ Package epstopdf Info: Source file: <Amarok_chart.eps>
 (epstopdf)                    size: 348509 bytes
 (epstopdf)             Command: <repstopdf --outfile=Amarok_chart-eps-converted
 -to.pdf Amarok_chart.eps>
-(epstopdf)             \includegraphics on input line 1176.
+(epstopdf)             \includegraphics on input line 1177.
 Package epstopdf Info: Output file is already uptodate.
-<Amarok_chart-eps-converted-to.pdf, id=715, 1233.60875pt x 521.95pt>
+<Amarok_chart-eps-converted-to.pdf, id=721, 1233.60875pt x 521.95pt>
 File: Amarok_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_chart-eps-converted-to.pdf>
 Package pdftex.def Info: Amarok_chart-eps-converted-to.pdf used on input line 1
-176.
+177.
 (pdftex.def)             Requested size: 360.0pt x 152.31734pt.
 Package epstopdf Info: Source file: <Amarok_diameter.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1392,21 +1436,21 @@ Package epstopdf Info: Source file: <Amarok_diameter.eps>
 (epstopdf)                    size: 12377 bytes
 (epstopdf)             Command: <repstopdf --outfile=Amarok_diameter-eps-conver
 ted-to.pdf Amarok_diameter.eps>
-(epstopdf)             \includegraphics on input line 1178.
+(epstopdf)             \includegraphics on input line 1179.
 Package epstopdf Info: Output file is already uptodate.
 
-<Amarok_diameter-eps-converted-to.pdf, id=716, 1229.59375pt x 145.54375pt>
+<Amarok_diameter-eps-converted-to.pdf, id=722, 1229.59375pt x 145.54375pt>
 File: Amarok_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Amarok_diameter-eps-converted-to.pdf used on input lin
-e 1178.
+e 1179.
 (pdftex.def)             Requested size: 333.0011pt x 39.41725pt.
- [44 <./2.png (PNG copy)> <./3.png (PNG copy)> <./5.png (PNG copy)> <./7.png (P
+ [45 <./2.png (PNG copy)> <./3.png (PNG copy)> <./5.png (PNG copy)> <./7.png (P
 NG copy)> <./Kamailio_chart-eps-converted-to.pdf> <./Kamailio_diameter-eps-conv
 erted-to.pdf>]
 
-LaTeX Warning: File `Asterisk_chart.eps' not found on input line 1188.
+LaTeX Warning: File `Asterisk_chart.eps' not found on input line 1189.
 
 Package epstopdf Info: Source file: <Asterisk_chart.eps>
 (epstopdf)             Output file: <Asterisk_chart-eps-converted-to.pdf>
@@ -1414,14 +1458,14 @@ Package epstopdf Info: Source file: <Asterisk_chart.eps>
 (epstopdf)                    size: 304010 bytes
 (epstopdf)             Command: <repstopdf --outfile=Asterisk_chart-eps-convert
 ed-to.pdf Asterisk_chart.eps>
-(epstopdf)             \includegraphics on input line 1188.
+(epstopdf)             \includegraphics on input line 1189.
 Package epstopdf Info: Output file is already uptodate.
-<Asterisk_chart-eps-converted-to.pdf, id=736, 1223.57124pt x 523.9575pt>
+<Asterisk_chart-eps-converted-to.pdf, id=742, 1223.57124pt x 523.9575pt>
 File: Asterisk_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_chart-eps-converted-to.pdf>
 Package pdftex.def Info: Asterisk_chart-eps-converted-to.pdf used on input line
- 1188.
+ 1189.
 (pdftex.def)             Requested size: 360.0pt x 154.15837pt.
 Package epstopdf Info: Source file: <Asterisk_diameter.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1431,42 +1475,42 @@ Package epstopdf Info: Source file: <Asterisk_diameter.eps>
 (epstopdf)                    size: 12112 bytes
 (epstopdf)             Command: <repstopdf --outfile=Asterisk_diameter-eps-conv
 erted-to.pdf Asterisk_diameter.eps>
-(epstopdf)             \includegraphics on input line 1190.
+(epstopdf)             \includegraphics on input line 1191.
 Package epstopdf Info: Output file is already uptodate.
 
-<Asterisk_diameter-eps-converted-to.pdf, id=737, 1230.5975pt x 145.54375pt>
+<Asterisk_diameter-eps-converted-to.pdf, id=743, 1230.5975pt x 145.54375pt>
 File: Asterisk_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Asterisk_diameter-eps-converted-to.pdf used on input l
-ine 1190.
+ine 1191.
 (pdftex.def)             Requested size: 338.40088pt x 40.02132pt.
- [45 <./Amarok_chart-eps-converted-to.pdf> <./Amarok_diameter-eps-converted-to.
+ [46 <./Amarok_chart-eps-converted-to.pdf> <./Amarok_diameter-eps-converted-to.
 pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
 
  []
 
-[46 <./Asterisk_chart-eps-converted-to.pdf> <./Asterisk_diameter-eps-converted-
-to.pdf>] [47] [48] [49] [50] (./referenc.tex [51
+[47 <./Asterisk_chart-eps-converted-to.pdf> <./Asterisk_diameter-eps-converted-
+to.pdf>] [48] [49] [50] [51] (./referenc.tex [52
 
-] [52] [53] [54]) (./report.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1432.
- [55]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1432.
+] [53] [54] [55]) (./report.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1433.
+ [56]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1433.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1432.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1433.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1433.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: CE68B31447893A546FAEED3989E14ACC;1840.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1432.
+(rerunfilecheck)             Checksum: B3CC0B9E9EDD6357BC42BCCCFC49E312;1840.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1433.
  ) 
 Here is how much of TeX's memory you used:
- 23373 strings out of 494985
- 434159 string characters out of 6180356
- 527958 words of memory out of 5000000
- 25883 multiletter control sequences out of 15000+600000
+ 23376 strings out of 494985
+ 434222 string characters out of 6180356
+ 528054 words of memory out of 5000000
+ 25884 multiletter control sequences out of 15000+600000
  12326 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  56i,24n,55p,10382b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1485,10 +1529,10 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (56 pages, 3007504 bytes).
+Output written on report.pdf (57 pages, 3008692 bytes).
 PDF statistics:
- 948 PDF objects out of 1000 (max. 8388607)
- 828 compressed objects within 9 object streams
- 278 named destinations out of 1000 (max. 500000)
+ 954 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
+ 280 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -704,15 +704,27 @@ For example,
 \item{Three-cycles, may be interpreted as the tendency toward local hierarchy. It is similar to reciprocity defined for three developers, and is the opposite of hierarchy.}
 \item{Betweenness, which reflects brokerage, is the tendency of developer i to position himself between other not-directly-connected developers.}
 represents brokerage
-\item{Density effect which reflects tendency to have connections at all (i.e. the out-degree of a developer i).      }
+\item{Density effect which reflects tendency to have connections at all (i.e. the out-degree of a developer i).}
 \item{Activity, which reflects the tendency of developers with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.}
 \item Covariate effects: Developers' covariates may influence the formation or termination of ties. For example:
 \begin{enumerate}
 \item{Covariate V-related popularity, which reflects the sum of covariate V for all developers to whom developer i is connected}
 \item{Covariate V-related activity, which reflects the developer i's out-degree multiplied by his covariate V value.}
 \item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between developer i and all developers to whom developer i is connected.}
-
 \end{enumerate}
+
+We use the following developer attributes as covariates:
+\begin{itemize}
+\item Developer's level of contribution/activity (e.g. code commits per month, or mailing list posts per month)
+\item Developer's level of privilege/prestige (e.g. admin privilege-holder vs. core contributor vs. marginal developer/user)
+\item Developer's level of negative experience (e.g. number of rejected pull requests: especially in forks for more community-driven development)
+\item Developer's age (either birth age, (young 20-year-old developer vs. older 50-year-old developer) or their seniority as a development community member (i.e. how long they have been in the community)
+\item Developer's propensity for short-responses vs. long-responses. (under-communicator vs. over-communicator)
+\item Developer's communication sentiment (generally bitter in communication known as ``a jerk''), or has a positive communication prose)
+\item Developer's engagement style (i.e. dive-bomber-style contributor who jumps in, overcommits and leave, vs. a steady and increasingly engaged contributor who starts off slow and grows his/her commitment gradually)
+\end{itemize}
+
+
 
 \item{in-in degree assortativity, which reflects the tendency of developers with high in-degree to be connected to other developers with high in-degrees}
 \item{in-out degree assortativity, which reflects which reflects the tendency of developers with high in-degree to be connected to other developers with high out-degrees}
@@ -721,17 +733,7 @@ represents brokerage
 \end{enumerate}
 
 \paragraph{Behavior-related Effects\\}
-Properties of developers can be called their behavior. Examples include: 
-
-\begin{itemize}
-\item Developer's level of contribution/activity (e.g. code commits per month, or mailing list posts per month)
-\item Developer's age (either birth age, (young 20-year-old developer vs. older 50-year-old developer) or their seniority as a development community member (i.e. how long they have been in the community)
-\item Developer's propensity for short-responses vs. long-responses. (under-communicator vs. over-communicator)
-\item Developer's communication sentiment (generally bitter in communication known as ``a jerk''), or has a positive communication prose)
-\item Developer's engagement style (i.e. dive-bomber-style contributor who jumps in, overcommits and leave, vs. a steady and increasingly engaged contributor who starts off slow and grows his/her commitment gradually)
-\end{itemize}
-
-For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following effects.
+Properties of developers can be called their behavior. For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following effects.
 
 Let's denote a dependent behavior variable as $Z$.
 \begin{enumerate}
@@ -811,7 +813,6 @@ Alternatively, we compare two models for two open source project communities, an
 
 Lastly, we compare several open source communities (or such networks) and test the statistical significance of the differences between their models, using the methods described in section \ref{MANOVA}. This allows us to compare within-group and across-group comparisons of longitudinal models of open-source projects. In this study, we do all three discussed forms of tests of significance. In the following subsections, the details of these tests are described.   
 
-
 \subsubsection{Single Parameter Test}
 \label{singleParameterTest}
 Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors (S.E.). 
@@ -866,6 +867,28 @@ The following are the null hypotheses for across-group comparisons using the Mul
 
 If the data does not exhibit statistically significant differences, then our study fails, and our assumptions cannot be proven. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially-related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution.  This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
 
+\begin{table*}
+\centering
+\caption{Hypothetical expectations for the statistical model covariates.}
+\label{tabelSummaryExpectationModelParameters}       
+\begin{tabular}{m{0.3\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth}}
+\hline\noalign{\smallskip}
+\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Reciprocity  &  &  &  &  \\ \hline
+Transitive triplets & * $\downarrow$ &  &   &   \\ \hline
+Number of developers at distance two &  &  &  &  \\ \hline
+Density  &  &  &  &  \\ \hline
+Covariate-related activity  &  &  &  &  \\ \hline
+Preferential Attachment  &  &  &  &  \\ \hline
+out-out degree assortativity &  &  &  &  \\ \hline
+Developer's level of contribution similarity  &  &  &  &  \\ \hline
+Developer's communication sentiment similarity  &  &  &  &  \\ \hline
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table*}
+
+
 \subsection{Validation}
 
 \subsubsection{Qualitative Study: Interviews and Survey}
@@ -912,30 +935,8 @@ The new model can then be compared to the ``known'' models in each forking categ
 %
 %As in the case of our longitudinal study of dynamic networks, we need to use an extension of ERGMs, namely, Separable Temporal Exponential Family Random Graph Models (STERGM), which takes two models, one for the formation, and another for dissolution \cite{Krivitsky}.
 %
-%
-%\begin{table*}
-%\centering
-%\caption{Summary of expectations for the statistical model covariates, and sentiment analysis for each forking category. An expected ``no significant change'' is denoted by a dash ($-$) line.}
-%\label{tabelSummaryExpectationModelParameters}       
-%\begin{tabular}{m{0.4\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth}}
-%\hline\noalign{\smallskip}
-%\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
-%\noalign{\smallskip}\hline\noalign{\smallskip}
-%Outdegree & - & - & - & - \\ \hline
-%Reciprocity & decrease & - & - & - \\ \hline
-%Balance & - & - & - & - \\ \hline
-%3-cycle & decrease & decrease & - & - \\ \hline
-%Transitive triplets & - & - & - & - \\ \hline
-%Transitive ties & - & - & - & - \\ \hline
-%Betweenness & increase & - & increase & - \\ \hline
-%Clustering Coefficient & - & - & - & - \\ \hline
-%Preferential Attachment & - & - & - & - \\ \hline
-%Assortativity & - & increase & - & - \\
-%%CUSUM betweenness & sharp increase & - & increase & - \\ \hline
-%%Sentiment Analysis & increase in negativity & - & - & - \\
-%\noalign{\smallskip}\hline
-%\end{tabular}
-%\end{table*}
+
+
 %
 %\subsubsection{Model Covariates}
 %\label{modelCovariates}
