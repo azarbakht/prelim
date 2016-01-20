@@ -724,13 +724,51 @@ We use the following developer attributes as covariates:
 \item (Covariate V7) Developer's engagement style (i.e. dive-bomber-style contributor who jumps in, overcommits and leave, vs. a steady and increasingly engaged contributor who starts off slow and grows his/her commitment gradually)
 \end{itemize}
 
-
-
 \item{in-in degree assortativity, which reflects the tendency of developers with high in-degree to be connected to other developers with high in-degrees}
 \item{in-out degree assortativity, which reflects which reflects the tendency of developers with high in-degree to be connected to other developers with high out-degrees}
 \item{out-in degree assortativity, which reflects which reflects the tendency of developers with high out-degree to be connected to other developers with high in-degrees}
 \item{out-out degree assortativity, which reflects which reflects the tendency of developers with high out-degree to be connected to other developers with high out-degrees}
 \end{enumerate}
+
+A summary of expectation for model effect, based on intuition, is summarized in Table \ref{tabelSummaryExpectationModelParameters}. 
+
+\begin{table*}[p]
+\centering
+\caption{Expectations for significance of the statistical model covariates based on intuition. Note that * indicates significantly-related; +/- indicates positively/negatively related.}
+\label{tabelSummaryExpectationModelParameters}       
+\begin{tabular}{m{0.6\columnwidth} m{0.12\columnwidth} m{0.1\columnwidth} m{0.1\columnwidth} m{0.01\columnwidth}}
+\hline\noalign{\smallskip}
+%\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
+\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \\
+
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Reciprocity  & * &  & * &  \\ \hline
+Transitive triplets & * &  & *  &   \\ \hline
+Number of developers at distance two &  & *- &  &  \\ \hline
+Three-cycles  & * &  & * &  \\ \hline
+out-out degree assortativity &  & *+ &  &  \\ \hline
+\small{Covariate-V1 [Developer's contribution level]-related popularity} & * &  & * &  \\ \hline
+\small{Covariate-V2 [Developer's privilege level]-related dissimilarity} &  & *- & * &  \\ \hline
+
+\small{Covariate-V3 [Developer's negative experience level]-related  popularity}  &  & * &  &  \\ \hline
+\small{Covariate-V3 [Developer's negative experience level]-related  dissimilarity}  & * &  &  &  \\ \hline
+
+\small{Covariate-V4 [Developer's age-seniority level]-related   popularity}  & * &  &  &  \\ \hline
+\small{Covariate-V4 [Developer's age-seniority level]-related   dissimilarity}  & * & * &  &  \\ \hline
+
+\small{Covariate-V5[Developer's under/over communicator]-related activity}  & * &  &  &  \\ \hline
+\small{Covariate-V5[Developer's under/over communicator]-related dissimilarity}  & * &  &  &  \\ \hline
+
+\small{Covariate-V6 [Developer's sentiment history]-related activity}  & * &  &  &  \\ \hline
+\small{Covariate-V6 [Developer's sentiment history]-related dissimilarity}  & * &  &  &  \\ \hline
+
+\small{Covariate-V7 [Developer's graduality level]-related activity} & * & *- &  &  \\ \hline
+\small{Covariate-V7 [Developer's graduality level]-related dissimilarity} & * & *- &  &  \\
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table*}
+
+
 
 \paragraph{Behavior-related Effects\\}
 Properties of developers can be called their behavior. For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following effects.
@@ -866,44 +904,6 @@ The following are the null hypotheses for across-group comparisons using the Mul
 \hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in U.F. category and H.F. category.\\
 
 If the data does not exhibit statistically significant differences, then our study fails, and our assumptions cannot be proven. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially-related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution.  This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
-
-\begin{table*}
-\centering
-\caption{Expectations for significance of the statistical model covariates based on intuition.}
-\label{tabelSummaryExpectationModelParameters}       
-\begin{tabular}{m{0.4\columnwidth} m{0.15\columnwidth} m{0.1\columnwidth} m{0.1\columnwidth} m{0.08\columnwidth}}
-\hline\noalign{\smallskip}
-\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Reciprocity  & * &  & * &  \\ \hline
-Transitive triplets & * &  & *  &   \\ \hline
-Number of developers at distance two &  & *- &  &  \\ \hline
-Three-cycles  & * &  & * &  \\ \hline
-out-out degree assortativity &  & *+ &  &  \\ \hline
-Covariate-V1-related popularity  & * &  & * &  \\ \hline
-Covariate-V2-related dissimilarity  &  & *- & * &  \\ \hline
-
-Covariate-V3-related popularity  &  & * &  &  \\ \hline
-Covariate-V3-related dissimilarity  & * &  &  &  \\ \hline
-
-Covariate-V4-related popularity  & * &  &  &  \\ \hline
-Covariate-V4-related dissimilarity  & * & * &  &  \\ \hline
-
-Covariate-V5-related activity  & * &  &  &  \\ \hline
-Covariate-V5-related dissimilarity  & * &  &  &  \\ \hline
-
-Covariate-V6-related activity  & * &  &  &  \\ \hline
-Covariate-V6-related dissimilarity  & * &  &  &  \\ \hline
-
-Covariate-V7-related activity  & * & *- &  &  \\ \hline
-Covariate-V7-related dissimilarity  & * & *- &  &  \\ \hline
-
-Developer's level of contribution similarity  &  &  &  &  \\ \hline
-Developer's communication sentiment similarity  &  &  &  &  \\
-\noalign{\smallskip}\hline
-\end{tabular}
-\end{table*}
-
 
 \subsection{Validation}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  19 JAN 2016 20:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  20 JAN 2016 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,7 +1035,7 @@ Overfull \hbox (1.40828pt too wide) in paragraph at lines 263--264
 n-tify these traces/social
  []
 
-[11] [12] <epc-flow-charts.pdf, id=354, 557.01099pt x 478.91924pt>
+[11] [12] <epc-flow-charts.pdf, id=355, 557.01099pt x 478.91924pt>
 File: epc-flow-charts.pdf Graphic file (type pdf)
 
 <use epc-flow-charts.pdf>
@@ -1056,7 +1056,7 @@ Package epstopdf Info: Source file: <flowchart.eps>
 .pdf flowchart.eps>
 (epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
-<flowchart-eps-converted-to.pdf, id=355, 1782.66pt x 2320.67pt>
+<flowchart-eps-converted-to.pdf, id=356, 1782.66pt x 2320.67pt>
 File: flowchart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flowchart-eps-converted-to.pdf>
@@ -1176,100 +1176,125 @@ Overfull \hbox (6.63283pt too wide) in paragraph at lines 722--723
 es vs. long-
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+[]|\OT1/cmr/bx/n/10.95 U.F.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/bx/n/10.95 Pers.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+[]|\OT1/cmr/bx/n/10.95 U.F.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/bx/n/10.95 More
+ []
+
+
+Overfull \hbox (3.8738pt too wide) in paragraph at lines 742--742
+\OT1/cmr/bx/n/10.95 Comm.| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+[]|\OT1/cmr/bx/n/10.95 H.F.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/bx/n/10.95 Tech.
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/10 Covariate-V1 [De-vel-oper's con-tri-bu-tion level]-
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 753--753
+[]|\OT1/cmr/m/n/10 Covariate-V3 [De-vel-oper's neg-a-tive ex-pe-ri-ence
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 754--754
+[]|\OT1/cmr/m/n/10 Covariate-V3 [De-vel-oper's neg-a-tive ex-pe-ri-ence
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 756--756
+[]|\OT1/cmr/m/n/10 Covariate-V4 [De-vel-oper's age-seniority level]-
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 757--757
+[]|\OT1/cmr/m/n/10 Covariate-V4 [De-vel-oper's age-seniority level]-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
+[]|\OT1/cmr/m/n/10 Covariate-V5[Developer's un-der/over
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
+[]|\OT1/cmr/m/n/10 Covariate-V5[Developer's un-der/over
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 762--762
+[]|\OT1/cmr/m/n/10 Covariate-V6 [De-vel-oper's sen-ti-ment history]-
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 763--763
+[]|\OT1/cmr/m/n/10 Covariate-V6 [De-vel-oper's sen-ti-ment history]-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--765
+[]|\OT1/cmr/m/n/10 Covariate-V7 [De-vel-oper's grad-u-al-ity level]-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--766
+[]|\OT1/cmr/m/n/10 Covariate-V7 [De-vel-oper's grad-u-al-ity level]-
+ []
+
+
+Overfull \hbox (34.80286pt too wide) in paragraph at lines 739--769
+ [][] 
+ []
+
+[26] [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 809--810
 
  []
 
-[27]
-Overfull \hbox (62.47102pt too wide) in paragraph at lines 806--808
+
+Overfull \hbox (62.47102pt too wide) in paragraph at lines 844--846
 []\OT1/cmr/m/n/10.95 The sim-u-la-tion out-put will be the ran-dom vari-ables $
 (\OML/cmm/m/it/10.95 S; R\OT1/cmr/m/n/10.95 ) = (\OML/cmm/m/it/10.95 S[]; :::; 
 S[]; R[]; :::; R[]\OT1/cmr/m/n/10.95 )$.
  []
 
-[28] [29]
-Overfull \hbox (1.77806pt too wide) in paragraph at lines 836--836
+[29] [30]
+Overfull \hbox (1.77806pt too wide) in paragraph at lines 874--874
 []\OT1/cmr/bx/n/10.95 Multivariate Anal-y-sis of Vari-ance Be-tween Mul-ti-ple 
 Groups 
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 866--867
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 904--905
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/bx/n/10.95 U.F.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/bx/n/10.95 U.F.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-\OT1/cmr/bx/n/10.95 More
- []
-
-
-Overfull \hbox (3.8738pt too wide) in paragraph at lines 876--876
-\OT1/cmr/bx/n/10.95 Comm.| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-[]|\OT1/cmr/bx/n/10.95 H.F.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 876--876
-\OT1/cmr/bx/n/10.95 Tech.
- []
-
-
-Overfull \hbox (2.26978pt too wide) in paragraph at lines 876--877
-[]|\OT1/cmr/bx/n/10.95 No.F.| 
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 884--884
-[]|\OT1/cmr/m/n/10.95 Covariate-V2-related dis-sim-i-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 887--887
-[]|\OT1/cmr/m/n/10.95 Covariate-V3-related dis-sim-i-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 890--890
-[]|\OT1/cmr/m/n/10.95 Covariate-V4-related dis-sim-i-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 893--893
-[]|\OT1/cmr/m/n/10.95 Covariate-V5-related dis-sim-i-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 896--896
-[]|\OT1/cmr/m/n/10.95 Covariate-V6-related dis-sim-i-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 899--899
-[]|\OT1/cmr/m/n/10.95 Covariate-V7-related dis-sim-i-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 902--902
-[]|\OT1/cmr/m/n/10.95 Developer's com-mu-ni-ca-tion
- []
-
-[31] [32] [33] [34]
+[32] [33] [34]
 Overfull \hbox (9.36748pt too wide) in paragraph at lines 994--1011
 [][]
  []
@@ -1332,7 +1357,7 @@ Package epstopdf Info: Source file: <centrality.eps>
 o.pdf centrality.eps>
 (epstopdf)             \includegraphics on input line 1124.
 Package epstopdf Info: Output file is already uptodate.
-<centrality-eps-converted-to.pdf, id=639, 1004.75375pt x 998.73125pt>
+<centrality-eps-converted-to.pdf, id=641, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use centrality-eps-converted-to.pdf>
@@ -1357,7 +1382,7 @@ ed-to.pdf NodesEdgesTime.eps>
 (epstopdf)             \includegraphics on input line 1143.
 Package epstopdf Info: Output file is already uptodate.
 
-<NodesEdgesTime-eps-converted-to.pdf, id=670, 744.7825pt x 697.60625pt>
+<NodesEdgesTime-eps-converted-to.pdf, id=672, 744.7825pt x 697.60625pt>
 File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
@@ -1375,7 +1400,7 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)             \includegraphics on input line 1150.
 Package epstopdf Info: Output file is already uptodate.
 
-<DiameterTime-eps-converted-to.pdf, id=671, 744.7825pt x 697.60625pt>
+<DiameterTime-eps-converted-to.pdf, id=673, 744.7825pt x 697.60625pt>
 File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
@@ -1383,10 +1408,10 @@ Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 1
 150.
 (pdftex.def)             Requested size: 360.0pt x 337.2103pt.
 
-<2.png, id=673, 502.87875pt x 520.94624pt> <use 2.png>
-<3.png, id=674, 576.1525pt x 636.3775pt> <use 3.png>
-<5.png, id=675, 591.20876pt x 576.1525pt> <use 5.png>
-<7.png, id=676, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
+<2.png, id=675, 502.87875pt x 520.94624pt> <use 2.png>
+<3.png, id=676, 576.1525pt x 636.3775pt> <use 3.png>
+<5.png, id=677, 591.20876pt x 576.1525pt> <use 5.png>
+<7.png, id=678, 576.1525pt x 575.14874pt> <use 7.png> <use 2.png> <use 3.png>
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
@@ -1420,7 +1445,7 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 ed-to.pdf Kamailio_chart.eps>
 (epstopdf)             \includegraphics on input line 1179.
 Package epstopdf Info: Output file is already uptodate.
-<Kamailio_chart-eps-converted-to.pdf, id=677, 1229.59375pt x 506.89375pt>
+<Kamailio_chart-eps-converted-to.pdf, id=679, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
@@ -1438,7 +1463,7 @@ erted-to.pdf Kamailio_diameter.eps>
 (epstopdf)             \includegraphics on input line 1181.
 Package epstopdf Info: Output file is already uptodate.
 
-<Kamailio_diameter-eps-converted-to.pdf, id=678, 1229.59375pt x 145.54375pt>
+<Kamailio_diameter-eps-converted-to.pdf, id=680, 1229.59375pt x 145.54375pt>
 File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
@@ -1458,7 +1483,7 @@ Package epstopdf Info: Source file: <Amarok_chart.eps>
 -to.pdf Amarok_chart.eps>
 (epstopdf)             \includegraphics on input line 1193.
 Package epstopdf Info: Output file is already uptodate.
-<Amarok_chart-eps-converted-to.pdf, id=722, 1233.60875pt x 521.95pt>
+<Amarok_chart-eps-converted-to.pdf, id=724, 1233.60875pt x 521.95pt>
 File: Amarok_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_chart-eps-converted-to.pdf>
@@ -1476,7 +1501,7 @@ ted-to.pdf Amarok_diameter.eps>
 (epstopdf)             \includegraphics on input line 1195.
 Package epstopdf Info: Output file is already uptodate.
 
-<Amarok_diameter-eps-converted-to.pdf, id=723, 1229.59375pt x 145.54375pt>
+<Amarok_diameter-eps-converted-to.pdf, id=725, 1229.59375pt x 145.54375pt>
 File: Amarok_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_diameter-eps-converted-to.pdf>
@@ -1497,7 +1522,7 @@ Package epstopdf Info: Source file: <Asterisk_chart.eps>
 ed-to.pdf Asterisk_chart.eps>
 (epstopdf)             \includegraphics on input line 1205.
 Package epstopdf Info: Output file is already uptodate.
-<Asterisk_chart-eps-converted-to.pdf, id=743, 1223.57124pt x 523.9575pt>
+<Asterisk_chart-eps-converted-to.pdf, id=745, 1223.57124pt x 523.9575pt>
 File: Asterisk_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_chart-eps-converted-to.pdf>
@@ -1515,7 +1540,7 @@ erted-to.pdf Asterisk_diameter.eps>
 (epstopdf)             \includegraphics on input line 1207.
 Package epstopdf Info: Output file is already uptodate.
 
-<Asterisk_diameter-eps-converted-to.pdf, id=744, 1230.5975pt x 145.54375pt>
+<Asterisk_diameter-eps-converted-to.pdf, id=746, 1230.5975pt x 145.54375pt>
 File: Asterisk_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_diameter-eps-converted-to.pdf>
@@ -1546,7 +1571,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1449.
 Here is how much of TeX's memory you used:
  23376 strings out of 494985
  434222 string characters out of 6180356
- 528076 words of memory out of 5000000
+ 529166 words of memory out of 5000000
  25884 multiletter control sequences out of 15000+600000
  12326 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1566,10 +1591,10 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (57 pages, 3008932 bytes).
+Output written on report.pdf (57 pages, 3009154 bytes).
 PDF statistics:
- 955 PDF objects out of 1000 (max. 8388607)
- 834 compressed objects within 9 object streams
+ 957 PDF objects out of 1000 (max. 8388607)
+ 836 compressed objects within 9 object streams
  280 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 

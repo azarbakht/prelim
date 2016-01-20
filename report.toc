@@ -17,21 +17,21 @@
 \contentsline {subsection}{\numberline {5.4}Model Specification}{24}{subsection.0.5.4}
 \contentsline {subsubsection}{\numberline {5.4.1}Objective Function}{24}{subsubsection.0.5.4.1}
 \contentsline {paragraph}{\numberline {5.4.1.1}Structural Effects}{24}{paragraph.0.5.4.1.1}
-\contentsline {paragraph}{\numberline {5.4.1.2}Behavior-related Effects\\}{26}{paragraph.0.5.4.1.2}
-\contentsline {subsubsection}{\numberline {5.4.2}Gratification Function}{27}{subsubsection.0.5.4.2}
-\contentsline {subsection}{\numberline {5.5}Markov Chain Monte Carlo (MCMC) Estimation}{27}{subsection.0.5.5}
-\contentsline {subsection}{\numberline {5.6}Hypothesis Testing}{29}{subsection.0.5.6}
-\contentsline {subsubsection}{\numberline {5.6.1}Single Parameter Test}{29}{subsubsection.0.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.2}Multi-Parameter Differences Between Groups}{29}{subsubsection.0.5.6.2}
-\contentsline {subsubsection}{\numberline {5.6.3}Multivariate Analysis of Variance Between Multiple Groups}{30}{subsubsection.0.5.6.3}
-\contentsline {subsection}{\numberline {5.7}Research Questions and Hypotheses}{30}{subsection.0.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}Behavior Models}{30}{subsubsection.0.5.7.1}
-\contentsline {paragraph}{\numberline {5.7.1.1}}{30}{paragraph.0.5.7.1.1}
-\contentsline {paragraph}{\numberline {5.7.1.2}}{30}{paragraph.0.5.7.1.2}
-\contentsline {subsubsection}{\numberline {5.7.2}Research Questions and Hypotheses}{31}{subsubsection.0.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.3}Null Hypothesis \# 1:}{31}{subsubsection.0.5.7.3}
-\contentsline {subsubsection}{\numberline {5.7.4}Null Hypothesis \# 2:}{31}{subsubsection.0.5.7.4}
-\contentsline {subsubsection}{\numberline {5.7.5}Null Hypothesis \# 3:}{31}{subsubsection.0.5.7.5}
+\contentsline {paragraph}{\numberline {5.4.1.2}Behavior-related Effects\\}{28}{paragraph.0.5.4.1.2}
+\contentsline {subsubsection}{\numberline {5.4.2}Gratification Function}{28}{subsubsection.0.5.4.2}
+\contentsline {subsection}{\numberline {5.5}Markov Chain Monte Carlo (MCMC) Estimation}{28}{subsection.0.5.5}
+\contentsline {subsection}{\numberline {5.6}Hypothesis Testing}{30}{subsection.0.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Single Parameter Test}{30}{subsubsection.0.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Multi-Parameter Differences Between Groups}{30}{subsubsection.0.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.3}Multivariate Analysis of Variance Between Multiple Groups}{31}{subsubsection.0.5.6.3}
+\contentsline {subsection}{\numberline {5.7}Research Questions and Hypotheses}{31}{subsection.0.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Behavior Models}{31}{subsubsection.0.5.7.1}
+\contentsline {paragraph}{\numberline {5.7.1.1}}{31}{paragraph.0.5.7.1.1}
+\contentsline {paragraph}{\numberline {5.7.1.2}}{31}{paragraph.0.5.7.1.2}
+\contentsline {subsubsection}{\numberline {5.7.2}Research Questions and Hypotheses}{32}{subsubsection.0.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.3}Null Hypothesis \# 1:}{32}{subsubsection.0.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.4}Null Hypothesis \# 2:}{32}{subsubsection.0.5.7.4}
+\contentsline {subsubsection}{\numberline {5.7.5}Null Hypothesis \# 3:}{32}{subsubsection.0.5.7.5}
 \contentsline {subsection}{\numberline {5.8}Validation}{33}{subsection.0.5.8}
 \contentsline {subsubsection}{\numberline {5.8.1}Qualitative Study: Interviews and Survey}{33}{subsubsection.0.5.8.1}
 \contentsline {subsubsection}{\numberline {5.8.2}Sentiment Analysis}{33}{subsubsection.0.5.8.2}
