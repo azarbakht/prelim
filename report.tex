@@ -715,13 +715,13 @@ represents brokerage
 
 We use the following developer attributes as covariates:
 \begin{itemize}
-\item Developer's level of contribution/activity (e.g. code commits per month, or mailing list posts per month)
-\item Developer's level of privilege/prestige (e.g. admin privilege-holder vs. core contributor vs. marginal developer/user)
-\item Developer's level of negative experience (e.g. number of rejected pull requests: especially in forks for more community-driven development)
-\item Developer's age (either birth age, (young 20-year-old developer vs. older 50-year-old developer) or their seniority as a development community member (i.e. how long they have been in the community)
-\item Developer's propensity for short-responses vs. long-responses. (under-communicator vs. over-communicator)
-\item Developer's communication sentiment (generally bitter in communication known as ``a jerk''), or has a positive communication prose)
-\item Developer's engagement style (i.e. dive-bomber-style contributor who jumps in, overcommits and leave, vs. a steady and increasingly engaged contributor who starts off slow and grows his/her commitment gradually)
+\item (Covariate V1) Developer's level of contribution/activity (e.g. code commits per month, or mailing list posts per month)
+\item (Covariate V2) Developer's level of privilege/prestige (e.g. admin privilege-holder vs. core contributor vs. marginal developer/user)
+\item (Covariate V3) Developer's level of negative experience (e.g. number of rejected pull requests: especially in forks for more community-driven development)
+\item (Covariate V4) Developer's age (either birth age, (young 20-year-old developer vs. older 50-year-old developer) or their seniority as a development community member (i.e. how long they have been in the community)
+\item (Covariate V5) Developer's propensity for short-responses vs. long-responses. (under-communicator vs. over-communicator)
+\item (Covariate V6) Developer's communication sentiment (generally bitter in communication known as ``a jerk'', or has a positive communication prose)
+\item (Covariate V7) Developer's engagement style (i.e. dive-bomber-style contributor who jumps in, overcommits and leave, vs. a steady and increasingly engaged contributor who starts off slow and grows his/her commitment gradually)
 \end{itemize}
 
 
@@ -869,21 +869,37 @@ If the data does not exhibit statistically significant differences, then our stu
 
 \begin{table*}
 \centering
-\caption{Hypothetical expectations for the statistical model covariates.}
+\caption{Expectations for significance of the statistical model covariates based on intuition.}
 \label{tabelSummaryExpectationModelParameters}       
-\begin{tabular}{m{0.3\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth}}
+\begin{tabular}{m{0.4\columnwidth} m{0.15\columnwidth} m{0.1\columnwidth} m{0.1\columnwidth} m{0.08\columnwidth}}
 \hline\noalign{\smallskip}
 \textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-Reciprocity  &  &  &  &  \\ \hline
-Transitive triplets & * $\downarrow$ &  &   &   \\ \hline
-Number of developers at distance two &  &  &  &  \\ \hline
-Density  &  &  &  &  \\ \hline
-Covariate-related activity  &  &  &  &  \\ \hline
-Preferential Attachment  &  &  &  &  \\ \hline
-out-out degree assortativity &  &  &  &  \\ \hline
+Reciprocity  & * &  & * &  \\ \hline
+Transitive triplets & * &  & *  &   \\ \hline
+Number of developers at distance two &  & *- &  &  \\ \hline
+Three-cycles  & * &  & * &  \\ \hline
+out-out degree assortativity &  & *+ &  &  \\ \hline
+Covariate-V1-related popularity  & * &  & * &  \\ \hline
+Covariate-V2-related dissimilarity  &  & *- & * &  \\ \hline
+
+Covariate-V3-related popularity  &  & * &  &  \\ \hline
+Covariate-V3-related dissimilarity  & * &  &  &  \\ \hline
+
+Covariate-V4-related popularity  & * &  &  &  \\ \hline
+Covariate-V4-related dissimilarity  & * & * &  &  \\ \hline
+
+Covariate-V5-related activity  & * &  &  &  \\ \hline
+Covariate-V5-related dissimilarity  & * &  &  &  \\ \hline
+
+Covariate-V6-related activity  & * &  &  &  \\ \hline
+Covariate-V6-related dissimilarity  & * &  &  &  \\ \hline
+
+Covariate-V7-related activity  & * & *- &  &  \\ \hline
+Covariate-V7-related dissimilarity  & * & *- &  &  \\ \hline
+
 Developer's level of contribution similarity  &  &  &  &  \\ \hline
-Developer's communication sentiment similarity  &  &  &  &  \\ \hline
+Developer's communication sentiment similarity  &  &  &  &  \\
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table*}
