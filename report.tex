@@ -276,7 +276,10 @@ We are going to investigate this by statistical modeling of the interaction grap
 
 \paragraph*{\hspace{4 mm} What are the key indicators that let us distinguish between different types of forks?\\}
 
-What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Are there metrics that can be used to monitor the odds of change, (e.g. forking-related patterns), ahead of time? This will be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.
+What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Are there metrics that can be used to monitor the odds of change, (e.g. forking-related patterns), ahead of time? This will be accomplished by statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.\\
+
+To validate what our quantitative approach finds, and to account and check for possible confounding factors, we will interview and survey people from the studied forked projects. 
+We will also analyze the sentiments in the content of the messages send and received by the top contributors of the project in the month leading to the forking events will be analyzed.
 
 %\subsubsection*{R.Q. 4 \hspace{4 mm} Does our analysis match what people in the community remember?\\} 
 %
@@ -756,11 +759,11 @@ out-out degree assortativity &  & *+ &  &  \\ \hline
 \small{Covariate-V4 [Developer's age-seniority level]-related   popularity}  & * &  &  &  \\ \hline
 \small{Covariate-V4 [Developer's age-seniority level]-related   dissimilarity}  & * & * &  &  \\ \hline
 
-\small{Covariate-V5[Developer's under/over communicator]-related activity}  & * &  &  &  \\ \hline
-\small{Covariate-V5[Developer's under/over communicator]-related dissimilarity}  & * &  &  &  \\ \hline
+\small{Covariate-V5 and V6[Developer's under/over communicator \& sentiment history]-related activity and dissimilarity}  & * &  &  &  \\ \hline
+%\small{Covariate-V5[Developer's under/over communicator]-related dissimilarity}  & * &  &  &  \\ \hline
 
-\small{Covariate-V6 [Developer's sentiment history]-related activity}  & * &  &  &  \\ \hline
-\small{Covariate-V6 [Developer's sentiment history]-related dissimilarity}  & * &  &  &  \\ \hline
+%\small{Covariate-V6 [Developer's sentiment history]-related activity}  & * &  &  &  \\ \hline
+%\small{Covariate-V6 [Developer's sentiment history]-related dissimilarity}  & * &  &  &  \\ \hline
 
 \small{Covariate-V7 [Developer's graduality level]-related activity} & * & *- &  &  \\ \hline
 \small{Covariate-V7 [Developer's graduality level]-related dissimilarity} & * & *- &  &  \\
@@ -1000,12 +1003,12 @@ Fall 2013 & Data cleaning and wrangling &\\
 Winter 2014 & Creating communication graphs & \\
 Spring 2014 & Temporal visualization and temporal SNA & \\
 Fall 2014 & Preliminary statistical analysis & \\
-Spring 2015 & Planning and preliminary examination & \\
-Fall 2015 & Prelim \\
-Winter 2015 & Data collection for issue tracking and source code & \\
-Winter/Spring 2015 &  Statistical study, longitudinal modeling & RQ 1-3 \\
-Spring 2016 & Thesis writing & \\
-June 2016 & Defense (Hopefully) & \\
+Spring/Fall 2015 & Planning and preliminary examination & \\
+Winter 2016 & Prelim \\
+Winter 2016 & Data collection for issue tracking and source code & \\
+Spring/Summer 2016 &  Longitudinal modeling \& qualitative study \\
+Summer 2016 & Thesis writing & \\
+September 2016 & Defense (Hopefully) & \\
 \end{tabular}
 \label{timeline}
 \end{table}
