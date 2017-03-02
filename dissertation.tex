@@ -58,6 +58,7 @@
 
 \usepackage{graphicx}
 \usepackage{blindtext}
+\usepackage{pdfpages}
 
 %%%%% TIKZ
 
@@ -69,7 +70,7 @@
 
 \title{Longitudinal Analysis of Collaboration Graphs of Forked Open Source Software Development Projects}
 
-\author{Amirhosein (Emerson) Azarbakht\\
+\author{Amirhosein ``Emerson'' Azarbakht\\
 School of Electrical Engineering and Computer Science\\
 Oregon State University\\
 \vspace{5mm} %5mm vertical space
@@ -79,8 +80,8 @@ Dissertation Draft\\
 Work Under Supervision of Prof. Carlos Jensen\\
 Ph.D. Committee Members:\\
 Prof. Alex Groce\\
-Prof. Chris Scaffidi\\
 Prof. Drew Gerkey\\
+Prof. Ron Metoyer\\
 Prof. A. Morrie Craig\\
 }
 
@@ -909,13 +910,191 @@ The following are the null hypotheses for across-group comparisons using the Mul
 
 If the data does not exhibit statistically significant differences, then our study fails, and our assumptions cannot be proven. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially-related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution.  This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
 
+\subsection{Sentiment Analysis}
+
+\subsubsection{Data Collection}
+A statistical time series analysis of the sentiments for the contents of the messages sent and received by the developers in the 10-month run-up to the fork was completed. The messages were collected from the projects' mailing list messages, and contained all messages by all developers for that time period. 
+
+\subsubsection{Methodology}
+We used the R (Statistical Computing) \cite{R} package SentimentAnalysis \cite{Feuer}\cite{Proel} to analyze the sentiments of the cleaned data, and each message was assigned a sentiment score between [-1, +1], with negative values indicating negative sentiments, 0 for neutral, and positive value representing positive sentiments. 
+
+\subsubsection{Results}
+
+The time series shown in Figures \ref{figureTS_1to6} and \ref{figureTS_7to12} show the daily average sentiments of the developers' messages.
+
+\begin{figure}[!htbp]
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_1.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_2.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_3.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_4.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_5.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_6.pdf, width=0.55\columnwidth}
+\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Kamailio, ffmpeg, Amarok, Apache CouchDB, Pidgin, MPlayer.}
+\label{figureTS_1to6}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_7.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_8.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_9.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_10.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_11.pdf, width=0.55\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/TS_12.pdf, width=0.55\columnwidth}
+\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk, rdesktop, freeglut, Ceph, OpenStack Neutron, and GlusterFS}
+\label{figureTS_7to12}
+\end{figure}
+
+Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomposed time series into seasonal, trend and irregular components using moving averages, for all projects. 
+
+
+\begin{figure}[!htbp]
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_1.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_2.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_3.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_4.pdf, width=0.57\columnwidth}
+\caption{Time series decomposed into trend, seasonality and noise time Series for projects (From top to bottom, left to right) Kamailio, ffmpeg, Amarok, Apache CouchDB.}
+\label{figureDecpmposed_1to4}
+\end{figure}
+
+\begin{figure}[!htbp]
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_5.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_6.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_7.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_8.pdf, width=0.57\columnwidth}
+\caption{Time series decomposed into trend, seasonality and noise time Series for projects (From top to bottom, left to right) Pidgin, MPlayer, Asterisk, rdesktop.}
+\label{figureDecpmposed_5to8}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_9.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_10.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_11.pdf, width=0.57\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/D_12.pdf, width=0.57\columnwidth}
+\caption{Time series decomposed into trend, seasonality and noise time Series for projects (From top to bottom, left to right) freeglut, Ceph, OpenStack Neutron, and GlusterFS}
+\label{figureDecpmposed_9to12}
+\end{figure}
+
+To detect outliers, we used the R (Statistical Computing) \cite{R} package tsoutliers \cite{Lopez} for outlier detection by estimating outlier effects for four types of outliers. We found the outliers and fitted models to the series with the outlier effects removed. Failing to adjust for outliers can result in wrong models or biased parameter estimates, and increased forecasting error. The four models for outlier effect that we looked for were Additive outlier (AO), Level shift (LS), Temporary change (TC), and Innovational outlier (IO).
+
+Figures \ref{figureOutliers_1to4}-\ref{figureOutliers_9to12} show the detected outliers in the sentiments time series, and includes both the original and adjusted time series, as well as the outlier effects. 
+
+
+
+\begin{figure}[!htbp]
+\centering
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_1.pdf, width=0.7\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_2.pdf, width=0.7\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_3.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for projects (From top) Kamailio, ffmpeg, Amarok. Our analysis did not find any outliers for Apache CouchDB.}
+\label{figureOutliers_1to4}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_5.pdf, width=0.6\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_6.pdf, width=0.6\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_7.pdf, width=0.6\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_9.pdf, width=0.6\columnwidth}
+
+\caption{Time series with outliers detected for projects (From top) Pidgin, MPlayer, Asterisk, and freeglut. Our analysis did not succussfully analyse the rdesktop data.}
+\label{figureOutliers_5to8}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\centering
+
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_10.pdf, width=0.7\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_11.pdf, width=0.7\columnwidth}
+\epsfig{file=/home/aha/Desktop/Thesis_data/prelim/PLOTS_PDF/O_12.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for projects (From top) Ceph, OpenStack Neutron, and GlusterFS.}
+\label{figureOutliers_9to12}
+\end{figure}
+
+\paragraph{Outlier Models}
+All the following description from \cite{Chen} describes outlier models. For an ARIMA($p, d, q$) process, we have 
+
+\begin{equation}
+X_t = \frac{\theta(B)}{\alpha(B) \phi(B)} Z_t 
+\end{equation}
+
+Roots of $\theta(B), \phi(B)$ outside unit circle
+
+$\alpha(B) = (1 - B)^d$
+
+$Z_t \sim_{iid}$ Normal(0, $\sigma^2$) \\
+
+The Observed series is represented as:
+\begin{equation}
+X^*_t = X_t + \text{ outlier effect}
+\end{equation}
+
+\begin{align}
+\text{AO:}\hspace{1cm}X^*_t &= X_t + \omega I_t(t_1) \\
+\text{LS:}\hspace{1cm}X^*_t &= X_t + \frac{1}{1 - B} \omega I_t(t_1) \\
+\text{TC:}\hspace{1cm}X^*_t &= X_t + \frac{1}{(1 - \delta B)} \omega I_t(t_1) \\
+\text{IO:}\hspace{1cm}X^*_t &= X_t + \frac{\theta(B)}{\alpha(B) \phi(B)} \omega I_t(t_1) = \frac{\theta(B)}{\alpha(B) \phi(B)}\left[Z_t + \omega I_t(t_1)\right]
+\end{align}
+
+\paragraph{Outlier Estimation} 
+
+The following Iterative procedure for detecting outliers, adjusting series,
+and fitting (seasonal) ARIMA model from \cite{Chen} describes how the outliers are detected by estimation. 
+
+Obtain residuals $\hat{e}_t$ from the observed series $X^*_t$ by applying
+\begin{equation*}
+\pi(B) = \frac{\alpha(B) \phi(B)}{\theta(B)} = 1 - \pi_1B - \pi_2B^2 - \pi_3B^3 - ...
+\end{equation*}
+
+(Remember $X_t = \frac{\theta(B)}{\alpha(B) \phi(B)} Z_t$)
+
+If there were no outliers, result is white noise: $\pi(B) X_t = Z_t$
+
+When outlier present at $t = t_1$, residuals $\hat{e}_t = \pi(B) X^*_t$ for $t = t_1, \dots, n$ reveal outlier effect.
+
+Least-squares estimate:
+\begin{equation*}
+\hat{\omega} = \frac{\sum_{t = t_1}^{n} \hat{e}_t x_{t}}{\sum_{t = t_1}^{n} x^2_{t}}
+\end{equation*}
+
+Divide by standard error:
+\begin{equation*}
+\hat{\tau} = \frac{\hat{\omega}}{\hat{\sigma} / \sqrt{\sum_{t = t_1}^{n} x^2_t}}
+\end{equation*}
+
+Approximately $\sim$ Normal(0, 1)
+
+\paragraph{Outlier Detection}
+
+At each $t = 1, \dots, n$, for each outlier type (AO, LS, TC, IO), Estimate outlier effect $\hat{\omega}$ and calculate $\hat{\tau}$. Large $|\hat{\tau}|$ ($> C$) indicates an outlier. Once outlier is detected, estimated effect can be subtracted to obtain adjusted series. \cite{Chen}
+
+\subsubsection{Discussion}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
 \subsection{Validation}
 
 \subsubsection{Qualitative Study: Interviews and Survey}
 To validate what our quantitative approach finds, and to account and check for possible confounding factors, we need to compare it to what people remember of the situation. This validation check requires interviewing and surveying people from the studied forked projects. Semi-structured interviews need to be conducted, with as many developers from the forked projects, till the interviewers reach a point of saturation (i.e., when no new information is gained by doing more interviews), as possible. These semi-structured interviews will be recorded, transcribed, and coded according to the statistical model's covariates, to find overlapping and common patterns.
-
-\subsubsection{Sentiment Analysis}
-To complement the study, the content of the messages send and received by the top contributors of the project in the month leading to the forking events will be analyzed. This data will be used as one of the developers' individual attributes in our statistical modeling. 
 
 \subsubsection{Cross-Validation}
 To test and validate our quantitative findings, we will model projects with ``unknown'' (or treated as ``unknown'') forking history using the same longitudinal modeling method. 
@@ -983,6 +1162,47 @@ We proposed to model the developers interactions statistically, to find the popu
 Data collection for mailing list archives is completed. The issue tracking system, and source code interactions data is in the progress. Once all data is collected an cleaned, we will do the statistical modeling. Next, we will do the validation testing, which will conclude the proposed research. 
 
 We expect to find patterns specific to each category, which then may be used to identify early warning signs of forking. The identification of such measures may inform those who are interested in the sustainability of their project community to stay informed and take action to amend undesirable dynamics. 
+
+% Table based on sienaFit object ans
+\begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
+\hline
+\rule{0pt}{2ex}\relax
+Effect &\multicolumn{2}{c}{par.}&\multicolumn{2}{c | }{(s.e.)} &\multicolumn{2}{c}{$t$ stat.} \\[0.5ex]
+\hline
+\rule{0pt}{2ex}\relax
+Rate 1 & 4 & 62 & (0 & 78) & \omit & -\\
+Rate 2 & 3 & 68 & (0 & 65) & \omit & -\\
+Rate 3 & 4 & 68 & (1 & 02) & \omit & -\\
+Rate 4 & 6 & 89 & (1 & 54) & \omit & -\\
+Rate 5 & 3 & 98 & (0 & 65) & \omit & -\\
+Rate 6 & 2 & 70 & (0 & 39) & \omit & -\\
+Rate 7 & 2 & 66 & (0 & 52) & \omit & -\\
+Rate 8 & 5 & 54 & (1 & 15) & \omit & -\\
+Rate 9 & 8 & 29 & (1 & 80) & \omit & -\\
+\hline
+\rule{0pt}{2ex}\relax
+outdegree (density)                        & --2 & 81$^{\ast\ast\ast}$ & ( 0 & 12) & --22 & 61\\
+reciprocity                                & --0 & 63                  & ( 0 & 68) &  --0 & 93\\
+transitive triplets                        &   2 & 24$^{\ast\ast\ast}$ & ( 0 & 38) &    5 & 85\\
+3-cycles                                   & --0 & 78                  & ( 0 & 52) &  --1 & 49\\
+out-out degree assortativity         & --0 & 52$^{\ast\ast}$     & ( 0 & 20) &  --2 & 66\\
+devSeniority alter                         & --0 & 01$^{\ast\ast\ast}$ & ( 0 & 00) &  --3 & 58\\
+devSeniority ego                           &   0 & 00                  & ( 0 & 00) &    0 & 04\\
+devSeniority ego x devSeniority alter      & --0 & 00                  & (31 & 61) &  --0 & 00\\
+devScActivity alter                        & --0 & 08$^\dagger$        & ( 0 & 05) &  --1 & 65\\
+devScActivity ego                          &   0 & 01                  & ( 0 & 04) &    0 & 36\\
+devScActivity ego x devScActivity alter    &   0 & 01                  & ( 0 & 01) &    0 & 46\\
+int.  devScActivity ego x devSeniority ego &   0 & 00                  & ( 0 & 00) &    0 & 85\\
+\hline
+\multicolumn{5}{l}{\footnotesize{$^\dagger$ $p$ $<$ 0.1;
+$^\ast$ $p$ $<$ 0.05; $^{\ast\ast}$ $p$ $<$ 0.01;
+$^{\ast\ast\ast}$ $p$ $<$ 0.001;}}\\
+\multicolumn{5}{l}
+   {\footnotesize{convergence $t$ ratios all $<$ 0.69,}}\\
+\multicolumn{5}{l}{\footnotesize{overall maximum convergence ratio 1.03.}}
+\end{tabular}
+
+
 
 \pagebreak
 
@@ -1142,14 +1362,14 @@ We visualized the dynamic network changes using Gephi \cite{Bastian}. The videos
 \subsection{Initial study results and discussion}
 \label{results}
 
-\begin{figure}[!Ht]
+\begin{figure}[!ht]
 \centering
 \epsfig{file=NodesEdgesTime.eps, width=\columnwidth}
 \caption[The number of nodes and edges over time, as network-specific measurements]{Nodes and Edges over Time. The number of nodes and number of edges are normalized to the range [0,1] to make comparison across projects meaningful, by emphasizing change in ratio, rather than the varying counts. Hence, the measurements were normalized for drawing this graph. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
 \label{figureNodesEdgesTimeR}
 \end{figure}
 
-\begin{figure}[!Ht]
+\begin{figure}[!ht]
 \centering
 \epsfig{file=DiameterTime.eps, width=\columnwidth}
 \caption[The network diameter change over time, as network-specific measurements]{Diameter changes over Time. Note that the diameter measurements were normalized to the range [0,1]. The three projects in the first row belong to the \textit{``technical differences''} forking reason category, the three projects in the second row belong to the \textit{``more community-driven development''} forking reason category, and the two projects in the third row belong to the \textit{``personal differences''} forking reason category.}
