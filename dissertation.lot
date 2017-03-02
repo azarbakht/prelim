@@ -6,6 +6,17 @@
 \contentsline {table}{\numberline {6}{\ignorespaces Undesirable forking vs. Other categories}}{18}{table.caption.14}
 \contentsline {table}{\numberline {7}{\ignorespaces List of projects in U.F. H.F., and No.F. categories selected based on the criteria described in section \ref {DataCollection} for our study\relax }}{19}{table.caption.15}
 \contentsline {table}{\numberline {8}{\ignorespaces Expectations for significance of the statistical model covariates based on intuition. Note that * indicates significantly-related; +/- indicates positively/negatively related.\relax }}{31}{table.caption.16}
-\contentsline {table}{\numberline {9}{\ignorespaces Timeline\relax }}{50}{table.caption.25}
-\contentsline {table}{\numberline {10}{\ignorespaces List of all projects forked because of ``\textit {personal differences among the developer team}'' (U.F.)}}{53}{table.caption.28}
-\contentsline {table}{\numberline {11}{\ignorespaces List of all projects forked because of the need for ``\textit {more community-driven development}'' (U.F.)}}{54}{table.caption.29}
+\contentsline {table}{\numberline {9}{\ignorespaces Estimates parameters in the model for Project Kamailio\relax }}{48}{table.0.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Estimates parameters in the model for Project ffmpeg\relax }}{48}{table.0.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Estimates parameters in the model for Project Amarok\relax }}{49}{table.0.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Estimates parameters in the model for Project Apache CouchDB\relax }}{50}{table.0.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Estimates parameters in the model for Project Pidgin\relax }}{51}{table.0.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Estimates parameters in the model for Project MPlayer\relax }}{52}{table.0.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Estimates parameters in the model for Project rdesktop\relax }}{53}{table.0.15}
+\contentsline {table}{\numberline {16}{\ignorespaces Estimates parameters in the model for Project freeglut\relax }}{54}{table.0.16}
+\contentsline {table}{\numberline {17}{\ignorespaces Estimates parameters in the model for Project Ceph\relax }}{55}{table.0.17}
+\contentsline {table}{\numberline {18}{\ignorespaces Estimates parameters in the model for Project OpenStack Neutron\relax }}{56}{table.0.18}
+\contentsline {table}{\numberline {19}{\ignorespaces Estimates parameters in the model for Project GlusterFS\relax }}{57}{table.0.19}
+\contentsline {table}{\numberline {20}{\ignorespaces Timeline\relax }}{60}{table.caption.25}
+\contentsline {table}{\numberline {21}{\ignorespaces List of all projects forked because of ``\textit {personal differences among the developer team}'' (U.F.)}}{63}{table.caption.28}
+\contentsline {table}{\numberline {22}{\ignorespaces List of all projects forked because of the need for ``\textit {more community-driven development}'' (U.F.)}}{64}{table.caption.29}

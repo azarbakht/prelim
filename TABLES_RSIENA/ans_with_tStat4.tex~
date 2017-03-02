@@ -1,0 +1,38 @@
+% Table based on sienaFit object ans
+\begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
+\hline
+\rule{0pt}{2ex}\relax
+Effect &\multicolumn{2}{c}{par.}&\multicolumn{2}{c | }{(s.e.)} &\multicolumn{2}{c}{$t$ stat.} \\[0.5ex]
+\hline
+\rule{0pt}{2ex}\relax
+Rate 1 & 1 & 31 & (0 & 33) & \omit & -\\
+Rate 2 & 2 & 24 & (0 & 67) & \omit & -\\
+Rate 3 & 2 & 21 & (0 & 68) & \omit & -\\
+Rate 4 & 5 & 36 & (1 & 94) & \omit & -\\
+Rate 5 & 4 & 11 & (1 & 19) & \omit & -\\
+Rate 6 & 6 & 40 & (2 & 35) & \omit & -\\
+Rate 7 & 1 & 62 & (0 & 41) & \omit & -\\
+Rate 8 & 0 & 65 & (0 & 21) & \omit & -\\
+Rate 9 & 0 & 70 & (0 & 22) & \omit & -\\
+\hline
+\rule{0pt}{2ex}\relax
+outdegree (density)                        & --4 & 37$^{\ast\ast\ast}$ & ( 0 & 26) & --17 & 02\\
+reciprocity                                & --3 & 97                  & ( 7 & 73) &  --0 & 51\\
+transitive triplets                        &   2 & 98$^{\ast\ast\ast}$ & ( 0 & 84) &    3 & 53\\
+3-cycles                                   & --1 & 57                  & ( 5 & 86) &  --0 & 27\\
+out-out degree^(1/2) assortativity         &   0 & 14                  & ( 0 & 40) &    0 & 34\\
+devSeniority alter                         & --0 & 00                  & ( 0 & 00) &  --0 & 89\\
+devSeniority ego                           &   0 & 00                  & ( 0 & 00) &    1 & 20\\
+devSeniority ego x devSeniority alter      & --0 & 00                  & (31 & 61) &  --0 & 00\\
+devScActivity alter                        & --0 & 01                  & ( 0 & 01) &  --1 & 04\\
+devScActivity ego                          &   0 & 02$^{\ast\ast}$     & ( 0 & 01) &    3 & 02\\
+devScActivity ego x devScActivity alter    & --0 & 00                  & ( 0 & 00) &  --0 & 36\\
+int.  devScActivity ego x devSeniority ego & --0 & 00                  & (31 & 61) &  --0 & 00\\
+\hline
+\multicolumn{5}{l}{\footnotesize{$^\dagger$ $p$ $<$ 0.1;
+$^\ast$ $p$ $<$ 0.05; $^{\ast\ast}$ $p$ $<$ 0.01;
+$^{\ast\ast\ast}$ $p$ $<$ 0.001;}}\\
+\multicolumn{5}{l}
+   {\footnotesize{convergence $t$ ratios all $<$ 0.56,}}\\
+\multicolumn{5}{l}{\footnotesize{overall maximum convergence ratio 1.38.}}
+\end{tabular}

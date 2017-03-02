@@ -1,0 +1,34 @@
+% Table based on sienaFit object ans
+\begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
+\hline
+\rule{0pt}{2ex}\relax
+Effect &\multicolumn{2}{c}{par.}&\multicolumn{2}{c | }{(s.e.)} &\multicolumn{2}{c}{$t$ stat.} \\[0.5ex]
+\hline
+\rule{0pt}{2ex}\relax
+Rate 1 &  5 & 21 & (0 & 54) & \omit & -\\
+Rate 2 &  4 & 52 & (0 & 43) & \omit & -\\
+Rate 3 &  4 & 52 & (0 & 46) & \omit & -\\
+Rate 4 &  5 & 62 & (0 & 62) & \omit & -\\
+Rate 5 &  4 & 08 & (0 & 40) & \omit & -\\
+Rate 6 &  4 & 69 & (0 & 54) & \omit & -\\
+Rate 7 &  4 & 39 & (0 & 53) & \omit & -\\
+Rate 8 & 27 & 77 & (5 & 86) & \omit & -\\
+Rate 9 &  3 & 46 & (0 & 32) & \omit & -\\
+\hline
+\rule{0pt}{2ex}\relax
+outdegree (density)                        & --2 & 20$^{\ast\ast\ast}$ & (0 & 06) & --39 & 64\\
+reciprocity                                & --2 & 52$^\ast$           & (1 & 27) &  --1 & 98\\
+transitive triplets                        &   3 & 63$^{\ast\ast\ast}$ & (0 & 85) &    4 & 27\\
+3-cycles                                   & --2 & 80$^{\ast\ast}$     & (1 & 05) &  --2 & 67\\
+out-out degree^(1/2) assortativity         & --1 & 42$^{\ast\ast\ast}$ & (0 & 40) &  --3 & 56\\
+devSeniority ego                           &   N & A. & (N & A.) & \omit & -\\
+devScActivity ego                          &   N & A. & (N & A.) & \omit & -\\
+int.  devScActivity ego x devSeniority ego &   N & A. & (N & A.) & \omit & -\\
+\hline
+\multicolumn{5}{l}{\footnotesize{$^\dagger$ $p$ $<$ 0.1;
+$^\ast$ $p$ $<$ 0.05; $^{\ast\ast}$ $p$ $<$ 0.01;
+$^{\ast\ast\ast}$ $p$ $<$ 0.001;}}\\
+\multicolumn{5}{l}
+   {\footnotesize{convergence $t$ ratios all $<$ 1.3,}}\\
+\multicolumn{5}{l}{\footnotesize{overall maximum convergence ratio 3.45.}}
+\end{tabular}
