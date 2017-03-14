@@ -8,22 +8,22 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Time series with outliers detected for projects (From top) Kamailio, ffmpeg, Amarok. Our analysis did not find any outliers for Apache CouchDB.\relax }}{43}{figure.caption.22}
 \contentsline {figure}{\numberline {9}{\ignorespaces Time series with outliers detected for projects (From top) Pidgin, MPlayer, Asterisk, and freeglut. Our analysis did not succussfully analyse the rdesktop data.\relax }}{44}{figure.caption.23}
 \contentsline {figure}{\numberline {10}{\ignorespaces Time series with outliers detected for projects (From top) Ceph, OpenStack Neutron, and GlusterFS.\relax }}{45}{figure.caption.24}
-\contentsline {figure}{\numberline {11}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{66}{figure.caption.30}
-\contentsline {figure}{\numberline {12}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{68}{figure.caption.31}
-\contentsline {figure}{\numberline {13}{\ignorespaces The network diameter change over time, as network-specific measurements}}{69}{figure.caption.32}
-\contentsline {figure}{\numberline {14}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{70}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}{subfigure.14.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}{subfigure.14.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{70}{subfigure.14.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{70}{subfigure.14.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}{subfigure.14.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}{subfigure.14.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{70}{subfigure.14.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{70}{subfigure.14.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{70}{subfigure.14.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{70}{subfigure.14.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{70}{subfigure.14.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{70}{subfigure.14.4}
-\contentsline {figure}{\numberline {15}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{70}{figure.caption.34}
-\contentsline {figure}{\numberline {16}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{71}{figure.caption.35}
-\contentsline {figure}{\numberline {17}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{72}{figure.caption.36}
+\contentsline {figure}{\numberline {11}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{67}{figure.caption.30}
+\contentsline {figure}{\numberline {12}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{69}{figure.caption.31}
+\contentsline {figure}{\numberline {13}{\ignorespaces The network diameter change over time, as network-specific measurements}}{70}{figure.caption.32}
+\contentsline {figure}{\numberline {14}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{71}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}{subfigure.14.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{71}{subfigure.14.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{71}{subfigure.14.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}{subfigure.14.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{71}{subfigure.14.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{71}{subfigure.14.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}{subfigure.14.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{71}{subfigure.14.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{71}{subfigure.14.4}
+\contentsline {figure}{\numberline {15}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{71}{figure.caption.34}
+\contentsline {figure}{\numberline {16}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{72}{figure.caption.35}
+\contentsline {figure}{\numberline {17}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{73}{figure.caption.36}
